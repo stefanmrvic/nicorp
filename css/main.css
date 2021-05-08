@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap");
+/* line 1, sass/base/_typography.scss */
+body {
+  font-family: "Rajdhani", sans-serif; }
+
+/* line 1, sass/base/_reset.scss */
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  scroll-behavior: smooth; }
+
+/* line 8, sass/base/_reset.scss */
+*,
+*::before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  outline: none; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes fadeInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(150px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes fadeInBottomTeam {
+  0% {
+    opacity: 0;
+    transform: translateY(115px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes fadeInBottomAboutUs {
+  0% {
+    opacity: 0;
+    transform: translateY(70px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes fadeInLeftEvent {
+  0% {
+    opacity: 0;
+    transform: translateX(-255px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes fadeInLeftCoach {
+  0% {
+    opacity: 0;
+    transform: translateX(-180px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes fadeInLeftSegments {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes fadeInLeftHero {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes fadeInLeftEvents {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(300px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes fadeInRightSegments {
+  0% {
+    opacity: 0;
+    transform: translateX(150px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes fadeInRightEvents {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3); }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+
+@keyframes zoomInOffer {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.6, 0.6, 0.6); }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+
+@keyframes zoomInSchedule {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.8, 0.8, 0.8); }
+  100% {
+    opacity: 1; } }
+
+@keyframes zoomInSocials {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3); }
+  40% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+
+/* line 1, sass/layout/_navigation.scss */
+.nav-distance {
+  width: 0;
+  height: 0; }

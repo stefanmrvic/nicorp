@@ -1,0 +1,14 @@
+//Our Team Socials Styles
+%our-team-socials {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 9px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    transition: bottom .35s .07s ease-out, opacity .25s .04s ease;
+    z-index: $z-index-max;
+
+    &:hover { opacity: 1; bottom: 25px; }
+}
