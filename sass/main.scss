@@ -5,6 +5,8 @@
 @import 'sass/base/reset';
 @import 'sass/base/animations';
 
-@import 'sass/layout/grid';
+@import 'sass/components/glide';
 
+@import 'sass/layout/grid';
 @import 'sass/layout/navigation';
+@import 'sass/layout/main-layout';

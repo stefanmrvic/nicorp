@@ -178,6 +178,46 @@ html {
   100% {
     opacity: 1; } }
 
+/* line 1, sass/components/_glide.scss */
+.glide__track {
+  position: relative; }
+
+/* line 6, sass/components/_glide.scss */
+.glide__slides {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+/* line 13, sass/components/_glide.scss */
+.glide__slide img {
+  width: 100%;
+  height: 90vh; }
+
+/* line 18, sass/components/_glide.scss */
+.glide__arrow {
+  font-size: 12px;
+  border: none;
+  box-shadow: none;
+  background: none;
+  text-transform: uppercase;
+  font-family: "Swansea", serif;
+  font-weight: 700;
+  opacity: .8; }
+
+/* line 29, sass/components/_glide.scss */
+.glide__arrow:hover {
+  opacity: 1; }
+
+/* line 33, sass/components/_glide.scss */
+.glide__arrow:first-child {
+  margin-right: 30px; }
+
+/* line 38, sass/components/_glide.scss */
+.glide__arrow__seperator {
+  width: 2px;
+  height: 8px;
+  background: #000; }
+
 /* line 1, sass/layout/_navigation.scss */
 body {
   background: deepskyblue;
@@ -207,7 +247,7 @@ body {
   /* line 21, sass/layout/_navigation.scss */
   .nav__logo {
     color: #fff;
-    font-size: 25px;
+    font-size: 23px;
     position: relative;
     z-index: 999; }
   /* line 35, sass/layout/_navigation.scss */
@@ -297,34 +337,39 @@ body {
       display: none; } }
 
 /* line 127, sass/layout/_navigation.scss */
-.nav__items > li::after {
+.nav__items > li > a::after {
   content: "";
   position: absolute;
-  bottom: -10px;
+  bottom: -8px;
   left: 0;
   transform: scaleX(0);
   width: 100%;
   height: 2px;
   background-color: #fff;
   opacity: 0;
-  transition: all .28s; }
+  transition: transform 2s, opacity .1s; }
 
 /* line 140, sass/layout/_navigation.scss */
-.nav__items > li:hover::after {
-  transform: scaleX(1.05);
+.nav__items > li a:hover::after {
+  transform: scaleX(1);
   background-color: #fff;
-  opacity: 1; }
+  opacity: 1;
+  transition: transform 2s, opacity .1s; }
 
-/* line 146, sass/layout/_navigation.scss */
+/* line 147, sass/layout/_navigation.scss */
 .nav__items > li {
   position: relative; }
 
-/* line 149, sass/layout/_navigation.scss */
+/* line 151, sass/layout/_navigation.scss */
 .nav__items > li a {
   color: #fff;
   opacity: .95;
-  font-size: 17px; }
+  font-size: 16px; }
 
-/* line 155, sass/layout/_navigation.scss */
+/* line 157, sass/layout/_navigation.scss */
 .nav__items > li:not(:first-child) {
   margin-left: 36px; }
+
+/* line 1, sass/layout/_main-layout.scss */
+.hero {
+  position: relative; }
