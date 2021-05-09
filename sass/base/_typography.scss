@@ -1,15 +1,21 @@
 body {
-    font-family: $font-rajdhani;
+    font-family: $font-swansea;
+    font-weight: 700;
 }
 
-//Montserrat Font//
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+//Swansea Font
+@font-face {
+    font-family: 'Swansea';
+    src: url('../../font/swansea-regular-webfont.woff2') format('woff2'),
+         url('../../font/swansea-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
 
-//Poppins Font//
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
-
-//Playfair Display Font//
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
-
-//Rajdhani Font//
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap');
+@font-face {
+    font-family: 'Swansea';
+    src: url('../../font/swansea-bold-webfont.woff2') format('woff2'),
+         url('../../font/swansea-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
