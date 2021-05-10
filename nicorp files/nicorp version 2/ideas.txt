@@ -1,0 +1,12 @@
+HERO SECTION
+------------
+1. Pictures will be draggable with hand
+2. It will have Prev | Next buttons and 3 rectangles to indicate which is current picture
+3. It will go in circle (360 rotation)
+
+PROJECT SECTION
+---------------
+1. When user clicks on the project, the project expands over the whole screen,
+   and on the left side is text, and or the right side is picture of the project.
+2. The background is black, and text is white.
+3. Close button can / will be x inside of a gray / white circle.
