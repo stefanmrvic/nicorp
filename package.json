@@ -20,8 +20,7 @@
   "author": "Stefan Mrvic",
   "license": "ISC",
   "dependencies": {
-    "@glidejs/glide": "^3.4.1",
-    "@splidejs/splide": "^2.4.21"
+    "@glidejs/glide": "^3.4.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.4",

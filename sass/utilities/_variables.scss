@@ -1,22 +1,29 @@
+//Media Queries//
+$breakpoint-laptop: 'min-width: 1000px';
+
 //Z-index//
-$z-index-max: 999;
+$z-index-max: 99999;
 
 //Font Variables//
-$font-swansea: 'Swansea', serif;
+$font-swansea: ('Swansea', serif);
 //Color Variables//
 $color-transparent: transparent;
-$color-primary: #f1ede1;
-$color-secondary: #16120f;
+$color-primary: #fff;
+$color-secondary: #101010;
+
+//Background Color//
+$color-background: #101010;
 
 //Navigation Colors//
 $color-nav-border: rgba(255, 255, 255, 0.1);
 $color-nav-shadow: rgba(0, 0, 0, 0.08);
-$color-nav-background: #030303;
-$color-nav-hamburger: #000;
-$color-nav-link: #101010;
-$color-mobileNav-background: #000;
-$color-mobileNav-links: #fff;
-$color-mobileNav-button: #000;
+$color-nav-background: #101010;
+$color-nav-hamburger: #101010;
+$color-nav-link: #fff;
+$color-nav-link-hover: #fff;
+$color-mobileNav-background: #fff;
+$color-mobileNav-links: #101010;
+$color-mobileNav-button: #101010;
 
 //Section Colors//
 $color-section-white: #f0f0f0;

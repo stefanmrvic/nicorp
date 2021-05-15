@@ -1,0 +1,211 @@
+#hero-slider {
+    position: relative;
+    overflow: hidden;
+    height: calc(100vh - 74px);
+
+    @media only screen and ($breakpoint-laptop) {
+      height: calc(100vh - 88px);
+    }
+  }
+  
+  #hero-slider::before {
+    display: none;
+
+    @media only screen and ($breakpoint-laptop) {
+      display: initial;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 20%;
+      bottom: 0;
+      width: 20%;
+      border-left: solid rgba(255, 255, 255, 0.25) 1px;
+      border-right: solid rgba(255, 255, 255, 0.25) 1px;
+      z-index: 999;
+    }
+  }
+
+  #hero-slider::after {
+    display: none;
+
+    @media only screen and ($breakpoint-laptop) {
+      display: initial;
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 20%;
+      bottom: 0;
+      width: 20%;
+      border-left: solid rgba(255, 255, 255, 0.25) 1px;
+      border-right: solid rgba(255, 255, 255, 0.25) 1px;
+      z-index: 999;
+    }
+  }
+
+  .hero-slide {
+    position: absolute;
+    width: 100%;
+    z-index: 700;
+    height: calc(100vh - 74px);
+
+    @media only screen and ($breakpoint-laptop) {
+      height: calc(100vh - 88px);
+    }
+  }
+
+  .hero-slide picture img {
+    //object-fit: cover;
+    width: 100%;
+    pointer-events: none;
+  }
+  
+  .active {
+    z-index: 998;
+  }
+  
+  .slideInLeft {
+    animation-name: animateInLeft;
+    z-index: 998;
+  }
+  
+  .slideInRight {
+    animation-name: animateInRight;
+    z-index: 998;
+  }
+  
+  .slideOutLeft {
+    transform: translateX(-100%);
+  }
+  
+  .slideOutRight {
+    transform: translateX(100%);
+  }
+  
+ .hero-dots {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 57px;
+    left: 49.9%;
+    transform: translateX(-50%);
+    width: 110px;
+    z-index: 999;
+ }
+
+ .dot {
+   width: 32px;
+   height: 3px;
+   background: #fff;
+   opacity: .5;
+ }
+
+  .hero-buttons {
+    position: absolute;
+    display: flex;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+  }
+  
+  .hero-slider-back-btn,
+  .hero-slider-next-btn,
+  .hero-slider-splitter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 13px;
+    opacity: .7;
+    transition: all .2s;
+    margin: 9px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    backface-visibility: hidden;
+
+    @media only screen and ($breakpoint-laptop) {
+      font-size: 14px;
+    }
+  }
+  
+  .hero-slider-back-btn:hover,
+  .hero-slider-next-btn:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+  
+  .hero-overlay-text {
+    position: absolute;
+    color: $color-primary;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: $z-index-max;
+    opacity: 1;
+
+    @media only screen and ($breakpoint-laptop) {
+      top: 25.5%;
+      left: 35%;
+      transform: translate(0, 0);
+    }
+  }
+
+  .text-1 {
+    max-width: 253px;
+
+    @media only screen and ($breakpoint-laptop) {
+      max-width: 509px;
+    }
+  }
+
+  .text-2 {
+    width: 337px;
+    max-width: 723px;
+
+    @media only screen and ($breakpoint-laptop) {
+      left: 34.5%;
+      width: initial;
+    }
+  }
+
+  .text-3 {
+    max-width: 559px;
+    width: 294px;
+
+    @media only screen and ($breakpoint-laptop) {
+      left: 34.5%;
+      width: initial;
+    }
+  }
+  
+  .hero-overlay-text .hero-subtitle {
+    text-transform: uppercase;
+    margin-left: 1px;
+    margin-bottom: 13px;
+    letter-spacing: 1px;
+
+    @media only screen and ($breakpoint-laptop) {
+      font-size: 14px;
+      margin-left: 9px;
+    }
+  }
+
+  .hero-overlay-text .hero-header {
+    text-transform: uppercase;
+
+    @media only screen and ($breakpoint-laptop) {
+    }
+  }
+  
+  .hero-overlay-text .hero-text {
+    margin-top: 20px;
+    //text-align: center;
+    color: white;
+
+    @media only screen and ($breakpoint-laptop) {
+      margin-top: 15px;
+      //text-align: left;
+    }
+  }
+  
