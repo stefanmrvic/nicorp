@@ -337,7 +337,7 @@ body {
       display: none; } }
 
 /* line 127, sass/layout/_navigation.scss */
-.nav__items > li > a::after {
+.nav__items > li > a::before {
   content: "";
   position: absolute;
   bottom: -8px;
@@ -347,26 +347,25 @@ body {
   height: 2px;
   background-color: #fff;
   opacity: 0;
-  transition: transform 2s, opacity .1s; }
+  transition: transform .28s, opacity .32s; }
 
 /* line 140, sass/layout/_navigation.scss */
-.nav__items > li a:hover::after {
+.nav__items > li a:hover::before {
   transform: scaleX(1);
   background-color: #fff;
-  opacity: 1;
-  transition: transform 2s, opacity .1s; }
+  opacity: 1; }
 
-/* line 147, sass/layout/_navigation.scss */
+/* line 146, sass/layout/_navigation.scss */
 .nav__items > li {
   position: relative; }
 
-/* line 151, sass/layout/_navigation.scss */
+/* line 150, sass/layout/_navigation.scss */
 .nav__items > li a {
   color: #fff;
   opacity: .95;
   font-size: 16px; }
 
-/* line 157, sass/layout/_navigation.scss */
+/* line 156, sass/layout/_navigation.scss */
 .nav__items > li:not(:first-child) {
   margin-left: 36px; }
 
