@@ -11,7 +11,7 @@
   #hero-slider::before {
     display: none;
 
-    @media only screen and ($breakpoint-laptop) {
+    @media only screen and ($breakpoint-desktop) {
       display: initial;
       content: "";
       position: absolute;
@@ -28,7 +28,7 @@
   #hero-slider::after {
     display: none;
 
-    @media only screen and ($breakpoint-laptop) {
+    @media only screen and ($breakpoint-desktop) {
       display: initial;
       content: "";
       position: absolute;
@@ -53,10 +53,67 @@
     }
   }
 
-  .hero-slide picture img {
+  .hero-slide div {
     //object-fit: cover;
     width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     pointer-events: none;
+  }
+
+  .hero-slide-1 {
+    background: url(/imgs/1-mobile.jpg);
+    background-position: 82% 0;
+
+    @media only screen and ($breakpoint-tablet) {
+      background: url(/imgs/1-tablet.jpg);
+      background-position: 92% 0;
+    }
+
+    @media only screen and ($breakpoint-laptop) {
+      background: url(/imgs/1.jpg);
+      background-position: 70% 0;
+    }
+  }
+
+  .hero-slide-2 {
+    background: url(/imgs/2-mobile.jpg);
+    background-position: 41% 0;
+
+    @media only screen and ($breakpoint-tablet) {
+      background: url(/imgs/2-tablet.jpg);
+      background-position: 92% 0;
+    }
+
+    @media only screen and ($breakpoint-laptop) {
+      background: url(/imgs/2.jpg);
+      background-position: 70% 0;
+    }
+
+    @media only screen and ($breakpoint-desktop) {
+      background: url(/imgs/2.jpg);
+      background-position: 100% 69%;
+    }
+  }
+
+  .hero-slide-3 {
+    background: url(/imgs/3-mobile.jpg);
+    background-position: 0 0;
+
+    @media only screen and ($breakpoint-tablet) {
+      background: url(/imgs/3-tablet.jpg);
+      background-position: 92% 0;
+    }
+
+    @media only screen and ($breakpoint-laptop) {
+      background: url(/imgs/3.jpg);
+      background-position: 70% 0;
+    }
+
+    @media only screen and ($breakpoint-desktop) {
+      background-position: 0 67%;
+    }
   }
   
   .active {

@@ -99,7 +99,7 @@ html::-webkit-scrollbar-thumb {
 /* line 11, sass/components/_hero-slider.scss */
 #hero-slider::before {
   display: none; }
-  @media only screen and (min-width: 1000px) {
+  @media only screen and (min-width: 1200px) {
     /* line 11, sass/components/_hero-slider.scss */
     #hero-slider::before {
       display: initial;
@@ -116,7 +116,7 @@ html::-webkit-scrollbar-thumb {
 /* line 28, sass/components/_hero-slider.scss */
 #hero-slider::after {
   display: none; }
-  @media only screen and (min-width: 1000px) {
+  @media only screen and (min-width: 1200px) {
     /* line 28, sass/components/_hero-slider.scss */
     #hero-slider::after {
       display: initial;
@@ -142,33 +142,90 @@ html::-webkit-scrollbar-thumb {
       height: calc(100vh - 88px); } }
 
 /* line 56, sass/components/_hero-slider.scss */
-.hero-slide picture img {
+.hero-slide div {
   width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
   pointer-events: none; }
 
-/* line 62, sass/components/_hero-slider.scss */
+/* line 65, sass/components/_hero-slider.scss */
+.hero-slide-1 {
+  background: url(/imgs/1-mobile.jpg);
+  background-position: 82% 0; }
+  @media only screen and (min-width: 720px) {
+    /* line 65, sass/components/_hero-slider.scss */
+    .hero-slide-1 {
+      background: url(/imgs/1-tablet.jpg);
+      background-position: 92% 0; } }
+  @media only screen and (min-width: 1000px) {
+    /* line 65, sass/components/_hero-slider.scss */
+    .hero-slide-1 {
+      background: url(/imgs/1.jpg);
+      background-position: 70% 0; } }
+
+/* line 80, sass/components/_hero-slider.scss */
+.hero-slide-2 {
+  background: url(/imgs/2-mobile.jpg);
+  background-position: 41% 0; }
+  @media only screen and (min-width: 720px) {
+    /* line 80, sass/components/_hero-slider.scss */
+    .hero-slide-2 {
+      background: url(/imgs/2-tablet.jpg);
+      background-position: 92% 0; } }
+  @media only screen and (min-width: 1000px) {
+    /* line 80, sass/components/_hero-slider.scss */
+    .hero-slide-2 {
+      background: url(/imgs/2.jpg);
+      background-position: 70% 0; } }
+  @media only screen and (min-width: 1200px) {
+    /* line 80, sass/components/_hero-slider.scss */
+    .hero-slide-2 {
+      background: url(/imgs/2.jpg);
+      background-position: 100% 69%; } }
+
+/* line 100, sass/components/_hero-slider.scss */
+.hero-slide-3 {
+  background: url(/imgs/3-mobile.jpg);
+  background-position: 0 0; }
+  @media only screen and (min-width: 720px) {
+    /* line 100, sass/components/_hero-slider.scss */
+    .hero-slide-3 {
+      background: url(/imgs/3-tablet.jpg);
+      background-position: 92% 0; } }
+  @media only screen and (min-width: 1000px) {
+    /* line 100, sass/components/_hero-slider.scss */
+    .hero-slide-3 {
+      background: url(/imgs/3.jpg);
+      background-position: 70% 0; } }
+  @media only screen and (min-width: 1200px) {
+    /* line 100, sass/components/_hero-slider.scss */
+    .hero-slide-3 {
+      background-position: 0 67%; } }
+
+/* line 119, sass/components/_hero-slider.scss */
 .active {
   z-index: 998; }
 
-/* line 66, sass/components/_hero-slider.scss */
+/* line 123, sass/components/_hero-slider.scss */
 .slideInLeft {
   animation-name: animateInLeft;
   z-index: 998; }
 
-/* line 71, sass/components/_hero-slider.scss */
+/* line 128, sass/components/_hero-slider.scss */
 .slideInRight {
   animation-name: animateInRight;
   z-index: 998; }
 
-/* line 76, sass/components/_hero-slider.scss */
+/* line 133, sass/components/_hero-slider.scss */
 .slideOutLeft {
   transform: translateX(-100%); }
 
-/* line 80, sass/components/_hero-slider.scss */
+/* line 137, sass/components/_hero-slider.scss */
 .slideOutRight {
   transform: translateX(100%); }
 
-/* line 84, sass/components/_hero-slider.scss */
+/* line 141, sass/components/_hero-slider.scss */
 .hero-dots {
   position: absolute;
   display: flex;
@@ -179,14 +236,14 @@ html::-webkit-scrollbar-thumb {
   width: 110px;
   z-index: 999; }
 
-/* line 95, sass/components/_hero-slider.scss */
+/* line 152, sass/components/_hero-slider.scss */
 .dot {
   width: 32px;
   height: 3px;
   background: #fff;
   opacity: .5; }
 
-/* line 102, sass/components/_hero-slider.scss */
+/* line 159, sass/components/_hero-slider.scss */
 .hero-buttons {
   position: absolute;
   display: flex;
@@ -195,7 +252,7 @@ html::-webkit-scrollbar-thumb {
   transform: translateX(-50%);
   z-index: 999; }
 
-/* line 111, sass/components/_hero-slider.scss */
+/* line 168, sass/components/_hero-slider.scss */
 .hero-slider-back-btn,
 .hero-slider-next-btn,
 .hero-slider-splitter {
@@ -212,19 +269,19 @@ html::-webkit-scrollbar-thumb {
   letter-spacing: 1px;
   backface-visibility: hidden; }
   @media only screen and (min-width: 1000px) {
-    /* line 111, sass/components/_hero-slider.scss */
+    /* line 168, sass/components/_hero-slider.scss */
     .hero-slider-back-btn,
     .hero-slider-next-btn,
     .hero-slider-splitter {
       font-size: 14px; } }
 
-/* line 132, sass/components/_hero-slider.scss */
+/* line 189, sass/components/_hero-slider.scss */
 .hero-slider-back-btn:hover,
 .hero-slider-next-btn:hover {
   opacity: 1;
   cursor: pointer; }
 
-/* line 138, sass/components/_hero-slider.scss */
+/* line 195, sass/components/_hero-slider.scss */
 .hero-overlay-text {
   position: absolute;
   color: #fff;
@@ -234,62 +291,62 @@ html::-webkit-scrollbar-thumb {
   z-index: 99999;
   opacity: 1; }
   @media only screen and (min-width: 1000px) {
-    /* line 138, sass/components/_hero-slider.scss */
+    /* line 195, sass/components/_hero-slider.scss */
     .hero-overlay-text {
       top: 25.5%;
       left: 35%;
       transform: translate(0, 0); } }
 
-/* line 154, sass/components/_hero-slider.scss */
+/* line 211, sass/components/_hero-slider.scss */
 .text-1 {
   max-width: 253px; }
   @media only screen and (min-width: 1000px) {
-    /* line 154, sass/components/_hero-slider.scss */
+    /* line 211, sass/components/_hero-slider.scss */
     .text-1 {
       max-width: 509px; } }
 
-/* line 162, sass/components/_hero-slider.scss */
+/* line 219, sass/components/_hero-slider.scss */
 .text-2 {
   width: 337px;
   max-width: 723px; }
   @media only screen and (min-width: 1000px) {
-    /* line 162, sass/components/_hero-slider.scss */
+    /* line 219, sass/components/_hero-slider.scss */
     .text-2 {
       left: 34.5%;
       width: initial; } }
 
-/* line 172, sass/components/_hero-slider.scss */
+/* line 229, sass/components/_hero-slider.scss */
 .text-3 {
   max-width: 559px;
   width: 294px; }
   @media only screen and (min-width: 1000px) {
-    /* line 172, sass/components/_hero-slider.scss */
+    /* line 229, sass/components/_hero-slider.scss */
     .text-3 {
       left: 34.5%;
       width: initial; } }
 
-/* line 182, sass/components/_hero-slider.scss */
+/* line 239, sass/components/_hero-slider.scss */
 .hero-overlay-text .hero-subtitle {
   text-transform: uppercase;
   margin-left: 1px;
   margin-bottom: 13px;
   letter-spacing: 1px; }
   @media only screen and (min-width: 1000px) {
-    /* line 182, sass/components/_hero-slider.scss */
+    /* line 239, sass/components/_hero-slider.scss */
     .hero-overlay-text .hero-subtitle {
       font-size: 14px;
       margin-left: 9px; } }
 
-/* line 194, sass/components/_hero-slider.scss */
+/* line 251, sass/components/_hero-slider.scss */
 .hero-overlay-text .hero-header {
   text-transform: uppercase; }
 
-/* line 201, sass/components/_hero-slider.scss */
+/* line 258, sass/components/_hero-slider.scss */
 .hero-overlay-text .hero-text {
   margin-top: 20px;
   color: white; }
   @media only screen and (min-width: 1000px) {
-    /* line 201, sass/components/_hero-slider.scss */
+    /* line 258, sass/components/_hero-slider.scss */
     .hero-overlay-text .hero-text {
       margin-top: 15px; } }
 
