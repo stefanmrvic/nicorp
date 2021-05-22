@@ -43,6 +43,9 @@
   }
 
   .hero-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     width: 100%;
     z-index: 700;
@@ -53,8 +56,10 @@
     }
   }
 
-  .hero-slide div {
-    //object-fit: cover;
+  .hero-slide > div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -82,17 +87,15 @@
     background-position: 41% 0;
 
     @media only screen and ($breakpoint-tablet) {
-      background: url(/imgs/2-tablet.jpg);
+      background: url(/imgs/2.jpg);
       background-position: 92% 0;
     }
 
     @media only screen and ($breakpoint-laptop) {
-      background: url(/imgs/2.jpg);
       background-position: 70% 0;
     }
 
     @media only screen and ($breakpoint-desktop) {
-      background: url(/imgs/2.jpg);
       background-position: 100% 69%;
     }
   }
@@ -195,51 +198,55 @@
   .hero-overlay-text {
     position: absolute;
     color: $color-primary;
-    top: 47%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     z-index: $z-index-max;
     opacity: 1;
-
-    @media only screen and ($breakpoint-laptop) {
-      top: 25.5%;
-      left: 35%;
-      transform: translate(0, 0);
-    }
   }
 
   .text-1 {
-    max-width: 253px;
+    min-width: 228px;
+    width: 60%;
+    max-width: 519px;
 
-    @media only screen and ($breakpoint-laptop) {
-      max-width: 509px;
+    @media only screen and (min-width: 533px) {
+      margin-left: 2%;
+    }
+
+    @media only screen and (min-width: 872px) {
+      margin-left: 0;
+    }
+
+    h1 {
+      width: 10ch;
     }
   }
 
   .text-2 {
-    width: 337px;
+    width: 79%;
     max-width: 723px;
 
     @media only screen and ($breakpoint-laptop) {
-      left: 34.5%;
       width: initial;
+    }
+
+    h1 {
+      width: 14ch;
     }
   }
 
   .text-3 {
+    width: 68%;
     max-width: 559px;
-    width: 294px;
 
     @media only screen and ($breakpoint-laptop) {
-      left: 34.5%;
       width: initial;
     }
   }
   
   .hero-overlay-text .hero-subtitle {
+    font-size: clamp(12px, 3vw, 16px);
     text-transform: uppercase;
     margin-left: 1px;
-    margin-bottom: 13px;
+    margin-bottom: 15px;
     letter-spacing: 1px;
 
     @media only screen and ($breakpoint-laptop) {
@@ -261,8 +268,7 @@
     color: white;
 
     @media only screen and ($breakpoint-laptop) {
-      margin-top: 15px;
-      //text-align: left;
+      margin-top: 22px;
     }
   }
   

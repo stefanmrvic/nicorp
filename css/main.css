@@ -1,44 +1,44 @@
 /* line 1, sass/base/_typography.scss */
 body {
-  font-family: "Swansea", serif;
+  font-family: "Work Sans", serif;
   font-weight: 700; }
 
 /* line 6, sass/base/_typography.scss */
 h1, h2, h3, h4, h5 {
-  font-family: "Swansea", serif;
+  font-family: "Work Sans", serif;
   font-weight: 700; }
 
 /* line 11, sass/base/_typography.scss */
 h1 {
-  font-size: clamp(34px, 5vw, 80px);
-  line-height: clamp(42px, 6vw, 90px); }
+  font-size: clamp(34px, 9vw, 80px);
+  line-height: 1.085; }
 
 /* line 16, sass/base/_typography.scss */
 p {
-  font-family: "Swansea", serif;
+  font-family: "Work Sans", serif;
   font-weight: 400;
-  font-size: clamp(16px, 2.5vw, 22px);
+  font-size: clamp(16px, 3vw, 22px);
   line-height: clamp(22px, 3.5vw, 30px); }
 
 @font-face {
-  font-family: 'Swansea';
-  src: url("../../font/swansea-regular-webfont.woff2") format("woff2"), url("../../font/swansea-regular-webfont.woff") format("woff");
+  font-family: 'Work Sans';
+  src: url("/font/WorkSans-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Swansea';
-  src: url("../../font/swansea-bold-webfont.woff2") format("woff2"), url("../../font/swansea-bold-webfont.woff") format("woff");
+  font-family: 'Work Sans';
+  src: url("/font/WorkSans-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal; }
 
 /* line 1, sass/base/_reset.scss */
 html {
   box-sizing: border-box;
-  font-size: 100%;
+  font-size: 62.5%;
   scroll-behavior: smooth; }
 
-/* line 8, sass/base/_reset.scss */
+/* line 7, sass/base/_reset.scss */
 *,
 *::before,
 *:after {
@@ -132,6 +132,9 @@ html::-webkit-scrollbar-thumb {
 
 /* line 45, sass/components/_hero-slider.scss */
 .hero-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   width: 100%;
   z-index: 700;
@@ -141,91 +144,92 @@ html::-webkit-scrollbar-thumb {
     .hero-slide {
       height: calc(100vh - 88px); } }
 
-/* line 56, sass/components/_hero-slider.scss */
-.hero-slide div {
+/* line 59, sass/components/_hero-slider.scss */
+.hero-slide > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   pointer-events: none; }
 
-/* line 65, sass/components/_hero-slider.scss */
+/* line 70, sass/components/_hero-slider.scss */
 .hero-slide-1 {
   background: url(/imgs/1-mobile.jpg);
   background-position: 82% 0; }
   @media only screen and (min-width: 720px) {
-    /* line 65, sass/components/_hero-slider.scss */
+    /* line 70, sass/components/_hero-slider.scss */
     .hero-slide-1 {
       background: url(/imgs/1-tablet.jpg);
       background-position: 92% 0; } }
   @media only screen and (min-width: 1000px) {
-    /* line 65, sass/components/_hero-slider.scss */
+    /* line 70, sass/components/_hero-slider.scss */
     .hero-slide-1 {
       background: url(/imgs/1.jpg);
       background-position: 70% 0; } }
 
-/* line 80, sass/components/_hero-slider.scss */
+/* line 85, sass/components/_hero-slider.scss */
 .hero-slide-2 {
   background: url(/imgs/2-mobile.jpg);
   background-position: 41% 0; }
   @media only screen and (min-width: 720px) {
-    /* line 80, sass/components/_hero-slider.scss */
+    /* line 85, sass/components/_hero-slider.scss */
     .hero-slide-2 {
-      background: url(/imgs/2-tablet.jpg);
+      background: url(/imgs/2.jpg);
       background-position: 92% 0; } }
   @media only screen and (min-width: 1000px) {
-    /* line 80, sass/components/_hero-slider.scss */
+    /* line 85, sass/components/_hero-slider.scss */
     .hero-slide-2 {
-      background: url(/imgs/2.jpg);
       background-position: 70% 0; } }
   @media only screen and (min-width: 1200px) {
-    /* line 80, sass/components/_hero-slider.scss */
+    /* line 85, sass/components/_hero-slider.scss */
     .hero-slide-2 {
-      background: url(/imgs/2.jpg);
       background-position: 100% 69%; } }
 
-/* line 100, sass/components/_hero-slider.scss */
+/* line 103, sass/components/_hero-slider.scss */
 .hero-slide-3 {
   background: url(/imgs/3-mobile.jpg);
   background-position: 0 0; }
   @media only screen and (min-width: 720px) {
-    /* line 100, sass/components/_hero-slider.scss */
+    /* line 103, sass/components/_hero-slider.scss */
     .hero-slide-3 {
       background: url(/imgs/3-tablet.jpg);
       background-position: 92% 0; } }
   @media only screen and (min-width: 1000px) {
-    /* line 100, sass/components/_hero-slider.scss */
+    /* line 103, sass/components/_hero-slider.scss */
     .hero-slide-3 {
       background: url(/imgs/3.jpg);
       background-position: 70% 0; } }
   @media only screen and (min-width: 1200px) {
-    /* line 100, sass/components/_hero-slider.scss */
+    /* line 103, sass/components/_hero-slider.scss */
     .hero-slide-3 {
       background-position: 0 67%; } }
 
-/* line 119, sass/components/_hero-slider.scss */
+/* line 122, sass/components/_hero-slider.scss */
 .active {
   z-index: 998; }
 
-/* line 123, sass/components/_hero-slider.scss */
+/* line 126, sass/components/_hero-slider.scss */
 .slideInLeft {
   animation-name: animateInLeft;
   z-index: 998; }
 
-/* line 128, sass/components/_hero-slider.scss */
+/* line 131, sass/components/_hero-slider.scss */
 .slideInRight {
   animation-name: animateInRight;
   z-index: 998; }
 
-/* line 133, sass/components/_hero-slider.scss */
+/* line 136, sass/components/_hero-slider.scss */
 .slideOutLeft {
   transform: translateX(-100%); }
 
-/* line 137, sass/components/_hero-slider.scss */
+/* line 140, sass/components/_hero-slider.scss */
 .slideOutRight {
   transform: translateX(100%); }
 
-/* line 141, sass/components/_hero-slider.scss */
+/* line 144, sass/components/_hero-slider.scss */
 .hero-dots {
   position: absolute;
   display: flex;
@@ -236,14 +240,14 @@ html::-webkit-scrollbar-thumb {
   width: 110px;
   z-index: 999; }
 
-/* line 152, sass/components/_hero-slider.scss */
+/* line 155, sass/components/_hero-slider.scss */
 .dot {
   width: 32px;
   height: 3px;
   background: #fff;
   opacity: .5; }
 
-/* line 159, sass/components/_hero-slider.scss */
+/* line 162, sass/components/_hero-slider.scss */
 .hero-buttons {
   position: absolute;
   display: flex;
@@ -252,7 +256,7 @@ html::-webkit-scrollbar-thumb {
   transform: translateX(-50%);
   z-index: 999; }
 
-/* line 168, sass/components/_hero-slider.scss */
+/* line 171, sass/components/_hero-slider.scss */
 .hero-slider-back-btn,
 .hero-slider-next-btn,
 .hero-slider-splitter {
@@ -269,86 +273,88 @@ html::-webkit-scrollbar-thumb {
   letter-spacing: 1px;
   backface-visibility: hidden; }
   @media only screen and (min-width: 1000px) {
-    /* line 168, sass/components/_hero-slider.scss */
+    /* line 171, sass/components/_hero-slider.scss */
     .hero-slider-back-btn,
     .hero-slider-next-btn,
     .hero-slider-splitter {
       font-size: 14px; } }
 
-/* line 189, sass/components/_hero-slider.scss */
+/* line 192, sass/components/_hero-slider.scss */
 .hero-slider-back-btn:hover,
 .hero-slider-next-btn:hover {
   opacity: 1;
   cursor: pointer; }
 
-/* line 195, sass/components/_hero-slider.scss */
+/* line 198, sass/components/_hero-slider.scss */
 .hero-overlay-text {
   position: absolute;
   color: #fff;
-  top: 47%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   z-index: 99999;
   opacity: 1; }
-  @media only screen and (min-width: 1000px) {
-    /* line 195, sass/components/_hero-slider.scss */
-    .hero-overlay-text {
-      top: 25.5%;
-      left: 35%;
-      transform: translate(0, 0); } }
 
-/* line 211, sass/components/_hero-slider.scss */
+/* line 205, sass/components/_hero-slider.scss */
 .text-1 {
-  max-width: 253px; }
-  @media only screen and (min-width: 1000px) {
-    /* line 211, sass/components/_hero-slider.scss */
+  min-width: 228px;
+  width: 60%;
+  max-width: 519px; }
+  @media only screen and (min-width: 533px) {
+    /* line 205, sass/components/_hero-slider.scss */
     .text-1 {
-      max-width: 509px; } }
+      margin-left: 2%; } }
+  @media only screen and (min-width: 872px) {
+    /* line 205, sass/components/_hero-slider.scss */
+    .text-1 {
+      margin-left: 0; } }
+  /* line 218, sass/components/_hero-slider.scss */
+  .text-1 h1 {
+    width: 10ch; }
 
-/* line 219, sass/components/_hero-slider.scss */
+/* line 223, sass/components/_hero-slider.scss */
 .text-2 {
-  width: 337px;
+  width: 79%;
   max-width: 723px; }
   @media only screen and (min-width: 1000px) {
-    /* line 219, sass/components/_hero-slider.scss */
+    /* line 223, sass/components/_hero-slider.scss */
     .text-2 {
-      left: 34.5%;
       width: initial; } }
+  /* line 231, sass/components/_hero-slider.scss */
+  .text-2 h1 {
+    width: 14ch; }
 
-/* line 229, sass/components/_hero-slider.scss */
+/* line 236, sass/components/_hero-slider.scss */
 .text-3 {
-  max-width: 559px;
-  width: 294px; }
+  width: 68%;
+  max-width: 559px; }
   @media only screen and (min-width: 1000px) {
-    /* line 229, sass/components/_hero-slider.scss */
+    /* line 236, sass/components/_hero-slider.scss */
     .text-3 {
-      left: 34.5%;
       width: initial; } }
 
-/* line 239, sass/components/_hero-slider.scss */
+/* line 245, sass/components/_hero-slider.scss */
 .hero-overlay-text .hero-subtitle {
+  font-size: clamp(12px, 3vw, 16px);
   text-transform: uppercase;
   margin-left: 1px;
-  margin-bottom: 13px;
+  margin-bottom: 15px;
   letter-spacing: 1px; }
   @media only screen and (min-width: 1000px) {
-    /* line 239, sass/components/_hero-slider.scss */
+    /* line 245, sass/components/_hero-slider.scss */
     .hero-overlay-text .hero-subtitle {
       font-size: 14px;
       margin-left: 9px; } }
 
-/* line 251, sass/components/_hero-slider.scss */
+/* line 258, sass/components/_hero-slider.scss */
 .hero-overlay-text .hero-header {
   text-transform: uppercase; }
 
-/* line 258, sass/components/_hero-slider.scss */
+/* line 265, sass/components/_hero-slider.scss */
 .hero-overlay-text .hero-text {
   margin-top: 20px;
   color: white; }
   @media only screen and (min-width: 1000px) {
-    /* line 258, sass/components/_hero-slider.scss */
+    /* line 265, sass/components/_hero-slider.scss */
     .hero-overlay-text .hero-text {
-      margin-top: 15px; } }
+      margin-top: 22px; } }
 
 /* line 1, sass/layout/_navigation.scss */
 body {
@@ -477,7 +483,7 @@ body {
   width: 100%;
   height: 2px;
   background-color: #fff;
-  transition: all .28s;
+  transition: all .27s;
   backface-visibility: hidden; }
 
 /* line 139, sass/layout/_navigation.scss */

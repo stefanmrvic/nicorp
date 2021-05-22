@@ -1,38 +1,36 @@
 body {
-    font-family: $font-swansea;
+    font-family: $font-work-sans;
     font-weight: 700;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: $font-swansea;
+    font-family: $font-work-sans;
     font-weight: 700;
 }
 
 h1 {
-    font-size: clamp(34px, 5vw, 80px);
-    line-height: clamp(42px, 6vw, 90px);
+    font-size: clamp(34px, 9vw, 80px);
+    line-height: 1.085;
 }
 
 p {
-    font-family: $font-swansea;
+    font-family: $font-work-sans;
     font-weight: 400;
-    font-size: clamp(16px, 2.5vw, 22px);
+    font-size: clamp(16px, 3vw, 22px);
     line-height: clamp(22px, 3.5vw, 30px);
 }
 
-//Swansea Font
+//Work Sans Font
 @font-face {
-    font-family: 'Swansea';
-    src: url('../../font/swansea-regular-webfont.woff2') format('woff2'),
-         url('../../font/swansea-regular-webfont.woff') format('woff');
+    font-family: 'Work Sans';
+    src: url('/font/WorkSans-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Swansea';
-    src: url('../../font/swansea-bold-webfont.woff2') format('woff2'),
-         url('../../font/swansea-bold-webfont.woff') format('woff');
+    font-family: 'Work Sans';
+    src: url('/font/WorkSans-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
 }
