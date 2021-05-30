@@ -10,10 +10,20 @@ h1, h2, h3, h4, h5 {
 
 /* line 11, sass/base/_typography.scss */
 h1 {
-  font-size: clamp(34px, 9vw, 80px);
+  font-size: clamp(36px, 9vw, 80px);
   line-height: 1.085; }
 
 /* line 16, sass/base/_typography.scss */
+h2 {
+  font-size: clamp(31px, 8vw, 70px);
+  line-height: 1.3; }
+
+/* line 21, sass/base/_typography.scss */
+h3 {
+  font-size: clamp(26px, 7vw, 60px);
+  line-height: 1.3; }
+
+/* line 26, sass/base/_typography.scss */
 p {
   font-family: "Work Sans", serif;
   font-weight: 400;
@@ -24,6 +34,12 @@ p {
   font-family: 'Work Sans';
   src: url("/font/WorkSans-Regular.woff") format("woff");
   font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url("/font/WorkSans-SemiBold.woff") format("woff");
+  font-weight: 600;
   font-style: normal; }
 
 @font-face {
@@ -48,6 +64,15 @@ html {
   text-decoration: none;
   list-style: none;
   outline: none; }
+
+/* line 19, sass/base/_reset.scss */
+button {
+  border: none;
+  background: none; }
+
+/* line 24, sass/base/_reset.scss */
+img {
+  max-width: 100%; }
 
 @keyframes fadeIn {
   0% {
@@ -291,46 +316,50 @@ html::-webkit-scrollbar-thumb {
   color: #fff;
   z-index: 99999;
   opacity: 1; }
+  @media only screen and (min-width: 1000px) {
+    /* line 198, sass/components/_hero-slider.scss */
+    .hero-overlay-text {
+      margin-left: 2%; } }
 
-/* line 205, sass/components/_hero-slider.scss */
+/* line 209, sass/components/_hero-slider.scss */
 .text-1 {
   min-width: 228px;
   width: 60%;
   max-width: 519px; }
   @media only screen and (min-width: 533px) {
-    /* line 205, sass/components/_hero-slider.scss */
+    /* line 209, sass/components/_hero-slider.scss */
     .text-1 {
       margin-left: 2%; } }
   @media only screen and (min-width: 872px) {
-    /* line 205, sass/components/_hero-slider.scss */
+    /* line 209, sass/components/_hero-slider.scss */
     .text-1 {
       margin-left: 0; } }
-  /* line 218, sass/components/_hero-slider.scss */
+  /* line 222, sass/components/_hero-slider.scss */
   .text-1 h1 {
     width: 10ch; }
 
-/* line 223, sass/components/_hero-slider.scss */
+/* line 227, sass/components/_hero-slider.scss */
 .text-2 {
   width: 79%;
   max-width: 723px; }
   @media only screen and (min-width: 1000px) {
-    /* line 223, sass/components/_hero-slider.scss */
+    /* line 227, sass/components/_hero-slider.scss */
     .text-2 {
       width: initial; } }
-  /* line 231, sass/components/_hero-slider.scss */
+  /* line 235, sass/components/_hero-slider.scss */
   .text-2 h1 {
     width: 14ch; }
 
-/* line 236, sass/components/_hero-slider.scss */
+/* line 240, sass/components/_hero-slider.scss */
 .text-3 {
   width: 68%;
   max-width: 559px; }
   @media only screen and (min-width: 1000px) {
-    /* line 236, sass/components/_hero-slider.scss */
+    /* line 240, sass/components/_hero-slider.scss */
     .text-3 {
       width: initial; } }
 
-/* line 245, sass/components/_hero-slider.scss */
+/* line 249, sass/components/_hero-slider.scss */
 .hero-overlay-text .hero-subtitle {
   font-size: clamp(12px, 3vw, 16px);
   text-transform: uppercase;
@@ -338,21 +367,21 @@ html::-webkit-scrollbar-thumb {
   margin-bottom: 15px;
   letter-spacing: 1px; }
   @media only screen and (min-width: 1000px) {
-    /* line 245, sass/components/_hero-slider.scss */
+    /* line 249, sass/components/_hero-slider.scss */
     .hero-overlay-text .hero-subtitle {
       font-size: 14px;
       margin-left: 9px; } }
 
-/* line 258, sass/components/_hero-slider.scss */
+/* line 262, sass/components/_hero-slider.scss */
 .hero-overlay-text .hero-header {
   text-transform: uppercase; }
 
-/* line 265, sass/components/_hero-slider.scss */
+/* line 269, sass/components/_hero-slider.scss */
 .hero-overlay-text .hero-text {
   margin-top: 20px;
   color: white; }
   @media only screen and (min-width: 1000px) {
-    /* line 265, sass/components/_hero-slider.scss */
+    /* line 269, sass/components/_hero-slider.scss */
     .hero-overlay-text .hero-text {
       margin-top: 22px; } }
 
@@ -510,8 +539,121 @@ body {
   @media only screen and (min-width: 1000px) {
     /* line 1, sass/layout/_main-layout.scss */
     body {
-      margin: 0 127px 0 48px; } }
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-right: clamp(50px, 9vw, 127px);
+      margin-left: clamp(24px, 3.5vw, 48px); } }
 
-/* line 9, sass/layout/_main-layout.scss */
+/* line 13, sass/layout/_main-layout.scss */
 .hero {
   position: relative; }
+
+/* line 18, sass/layout/_main-layout.scss */
+.about-us {
+  padding: 60px 15px 100px 15px;
+  background-color: #fff; }
+
+/* line 27, sass/layout/_main-layout.scss */
+.about-us__1__header-text__subtitle {
+  color: #e82e31;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-bottom: 28px; }
+
+/* line 36, sass/layout/_main-layout.scss */
+.about-us__1__header-text__header {
+  color: #101010;
+  margin-bottom: 28px; }
+
+/* line 44, sass/layout/_main-layout.scss */
+.about-us__1__about-text__text {
+  color: #525252;
+  margin-bottom: 40px; }
+
+/* line 49, sass/layout/_main-layout.scss */
+.about-us__1__about-text__button {
+  position: relative;
+  background: #101010;
+  margin-bottom: 50px; }
+  /* line 54, sass/layout/_main-layout.scss */
+  .about-us__1__about-text__button a {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 18px 54px;
+    z-index: 999; }
+
+/* line 65, sass/layout/_main-layout.scss */
+.about-us__1__about-text__button::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #e82e31;
+  transition: all .4s; }
+
+/* line 76, sass/layout/_main-layout.scss */
+.about-us__1__about-text__button:hover::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+/* line 86, sass/layout/_main-layout.scss */
+.about-us__1__img {
+  margin-bottom: 45px; }
+
+/* line 95, sass/layout/_main-layout.scss */
+.about-us__2__header-text__header {
+  margin-bottom: 28px; }
+
+/* line 99, sass/layout/_main-layout.scss */
+.about-us__2__header-text__text {
+  color: #525252;
+  margin-bottom: 40px; }
+
+/* line 107, sass/layout/_main-layout.scss */
+.services {
+  background: #fff;
+  margin-bottom: 100px; }
+  /* line 111, sass/layout/_main-layout.scss */
+  .services__1 {
+    background: url(/imgs/Services/concept-1.jpg);
+    background-size: cover; }
+  /* line 116, sass/layout/_main-layout.scss */
+  .services__2 {
+    background: url(/imgs/Services/building-1.jpg);
+    background-size: cover; }
+  /* line 121, sass/layout/_main-layout.scss */
+  .services__3 {
+    background: url(/imgs/Services/Design.jpg);
+    background-size: cover; }
+
+/* line 128, sass/layout/_main-layout.scss */
+.services > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 180px;
+  padding: 0 30px; }
+
+/* line 139, sass/layout/_main-layout.scss */
+.services > div > div > h5 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px; }
+
+/* line 147, sass/layout/_main-layout.scss */
+.services > div > div > h3 {
+  color: #fff; }

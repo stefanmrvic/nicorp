@@ -13,7 +13,7 @@ body {
     background-color: $color-nav-background;
     padding: 23px 7%;
 
-    @media only screen and ($breakpoint-laptop) {
+    @media only screen and (min-width: $laptop) {
     padding: 30px 7%;
     }
 
@@ -43,7 +43,7 @@ body {
         position: relative;
         z-index: $z-index-max;
 
-        @media only screen and ($breakpoint-laptop) {
+        @media only screen and (min-width: $laptop) {
             display: none;
         }
 
@@ -100,7 +100,7 @@ body {
     z-index: 999;
     transition: opacity .3s, visibility .3s;
 
-    @media only screen and ($breakpoint-laptop) {
+    @media only screen and (min-width: $laptop) {
         display: none;
     }
 }
@@ -117,7 +117,7 @@ body {
 .nav__items {
     display: none;
 
-    @media only screen and ($breakpoint-laptop) {
+    @media only screen and (min-width: $laptop) {
         display: flex;
         align-items: center;
     }

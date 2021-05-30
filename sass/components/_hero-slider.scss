@@ -3,7 +3,7 @@
     overflow: hidden;
     height: calc(100vh - 74px);
 
-    @media only screen and ($breakpoint-laptop) {
+    @media only screen and (min-width: $laptop) {
       height: calc(100vh - 88px);
     }
   }
@@ -11,7 +11,7 @@
   #hero-slider::before {
     display: none;
 
-    @media only screen and ($breakpoint-desktop) {
+    @media only screen and (min-width: $desktop) {
       display: initial;
       content: "";
       position: absolute;
@@ -28,7 +28,7 @@
   #hero-slider::after {
     display: none;
 
-    @media only screen and ($breakpoint-desktop) {
+    @media only screen and (min-width: $desktop) {
       display: initial;
       content: "";
       position: absolute;
@@ -51,7 +51,7 @@
     z-index: 700;
     height: calc(100vh - 74px);
 
-    @media only screen and ($breakpoint-laptop) {
+    @media only screen and (min-width: $laptop) {
       height: calc(100vh - 88px);
     }
   }
@@ -71,12 +71,12 @@
     background: url(/imgs/1-mobile.jpg);
     background-position: 82% 0;
 
-    @media only screen and ($breakpoint-tablet) {
+    @media only screen and (min-width: $tablet) {
       background: url(/imgs/1-tablet.jpg);
       background-position: 92% 0;
     }
 
-    @media only screen and ($breakpoint-laptop) {
+    @media only screen and (min-width: $laptop) {
       background: url(/imgs/1.jpg);
       background-position: 70% 0;
     }
@@ -86,16 +86,16 @@
     background: url(/imgs/2-mobile.jpg);
     background-position: 41% 0;
 
-    @media only screen and ($breakpoint-tablet) {
+    @media only screen and (min-width: $tablet) {
       background: url(/imgs/2.jpg);
       background-position: 92% 0;
     }
 
-    @media only screen and ($breakpoint-laptop) {
+    @media only screen and (min-width: $laptop) {
       background-position: 70% 0;
     }
 
-    @media only screen and ($breakpoint-desktop) {
+    @media only screen and (min-width: $desktop) {
       background-position: 100% 69%;
     }
   }
@@ -104,17 +104,17 @@
     background: url(/imgs/3-mobile.jpg);
     background-position: 0 0;
 
-    @media only screen and ($breakpoint-tablet) {
+    @media only screen and (min-width: $tablet) {
       background: url(/imgs/3-tablet.jpg);
       background-position: 92% 0;
     }
 
-    @media only screen and ($breakpoint-laptop) {
+    @media only screen and (min-width: $laptop) {
       background: url(/imgs/3.jpg);
       background-position: 70% 0;
     }
 
-    @media only screen and ($breakpoint-desktop) {
+    @media only screen and (min-width: $desktop) {
       background-position: 0 67%;
     }
   }
@@ -184,7 +184,7 @@
     letter-spacing: 1px;
     backface-visibility: hidden;
 
-    @media only screen and ($breakpoint-laptop) {
+    @media only screen and (min-width: $laptop) {
       font-size: 14px;
     }
   }
@@ -200,6 +200,10 @@
     color: $color-primary;
     z-index: $z-index-max;
     opacity: 1;
+
+    @media only screen and (min-width: $laptop) {
+      margin-left: 2%;
+    }
   }
 
   .text-1 {
@@ -224,7 +228,7 @@
     width: 79%;
     max-width: 723px;
 
-    @media only screen and ($breakpoint-laptop) {
+    @media only screen and (min-width: $laptop) {
       width: initial;
     }
 
@@ -237,7 +241,7 @@
     width: 68%;
     max-width: 559px;
 
-    @media only screen and ($breakpoint-laptop) {
+    @media only screen and (min-width: $laptop) {
       width: initial;
     }
   }
@@ -249,7 +253,7 @@
     margin-bottom: 15px;
     letter-spacing: 1px;
 
-    @media only screen and ($breakpoint-laptop) {
+    @media only screen and (min-width: $laptop) {
       font-size: 14px;
       margin-left: 9px;
     }
@@ -258,7 +262,7 @@
   .hero-overlay-text .hero-header {
     text-transform: uppercase;
 
-    @media only screen and ($breakpoint-laptop) {
+    @media only screen and (min-width: $laptop) {
     }
   }
   
@@ -267,7 +271,7 @@
     //text-align: center;
     color: white;
 
-    @media only screen and ($breakpoint-laptop) {
+    @media only screen and (min-width: $laptop) {
       margin-top: 22px;
     }
   }
