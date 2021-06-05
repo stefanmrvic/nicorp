@@ -1,3 +1,12 @@
+/* line 3, sass/utilities/_utility.scss */
+.subtitle {
+  color: #e82e31;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-bottom: 28px; }
+
 /* line 1, sass/base/_typography.scss */
 body {
   font-family: "Work Sans", serif;
@@ -15,12 +24,12 @@ h1 {
 
 /* line 16, sass/base/_typography.scss */
 h2 {
-  font-size: clamp(31px, 8vw, 70px);
+  font-size: clamp(31px, 5.5vw, 70px);
   line-height: 1.3; }
 
 /* line 21, sass/base/_typography.scss */
 h3 {
-  font-size: clamp(26px, 7vw, 60px);
+  font-size: clamp(26px, 4.5vw, 60px);
   line-height: 1.3; }
 
 /* line 26, sass/base/_typography.scss */
@@ -535,49 +544,41 @@ body {
 
 /* line 1, sass/layout/_main-layout.scss */
 body {
-  background: #101010; }
+  background: #f5f5f5; }
   @media only screen and (min-width: 1000px) {
     /* line 1, sass/layout/_main-layout.scss */
     body {
       margin-top: 0;
       margin-bottom: 0;
       margin-right: clamp(50px, 9vw, 127px);
-      margin-left: clamp(24px, 3.5vw, 48px); } }
+      margin-left: clamp(24px, 3.5vw, 48px);
+      background: #101010; } }
 
-/* line 13, sass/layout/_main-layout.scss */
+/* line 14, sass/layout/_main-layout.scss */
 .hero {
   position: relative; }
 
-/* line 18, sass/layout/_main-layout.scss */
+/* line 19, sass/layout/_main-layout.scss */
 .about-us {
   padding: 60px 15px 100px 15px;
   background-color: #fff; }
 
-/* line 27, sass/layout/_main-layout.scss */
-.about-us__1__header-text__subtitle {
-  color: #e82e31;
-  font-size: 1.3rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 600;
-  margin-bottom: 28px; }
-
-/* line 36, sass/layout/_main-layout.scss */
+/* line 28, sass/layout/_main-layout.scss */
 .about-us__1__header-text__header {
   color: #101010;
   margin-bottom: 28px; }
 
-/* line 44, sass/layout/_main-layout.scss */
+/* line 36, sass/layout/_main-layout.scss */
 .about-us__1__about-text__text {
   color: #525252;
   margin-bottom: 40px; }
 
-/* line 49, sass/layout/_main-layout.scss */
+/* line 41, sass/layout/_main-layout.scss */
 .about-us__1__about-text__button {
   position: relative;
   background: #101010;
   margin-bottom: 50px; }
-  /* line 54, sass/layout/_main-layout.scss */
+  /* line 46, sass/layout/_main-layout.scss */
   .about-us__1__about-text__button a {
     position: relative;
     display: inline-block;
@@ -587,7 +588,7 @@ body {
     padding: 18px 54px;
     z-index: 999; }
 
-/* line 65, sass/layout/_main-layout.scss */
+/* line 57, sass/layout/_main-layout.scss */
 .about-us__1__about-text__button::after {
   content: " ";
   position: absolute;
@@ -598,7 +599,7 @@ body {
   background-color: #e82e31;
   transition: all .4s; }
 
-/* line 76, sass/layout/_main-layout.scss */
+/* line 68, sass/layout/_main-layout.scss */
 .about-us__1__about-text__button:hover::after {
   content: " ";
   position: absolute;
@@ -607,37 +608,37 @@ body {
   width: 100%;
   height: 100%; }
 
-/* line 86, sass/layout/_main-layout.scss */
+/* line 78, sass/layout/_main-layout.scss */
 .about-us__1__img {
   margin-bottom: 45px; }
 
-/* line 95, sass/layout/_main-layout.scss */
+/* line 87, sass/layout/_main-layout.scss */
 .about-us__2__header-text__header {
   margin-bottom: 28px; }
 
-/* line 99, sass/layout/_main-layout.scss */
+/* line 91, sass/layout/_main-layout.scss */
 .about-us__2__header-text__text {
   color: #525252;
   margin-bottom: 40px; }
 
-/* line 107, sass/layout/_main-layout.scss */
+/* line 99, sass/layout/_main-layout.scss */
 .services {
   background: #fff;
   margin-bottom: 100px; }
-  /* line 111, sass/layout/_main-layout.scss */
+  /* line 103, sass/layout/_main-layout.scss */
   .services__1 {
     background: url(/imgs/Services/concept-1.jpg);
     background-size: cover; }
-  /* line 116, sass/layout/_main-layout.scss */
+  /* line 108, sass/layout/_main-layout.scss */
   .services__2 {
     background: url(/imgs/Services/building-1.jpg);
     background-size: cover; }
-  /* line 121, sass/layout/_main-layout.scss */
+  /* line 113, sass/layout/_main-layout.scss */
   .services__3 {
     background: url(/imgs/Services/Design.jpg);
     background-size: cover; }
 
-/* line 128, sass/layout/_main-layout.scss */
+/* line 120, sass/layout/_main-layout.scss */
 .services > div > div {
   display: flex;
   flex-direction: column;
@@ -647,13 +648,74 @@ body {
   height: 180px;
   padding: 0 30px; }
 
-/* line 139, sass/layout/_main-layout.scss */
+/* line 131, sass/layout/_main-layout.scss */
 .services > div > div > h5 {
   color: #fff;
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 10px; }
 
-/* line 147, sass/layout/_main-layout.scss */
+/* line 139, sass/layout/_main-layout.scss */
 .services > div > div > h3 {
   color: #fff; }
+
+/* line 144, sass/layout/_main-layout.scss */
+.our-clients {
+  padding: 0 15px 100px 15px;
+  text-align: center; }
+  /* line 148, sass/layout/_main-layout.scss */
+  .our-clients__text {
+    font-size: clamp(24px, 4.5vw, 70px);
+    color: #101010;
+    margin-bottom: 55px; }
+  /* line 154, sass/layout/_main-layout.scss */
+  .our-clients__clients {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  /* line 160, sass/layout/_main-layout.scss */
+  .our-clients__clients > a {
+    max-width: 50%;
+    opacity: .3;
+    transition: opacity .3s; }
+  /* line 166, sass/layout/_main-layout.scss */
+  .our-clients__clients > a:hover {
+    opacity: 1; }
+  /* line 170, sass/layout/_main-layout.scss */
+  .our-clients__clients > a:not(:last-child) {
+    padding-bottom: 60px; }
+
+/* line 176, sass/layout/_main-layout.scss */
+.all-services {
+  padding: 60px 0 100px 0;
+  background: #fff; }
+  /* line 180, sass/layout/_main-layout.scss */
+  .all-services__header {
+    color: #101010;
+    text-align: center; }
+  /* line 185, sass/layout/_main-layout.scss */
+  .all-services__services {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px; }
+  /* line 191, sass/layout/_main-layout.scss */
+  .all-services__services > a {
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.185);
+    padding: 90px 15%;
+    transition: border .2s;
+    color: initial; }
+  /* line 199, sass/layout/_main-layout.scss */
+  .all-services__services > a:hover {
+    border: 1px solid #101010; }
+  /* line 203, sass/layout/_main-layout.scss */
+  .all-services__services > a > div:nth-child(1) {
+    margin-top: 10px;
+    margin-right: 40px; }
+  /* line 208, sass/layout/_main-layout.scss */
+  .all-services__services > a > div > h4 {
+    font-size: clamp(26px, 3.5vw, 60px); }
+  /* line 212, sass/layout/_main-layout.scss */
+  .all-services__services > a > div > p {
+    margin-top: 20px;
+    color: #525252; }
