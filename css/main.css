@@ -33,6 +33,10 @@ h3 {
   line-height: 1.3; }
 
 /* line 26, sass/base/_typography.scss */
+h4 {
+  font-size: clamp(20px, 3.5vw, 60px); }
+
+/* line 30, sass/base/_typography.scss */
 p {
   font-family: "Work Sans", serif;
   font-weight: 400;
@@ -675,7 +679,7 @@ body {
     align-items: center; }
   /* line 160, sass/layout/_main-layout.scss */
   .our-clients__clients > a {
-    max-width: 50%;
+    max-width: 164px;
     opacity: .3;
     transition: opacity .3s; }
   /* line 166, sass/layout/_main-layout.scss */
@@ -719,3 +723,59 @@ body {
   .all-services__services > a > div > p {
     margin-top: 20px;
     color: #525252; }
+
+/* line 219, sass/layout/_main-layout.scss */
+.footer {
+  background: #0f0f0f;
+  padding: 60px 30px 25px 30px;
+  color: #fff; }
+  /* line 225, sass/layout/_main-layout.scss */
+  .footer__about {
+    margin-bottom: 30px; }
+    /* line 228, sass/layout/_main-layout.scss */
+    .footer__about__logo img {
+      max-width: 160px;
+      margin-bottom: 10px; }
+  /* line 234, sass/layout/_main-layout.scss */
+  .footer__contact {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px; }
+    /* line 239, sass/layout/_main-layout.scss */
+    .footer__contact__title {
+      margin-bottom: 10px; }
+  /* line 244, sass/layout/_main-layout.scss */
+  .footer__contact > a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500; }
+  /* line 250, sass/layout/_main-layout.scss */
+  .footer__contact > a:not(:last-child) {
+    padding-bottom: 5px; }
+  /* line 254, sass/layout/_main-layout.scss */
+  .footer__location {
+    margin-bottom: 30px; }
+    /* line 257, sass/layout/_main-layout.scss */
+    .footer__location__title {
+      margin-bottom: 10px; }
+    /* line 261, sass/layout/_main-layout.scss */
+    .footer__location__text {
+      margin-bottom: 20px;
+      font-size: clamp(15px, 3vw, 22px); }
+    /* line 266, sass/layout/_main-layout.scss */
+    .footer__location__map {
+      height: 200px; }
+  /* line 271, sass/layout/_main-layout.scss */
+  .footer__links {
+    margin-bottom: 30px; }
+    /* line 274, sass/layout/_main-layout.scss */
+    .footer__links__title {
+      margin-bottom: 10px; }
+  /* line 279, sass/layout/_main-layout.scss */
+  .footer__links > ul > li > a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500; }
+  /* line 285, sass/layout/_main-layout.scss */
+  .footer__links > ul > li:not(:last-child) {
+    margin-bottom: 7px; }
