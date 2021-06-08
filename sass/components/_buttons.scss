@@ -1,0 +1,76 @@
+.btn {
+    position: relative;
+    margin-bottom: 50px;
+
+    a {
+        position: relative;
+        display: inline-block;
+        font-size: 1.6rem;
+        font-weight: 600;
+        padding: 18px 54px;
+        z-index: 999;
+    }
+}
+
+//Black Button with white text
+.btn-black::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: $color-btn-hover-red;
+    transition: all .4s;
+}
+
+.btn-black:hover::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-black {
+    background: $color-black-btn;
+
+    a {
+        color: $color-primary;
+    }
+}
+
+//White Button with black text
+.btn-white::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: $color-btn-hover-black;
+    transition: all .4s;
+}
+
+.btn-white:hover::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-white {
+    background: $color-white-btn;
+
+    svg {
+        fill: $color-secondary;
+        transition: fill .13s .1s;
+    }
+
+    a:hover svg {
+        fill: $color-primary;
+    }
+}
