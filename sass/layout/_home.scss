@@ -152,10 +152,6 @@ body {
 
         &__header {
             margin-bottom: 28px;
-
-            @media only screen and (min-width: $tablet-medium) {
-                font-size: clamp(26px, 3.5vw, 60px);
-            }
         }
 
         &__text {
@@ -281,10 +277,6 @@ body {
     &__services > a > div:nth-child(1) {
         margin-top: 10px;
         margin-right: 40px;
-    }
-
-    &__services > a > div > h4 {
-        font-size: clamp(26px, 3.5vw, 60px);
     }
 
     &__services > a > div > p {

@@ -7,29 +7,46 @@ body {
     height: 0;
 }
 
+
 .nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: center;
     background-color: $color-nav-background;
     padding: 23px 7%;
+    z-index: $z-index-max;
 
     @media only screen and (min-width: $laptop) {
     padding: 30px 7%;
     }
 
-    &__logo {
+    &--scrolled {
+        box-shadow: $color-nav-shadow 0px 0px 21px 0px;
+        border-bottom: 1px solid $color-transparent;
+        position: fixed;
+    }
+
+    /*&__logo {
         color: $color-primary;
         font-size: 23px;
         position: relative;
         z-index: $z-index-max;
+    }*/
+
+    &__logo {
+        min-width: 83px;
+        width: 14%;
+        max-width: 115px;
     }
 
-    /*
-    &__logo img {
-        width: 145px;
-        height: 50px;
+    &__logo--scrolled {
+        max-width: 10%;
+        max-width: 115px;
     }
-    */
+    
 
     &__hamburger > span {
         display: inline-block;
