@@ -31,5 +31,4 @@ hamburger.addEventListener('click', () => {
             el.style.animation = 'fadeIn .7s forwards';
         });
     }
-
 });
