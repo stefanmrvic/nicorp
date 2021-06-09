@@ -484,14 +484,14 @@ body {
 
 /* line 11, sass/layout/_navigation.scss */
 .nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   display: flex;
   justify-content: center;
   background-color: #101010;
-  padding: 23px 7%;
+  padding: 17px 7%;
   z-index: 99999;
   /*&__logo {
         color: $color-primary;
@@ -499,28 +499,24 @@ body {
         position: relative;
         z-index: $z-index-max;
     }*/ }
-  @media only screen and (min-width: 1000px) {
-    /* line 11, sass/layout/_navigation.scss */
-    .nav {
-      padding: 30px 7%; } }
-  /* line 26, sass/layout/_navigation.scss */
+  /* line 22, sass/layout/_navigation.scss */
   .nav--scrolled {
-    box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 21px 0px;
-    border-bottom: 1px solid transparent;
-    position: fixed; }
-  /* line 39, sass/layout/_navigation.scss */
+    padding: 15px 7%; }
+  /* line 33, sass/layout/_navigation.scss */
   .nav__logo {
     min-width: 83px;
     width: 14%;
-    max-width: 115px; }
-  /* line 45, sass/layout/_navigation.scss */
+    max-width: 115px;
+    transition: all .35s; }
+  /* line 40, sass/layout/_navigation.scss */
   .nav__logo--scrolled {
-    max-width: 10%;
-    max-width: 115px; }
-  /* line 51, sass/layout/_navigation.scss */
+    min-width: 73px;
+    width: 12%;
+    max-width: 105px; }
+  /* line 47, sass/layout/_navigation.scss */
   .nav__hamburger > span {
     display: inline-block; }
-  /* line 55, sass/layout/_navigation.scss */
+  /* line 51, sass/layout/_navigation.scss */
   .nav__hamburger {
     display: flex;
     flex-direction: column;
@@ -529,35 +525,35 @@ body {
     position: relative;
     z-index: 99999; }
     @media only screen and (min-width: 1000px) {
-      /* line 55, sass/layout/_navigation.scss */
+      /* line 51, sass/layout/_navigation.scss */
       .nav__hamburger {
         display: none; } }
-    /* line 67, sass/layout/_navigation.scss */
+    /* line 63, sass/layout/_navigation.scss */
     .nav__hamburger--1 {
       width: 32px;
       height: 2px;
       background: #fff;
       margin-bottom: 8px;
       transition: margin 0s ,transform .3s; }
-    /* line 75, sass/layout/_navigation.scss */
+    /* line 71, sass/layout/_navigation.scss */
     .nav__hamburger .opened--1 {
       transform: rotate(45deg);
       margin-top: 5px;
       margin-bottom: -2px;
       background: #000; }
-    /* line 82, sass/layout/_navigation.scss */
+    /* line 78, sass/layout/_navigation.scss */
     .nav__hamburger--2 {
       width: 20px;
       height: 2px;
       background: #fff;
       transition: width .15s, transform .3s; }
-    /* line 89, sass/layout/_navigation.scss */
+    /* line 85, sass/layout/_navigation.scss */
     .nav__hamburger .opened--2 {
       width: 32px;
       transform: rotate(-45deg);
       background: #000; }
 
-/* line 97, sass/layout/_navigation.scss */
+/* line 93, sass/layout/_navigation.scss */
 .wrapper {
   flex-basis: 100%;
   display: flex;
@@ -565,7 +561,7 @@ body {
   position: relative;
   max-width: 1240px; }
 
-/* line 105, sass/layout/_navigation.scss */
+/* line 101, sass/layout/_navigation.scss */
 .nav__mobile__items {
   display: flex;
   flex-direction: column;
@@ -581,29 +577,29 @@ body {
   z-index: 999;
   transition: opacity .3s, visibility .3s; }
   @media only screen and (min-width: 1000px) {
-    /* line 105, sass/layout/_navigation.scss */
+    /* line 101, sass/layout/_navigation.scss */
     .nav__mobile__items {
       display: none; } }
 
-/* line 125, sass/layout/_navigation.scss */
+/* line 121, sass/layout/_navigation.scss */
 .nav__mobile__items > li:not(:first-child) {
   padding-top: 31px; }
 
-/* line 129, sass/layout/_navigation.scss */
+/* line 125, sass/layout/_navigation.scss */
 .nav__mobile__items > li a {
   font-size: 26px;
   color: #101010; }
 
-/* line 134, sass/layout/_navigation.scss */
+/* line 130, sass/layout/_navigation.scss */
 .nav__items {
   display: none; }
   @media only screen and (min-width: 1000px) {
-    /* line 134, sass/layout/_navigation.scss */
+    /* line 130, sass/layout/_navigation.scss */
     .nav__items {
       display: flex;
       align-items: center; } }
 
-/* line 143, sass/layout/_navigation.scss */
+/* line 139, sass/layout/_navigation.scss */
 .nav__items > li > a::before {
   content: "";
   position: absolute;
@@ -616,21 +612,21 @@ body {
   transition: all .27s;
   backface-visibility: hidden; }
 
-/* line 156, sass/layout/_navigation.scss */
+/* line 152, sass/layout/_navigation.scss */
 .nav__items > li a:hover::before {
   transform: scaleX(1); }
 
-/* line 160, sass/layout/_navigation.scss */
+/* line 156, sass/layout/_navigation.scss */
 .nav__items > li {
   position: relative; }
 
-/* line 164, sass/layout/_navigation.scss */
+/* line 160, sass/layout/_navigation.scss */
 .nav__items > li a {
   color: #fff;
   opacity: .95;
   font-size: 16px; }
 
-/* line 170, sass/layout/_navigation.scss */
+/* line 166, sass/layout/_navigation.scss */
 .nav__items > li:not(:first-child) {
   margin-left: 36px; }
 

@@ -18,11 +18,11 @@ window.addEventListener("load", (event) => {
         console.log(navDistance);
 
         if (navDistance < 0) {
-            navLogo.classList.add("navbar__logo--scrolled");
+            navLogo.classList.add("nav__logo--scrolled");
             nav.classList.add("nav--scrolled");
         }
         else {
-            navLogo.classList.remove("navbar__logo--scrolled");
+            navLogo.classList.remove("nav__logo--scrolled");
             nav.classList.remove("nav--scrolled");
         }
     });

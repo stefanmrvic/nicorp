@@ -9,24 +9,18 @@ body {
 
 
 .nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     display: flex;
     justify-content: center;
     background-color: $color-nav-background;
-    padding: 23px 7%;
+    padding: 17px 7%;
     z-index: $z-index-max;
 
-    @media only screen and (min-width: $laptop) {
-    padding: 30px 7%;
-    }
-
     &--scrolled {
-        box-shadow: $color-nav-shadow 0px 0px 21px 0px;
-        border-bottom: 1px solid $color-transparent;
-        position: fixed;
+        padding: 15px 7%;
     }
 
     /*&__logo {
@@ -40,11 +34,13 @@ body {
         min-width: 83px;
         width: 14%;
         max-width: 115px;
+        transition: all .35s;
     }
 
     &__logo--scrolled {
-        max-width: 10%;
-        max-width: 115px;
+        min-width: 73px;
+        width: 12%;
+        max-width: 105px;
     }
     
 
