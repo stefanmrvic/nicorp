@@ -170,6 +170,17 @@ body {
 .services {
     background: $color-section-white;
 
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 180px);
+
+        @media only screen and (min-width: $laptop-medium) {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: minmax(254px, 375px);
+        }
+    }
+
     &__1 {
         background: url(/imgs/Services/concept-1.jpg);
         background-size: cover;
@@ -193,7 +204,6 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 180px;
     padding: 0 30px;
 }
 
@@ -243,6 +253,15 @@ body {
         @media only screen and (min-width: $tablet-medium) {
             grid-template-columns: repeat(2, 160px);
             gap: 60px 160px;
+        }
+
+        @media only screen and (min-width: $laptop) {
+            grid-template-columns: 160px 112px 160px 160px 160px;
+            gap: 0 2.8vw;
+        }
+
+        @media only screen and (min-width: $desktop) {
+            gap: 0 3.5vw;
         }
     }
 
