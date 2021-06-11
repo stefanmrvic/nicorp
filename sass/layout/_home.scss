@@ -92,16 +92,11 @@ body {
 
 .about-us__1 {
 
-    &__subtitle {
-        padding-left: 63px;
-        padding-top: 30px;
-    }
-
     &__splitter--1 {
 
         @media only screen and (min-width: $tablet-medium) {
             display: flex;
-            padding: 0 63px;
+            padding: 18px 63px 0 63px;
         }
     }
 
@@ -114,13 +109,16 @@ body {
         &__header {
             color: $color-secondary;
             margin-bottom: 28px;
+
+            @media only screen and (min-width: $tablet-medium) {
+                margin-top: 40px;
+            }
         }
     }
 
     &__about-text {
 
         &__text {
-            color: $color-text;
             margin-bottom: 40px;
         }
     }
@@ -147,7 +145,7 @@ body {
     &__header-text {
 
         @media only screen and (min-width: $tablet-medium) {
-            padding: 40px 38px 0 38px;
+            padding: 30px 38px 0 38px;
         }
 
         &__header {
@@ -155,7 +153,6 @@ body {
         }
 
         &__text {
-            color: $color-text;
             margin-bottom: 40px;
         }
     }
@@ -172,7 +169,6 @@ body {
 //Services Section
 .services {
     background: $color-section-white;
-    margin-bottom: 100px;
 
     &__1 {
         background: url(/imgs/Services/concept-1.jpg);
@@ -204,7 +200,7 @@ body {
 //Selects all the subtitles 
 .services > div > div > h5 {
     color: $color-primary;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -212,37 +208,51 @@ body {
 //Selects all the texts
 .services > div > div > h3 {
     color: $color-primary;
+    font-size: 26px;
 }
 
 //Our Clients Section
 .our-clients {
-    padding: 0 15px 100px 15px;
+    background-color: $color-section-grey;
+    padding: 60px 15px 70px 15px;
     text-align: center;
 
+    @media only screen and (min-width: $tablet-medium) {
+        padding: 100px 15px 100px 15px;
+    }
+
     &__text {
-        font-size: clamp(24px, 4.5vw, 70px);
+        display: inline-block;
+        font-size: clamp(24px, 4vw, 40px);
         color: $color-secondary;
         margin-bottom: 55px;
+        max-width: 31ch;
+
+        @media only screen and (min-width: $tablet-medium) {
+            margin-bottom: 70px;
+        }
     }
 
     &__clients {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        justify-content: center;
         align-items: center;
+        grid-template-columns: repeat(1, 160px);
+        gap: 60px 0;
+
+        @media only screen and (min-width: $tablet-medium) {
+            grid-template-columns: repeat(2, 160px);
+            gap: 60px 160px;
+        }
     }
 
     &__clients > a {
-        max-width: 164px;
         opacity: .3;
         transition: opacity .3s;
     }
 
     &__clients > a:hover {
         opacity: 1;
-    }
-
-    &__clients > a:not(:last-child) {
-        padding-bottom: 60px;
     }
 }
 
@@ -257,9 +267,16 @@ body {
     }
 
     &__services {
-        display: flex;
-        flex-direction: column;
+        display: grid;
         margin-top: 60px;
+
+        @media only screen and (min-width: $laptop) {
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        }
+
+        @media only screen and (min-width: $desktop) {
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
 
     &__services > a {
@@ -268,6 +285,10 @@ body {
         padding: 90px 15%;
         transition: border .2s;
         color: initial;
+
+        @media only screen and (min-width: $laptop) {
+            padding: 52px 5%;
+        }
     }
 
     &__services > a:hover {
@@ -281,19 +302,46 @@ body {
 
     &__services > a > div > p {
         margin-top: 20px;
-        color: $color-text;
     }
 }
 
 //Projects Section
 .projects {
+    background-color: $color-section-grey;
     padding: 60px 15px;
+
+    @media only screen and (min-width: $laptop) {
+        display: flex;
+        padding: 60px 5%;
+    }
 
     &__about {
         margin-bottom: 50px;
 
+        @media only screen and (min-width: $tablet-medium) {
+            margin-bottom: 55px;
+        }
+
+        @media only screen and (min-width: $laptop) {
+            margin-right: 113px;
+            max-width: 57ch; //45ch;
+        }
+
         &__title {
            margin-bottom: 20px;
+           font-size: clamp(31px, 4.1vw, 46px);
+
+           @media only screen and (min-width: $tablet-medium) {
+            margin-bottom: 25px;
+            font-weight: 600;
+           }
+        }
+    }
+
+    &__carousel {
+        @media only screen and (min-width: $laptop) {
+            min-width: 53%;
+            max-width: 77%;
         }
     }
 }
@@ -307,10 +355,13 @@ body {
     text-align: center;
 
     &__title {
+        font-size: clamp(32px, 5.3vw, 46px);
         margin-bottom: 20px;
     }
 
     &__text {
+        color: $color-primary;
+        font-size: clamp(18px, 5vw, 20px);
         margin-bottom: 32px;
     }
 
@@ -329,16 +380,43 @@ body {
 //Footer Section
 .footer {
     background: $color-section-black;
-    padding: 60px 30px 25px 30px;
+    padding: 50px 30px 20px 30px;
     color: $color-primary;
+    display: grid;
+    grid-template-areas: 
+    "logo logo"
+    "about contact"
+    "location links"
+    "copyright copyright";
 
+    @media only screen and (min-width: $laptop) {
+        grid-template-columns: 3fr 1fr 3fr 1fr;
+        grid-template-areas: 
+        "logo logo logo logo"
+        "about contact location links"
+        "copyright copyright copyright copyright";
+        gap: 0 50px;
+    }
+
+
+    &__logo {
+        max-width: 160px;
+        margin-bottom: 20px;
+        grid-area: logo;
+
+        @media only screen and (min-width: $laptop) {
+            margin: 0 auto;
+            margin-bottom: 40px;
+        }
+    }
 
     &__about {
         margin-bottom: 30px;
+        grid-area: about;
 
-        &__logo img {
-            max-width: 160px;
-            margin-bottom: 10px;
+        &__text {
+            color: $color-primary;
+            max-width: 450px;
         }
     }
 
@@ -346,45 +424,38 @@ body {
         display: flex;
         flex-direction: column;
         margin-bottom: 30px;
-
-        &__title {
-            margin-bottom: 10px;
-        }
+        grid-area: contact;
     }
 
-    &__contact > a {
+    &__contact > ul > li > a {
         color: $color-primary;
         font-size: 15px;
         font-weight: 500;
     }
 
-    &__contact > a:not(:last-child) {
+    &__contact > ul > li:not(:last-child) {
         padding-bottom: 5px;
     }
 
     &__location {
         margin-bottom: 30px;
-
-        &__title {
-            margin-bottom: 10px;
-        }
+        grid-area: location;
 
         &__text {
+            color: $color-primary;
             margin-bottom: 20px;
             font-size: clamp(15px, 3vw, 22px);
         }
 
         &__map {
             height: 200px;
+            max-width: 310px;
         }
     }
 
     &__links {
         margin-bottom: 30px;
-
-        &__title {
-            margin-bottom: 10px;
-        }
+        grid-area: links;
     }
 
     &__links > ul > li > a {
@@ -396,4 +467,24 @@ body {
     &__links > ul > li:not(:last-child) {
         margin-bottom: 7px;
     }
+
+    &__copyright {
+        color: $color-primary;
+        font-size: clamp(16px, 2.5vw, 18px);
+        grid-area: copyright;
+
+        @media only screen and (min-width: $laptop) {
+            text-align: center;
+            margin-top: 10px;
+        }
+    }
+}
+
+.footer > div > h4 {
+    font-size: clamp(20px, 3.5vw, 21px);
+    margin-bottom: 10px;
+}
+
+.footer > div > p {
+    font-size: clamp(16px, 2.5vw, 18px);
 }

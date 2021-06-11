@@ -1,3 +1,50 @@
-.glide__slides {
-    height: 200px;
+//Glider Scrollbar
+.glider {
+    scrollbar-width: none;
+    margin-bottom: 10px;
+}
+
+.glider::-webkit-scrollbar {
+    width: 0;
+}
+
+.glider::-webkit-scrollbar-track {
+    background: #f5f5f5;
+}
+
+.glider::-webkit-scrollbar-thumb {
+    background: #f5f5f5;
+}
+
+//Glider Dots
+.glider-dot {
+    width: 10px;
+    height: 10px;
+}
+
+button.glider-dot.active {
+    background: #38373b;
+}
+
+.glider-track > div > img {
+    margin-bottom: 16px;
+}
+
+.glider-track > div > h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.glider-track > div > p {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.glider > div > div {
+    text-align: center;
+}
+
+.glider > div > div:not(:last-child) {
+    margin-right: 20px;
 }

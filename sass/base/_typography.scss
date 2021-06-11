@@ -28,6 +28,7 @@ h4 {
 }
 
 p {
+    color: $color-text;
     font-family: $font-work-sans;
     font-weight: 400;
     font-size: clamp(16px, 2.5vw, 20px);

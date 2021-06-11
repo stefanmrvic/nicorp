@@ -1,12 +1,8 @@
 #hero-slider {
-    position: relative;
-    overflow: hidden;
-    height: calc(100vh - 74px);
-
-    @media only screen and (min-width: $laptop) {
-      height: calc(100vh - 88px);
-    }
-  }
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
   
   #hero-slider::before {
     display: none;
@@ -49,11 +45,7 @@
     position: absolute;
     width: 100%;
     z-index: 700;
-    height: calc(100vh - 74px);
-
-    @media only screen and (min-width: $laptop) {
-      height: calc(100vh - 88px);
-    }
+    height: 100vh;
   }
 
   .hero-slide > div:nth-child(1) {
@@ -238,8 +230,8 @@
   }
 
   .text-3 {
-    width: 68%;
-    max-width: 559px;
+    width: 70%;
+    max-width: 568px;
 
     @media only screen and (min-width: $laptop) {
       width: initial;
