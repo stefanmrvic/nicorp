@@ -142,6 +142,7 @@
     <main>
       <!-- About Us Section Start -->
       <section id="about-us" class="about-us">
+
         <!-- Pop-up Window when Who Are We Button is Pressed -->
         <div id="about" class="about-us__about">
           <div class="about-us__about__button">
@@ -160,33 +161,36 @@
             Naš uspeh je definisan time koliko brzo i efikasno možemo da nadmašimo Vaša očekivanja u pružanju vrhunskog kvaliteta usluge i cene.
           </p>
         </div>
-        <div class="about-us__1">
-          <div class="about-us__1__splitter--1">
-            <div class="about-us__1__header-text">
-              <h5 class="about-us__1__subtitle subtitle">O nama</h5>
-              <h2 class="about-us__1__header-text__header">Nicorp je građevinska kompanija.</h2>
+
+        <div class="about-us__wrapper">
+          <div class="about-us__1">
+            <h5 class="about-us__1__subtitle subtitle">O nama</h5>
+            <div class="about-us__1__splitter--1">
+              <div class="about-us__1__header-text">
+                <h2 class="about-us__1__header-text__header">Nicorp je građevinska kompanija.</h2>
+              </div>
+              <div class="about-us__1__about-text">
+                <p class="about-us__1__about-text__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quibusdam minima esse dolorem dolor tempora natus dolorum nobis, molestiae quasi, aspernatur reiciendis facere explicabo fugit rem harum reprehenderit saepe?
+                </p>
+                <button class="about-us__1__about-text__button btn btn-black">
+                  <a href="#about">Ko smo mi</a>
+                </button>
+              </div>
             </div>
-            <div class="about-us__1__about-text">
-              <p class="about-us__1__about-text__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quibusdam minima esse dolorem dolor tempora natus dolorum nobis, molestiae quasi, aspernatur reiciendis facere explicabo fugit rem harum reprehenderit saepe?
-              </p>
-              <button class="about-us__1__about-text__button btn btn-black">
-                <a href="#about">Ko smo mi</a>
-              </button>
+            <div class="about-us__1__splitter--2">
+              <img src="/imgs/s1_1.jpg" alt="Nicorp Construction Engineers Talking In front Of Construction" class="about-us__1__img">
             </div>
           </div>
-          <div class="about-us__1__splitter--2">
-            <img src="/imgs/s1_1.jpg" alt="Nicorp Construction Engineers Talking In front Of Construction" class="about-us__1__img">
-          </div>
-        </div>
-        <div class="about-us__2">
-          <div class="about-us__2__splitter">
-            <div class="about-us__2__header-text">
-              <h3 class="about-us__2__header-text__header">Nudimo moderna rešenja za Vaše građevinske potrebe.</h3>
-              <p class="about-us__2__header-text__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit rem hic illum quidem perferendis velit neque quo, pariatur nisi.</p>
+          <div class="about-us__2">
+            <div class="about-us__2__splitter">
+              <div class="about-us__2__header-text">
+                <h3 class="about-us__2__header-text__header">Nudimo moderna rešenja za Vaše građevinske potrebe.</h3>
+                <p class="about-us__2__header-text__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit rem hic illum quidem perferendis velit neque quo, pariatur nisi.</p>
+              </div>
+              <img src="/imgs/s1_2.jpg" alt="" class="about-us__2__img">
             </div>
-            <img src="/imgs/s1_2.jpg" alt="" class="about-us__2__img">
           </div>
         </div>
       </section>
@@ -197,19 +201,36 @@
       <section id="services" class="services">
         <div class="services__container">
           <div class="services__1">
-            <h5 class="services__1__subtitle">Arhitektura</h5>
-            <h3 class="services__1__text">Planiranje I Projektovanje</h3>
+            <div class="services__1__content">
+              <h5 class="services__1__content__subtitle">Arhitektura</h5>
+              <h3 class="services__1__content__text">Planiranje I Projektovanje</h3>
+            </div>
+            <div class="services__1__background">
+              <img class="services__1__background__img" src="/imgs/Services/concept-1.jpg" alt="">
+            </div>
           </div>
           <div class="services__2">
-            <h5 class="services__3__subtitle">Izgradnja</h5>
-            <h3 class="services__3__text">Građevinski radovi I Završni radovi</h3>
+            <div class="services__2__content">
+              <h5 class="services__2__content__subtitle">Izgradnja</h5>
+              <h3 class="services__2__content__text">Građevinski radovi I Završni radovi</h3>
+            </div>
+            <div class="services__2__background">
+              <img class="services__2__background__img" src="/imgs/Services/building-1.jpg" alt="">
+            </div>
           </div>
           <div class="services__3">
-            <h5 class="services__2__subtitle">Dizajn</h5>
-            <h3 class="services__2__text">Enterijer I Eksterijer</h3>
+            <div class="services__3__content">
+              <h5 class="services__3__subtitle">Dizajn</h5>
+              <h3 class="services__3__text">Enterijer I Eksterijer</h3>
+            </div>
+            <div class="services__3__background">
+              <img class="services__3__background__img" src="/imgs/Services/Design.jpg" alt="">
+            </div>
           </div>
         </div>
+        <div class="services__background"></div>
       </section>
+      <script src="/js/services/services.js"></script>
       <!-- Services Section End -->
 
       <!-- Our Clients Section Start -->

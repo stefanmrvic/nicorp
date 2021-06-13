@@ -16,6 +16,13 @@ new Glider(document.querySelector('.glider'), {
         // screens greater than >= 1000px
         breakpoint: 1000,
         settings: {
+          slidesToShow: 1.5,
+          scrollLock: false,
+        }
+      },{
+        // screens greater than >= 1000px
+        breakpoint: 1228,
+        settings: {
           slidesToShow: 2.2,
           scrollLock: false
         }

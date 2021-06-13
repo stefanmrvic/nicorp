@@ -15,7 +15,6 @@ window.addEventListener("load", (event) => {
     document.addEventListener("scroll", function(e) {
         //calculates Y coordinates from nav to top of window on scroll
         navDistance = distance.getBoundingClientRect().top;
-        console.log(navDistance);
 
         if (navDistance < 0) {
             navLogo.classList.add("nav__logo--scrolled");

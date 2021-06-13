@@ -21,6 +21,12 @@ body {
     background-color: $color-section-white;
     position: relative;
 
+    @media only screen and (min-width: $tablet) {
+        background: url(/imgs/bgg.png);
+        background-size: cover;
+        background-position: center;
+    }
+
     &__about {
         visibility: hidden;
         width: 100%;
@@ -83,6 +89,11 @@ body {
     &__about > p:not(:last-child) {
         margin-bottom: 35px;
     }
+
+    &__wrapper {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
 }
 
 .visible {
@@ -92,10 +103,32 @@ body {
 
 .about-us__1 {
 
+    @media only screen and (min-width: $tablet) {
+        margin-top: 34px;
+    }
+
+    @media only screen and (min-width: $laptop) {
+        margin-top: 0;
+    }
+
+    &__subtitle {
+
+        @media only screen and (min-width: $tablet) {
+            padding-left: 63px;
+            margin-bottom: -34px;
+        }
+
+        @media only screen and (min-width: $laptop) {
+            padding-left: 78px;
+            margin-bottom: 0;
+        }
+    }
+
     &__splitter--1 {
 
         @media only screen and (min-width: $tablet-medium) {
-            display: flex;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
             padding: 18px 63px 0 63px;
         }
     }
@@ -106,6 +139,11 @@ body {
             margin-right: 79px;
         }
 
+        @media only screen and (min-width: $laptop) {
+            margin-right: 100px;
+            margin-left: 15px;
+        }
+
         &__header {
             color: $color-secondary;
             margin-bottom: 28px;
@@ -113,13 +151,22 @@ body {
             @media only screen and (min-width: $tablet-medium) {
                 margin-top: 40px;
             }
+
+            @media only screen and (min-width: $laptop) {
+                margin-top: 0;
+            }
         }
     }
 
     &__about-text {
 
+        @media only screen and (min-width: $laptop) {
+            margin-bottom: 50px;
+        }
+
         &__text {
             margin-bottom: 40px;
+            max-width: 68ch;
         }
     }
 
@@ -127,7 +174,8 @@ body {
         margin-bottom: 45px;
 
         @media only screen and (min-width: $tablet-medium) {
-            max-width: 50%;
+            width: 50%;
+            max-width: 570px;
         }
     }
 }
@@ -146,9 +194,19 @@ body {
 
         @media only screen and (min-width: $tablet-medium) {
             padding: 30px 38px 0 38px;
+            max-width: 50%;
+        }
+
+        @media only screen and (min-width: $laptop) {
+            padding: 40px 50px 0 50px;
+        }
+
+        @media only screen and (min-width: $desktop) {
+            padding: 80px 90px 0 90px;
         }
 
         &__header {
+            font-size: 25px;
             margin-bottom: 28px;
         }
 
@@ -160,7 +218,8 @@ body {
     &__img {
 
         @media only screen and (min-width: $tablet-medium) {
-            max-width: 50%;
+            width: 50%;
+            max-width: 570px;
             height: max-content;
         }
     }
@@ -174,26 +233,73 @@ body {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 180px);
+        background-size: cover;
+        position: relative;
 
         @media only screen and (min-width: $laptop-medium) {
             grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: minmax(254px, 375px);
+            grid-template-rows: minmax(254px, 540px);
         }
     }
 
+    &__container > div {
+        position: relative;
+    }
+
+    //selecting all background divs inside container
+    &__container > div > div:nth-child(2) {
+        width: 300%;
+        height: 100%;
+    }
+
+    //selecting all background divs inside container
+    &__container > div > div:nth-child(2) > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 2s;
+    }
+
     &__1 {
-        background: url(/imgs/Services/concept-1.jpg);
-        background-size: cover;
+        z-index: 100;
+        &__content {
+            color: $color-primary;
+            z-index: 99;
+        }
+
+        &__background {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
     }
 
     &__2 {
-        background: url(/imgs/Services/building-1.jpg);
-        background-size: cover;
+        z-index: 99;
+        &__content {
+            color: $color-primary;
+            z-index: 99;
+        }
+
+        &__background {
+            position: absolute;
+            top: 0;
+            left: -579px;
+        }
     }
 
     &__3 {
-        background: url(/imgs/Services/Design.jpg);
-        background-size: cover; 
+        z-index: 98;
+        &__content {
+            color: $color-primary;
+            z-index: 99;
+        }
+
+        &__background {
+            position: absolute;
+            top: 0;
+            left: -1158px;
+        }
     }
 }
 
@@ -233,13 +339,17 @@ body {
 
     &__text {
         display: inline-block;
-        font-size: clamp(24px, 4vw, 40px);
+        font-size: clamp(24px, 4vw, 38px);
         color: $color-secondary;
         margin-bottom: 55px;
         max-width: 31ch;
 
         @media only screen and (min-width: $tablet-medium) {
             margin-bottom: 70px;
+        }
+
+        @media only screen and (min-width: $laptop) {
+            margin-bottom: 90px;
         }
     }
 
@@ -261,7 +371,7 @@ body {
         }
 
         @media only screen and (min-width: $desktop) {
-            gap: 0 3.5vw;
+            gap: 0 4vw;
         }
     }
 
@@ -306,7 +416,7 @@ body {
         color: initial;
 
         @media only screen and (min-width: $laptop) {
-            padding: 52px 5%;
+            padding: 85px 5%;
         }
     }
 
@@ -327,11 +437,15 @@ body {
 //Projects Section
 .projects {
     background-color: $color-section-grey;
-    padding: 60px 15px;
+    padding: 70px 15px;
 
     @media only screen and (min-width: $laptop) {
         display: flex;
-        padding: 60px 5%;
+        padding: 80px 0 80px 5%;
+    }
+
+    @media only screen and (min-width: $desktop) {
+        padding: 120px 0 80px 10%;
     }
 
     &__about {
@@ -403,10 +517,21 @@ body {
     color: $color-primary;
     display: grid;
     grid-template-areas: 
-    "logo logo"
-    "about contact"
-    "location links"
-    "copyright copyright";
+    "logo"
+    "about"
+    "contact"
+    "location"
+    "links"
+    "copyright";
+
+
+    @media only screen and (min-width: $tablet) {
+        grid-template-areas: 
+        "logo logo"
+        "about contact"
+        "location links"
+        "copyright copyright";
+    }
 
     @media only screen and (min-width: $laptop) {
         grid-template-columns: 3fr 1fr 3fr 1fr;
