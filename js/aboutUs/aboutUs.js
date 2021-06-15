@@ -5,9 +5,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     aboutUs.addEventListener('click', () => {
         aboutUsModal.classList.add('visible');
+        document.body.style.overflow = 'hidden';
     });
 
     closeButton.addEventListener('click', () => {
         aboutUsModal.classList.remove('visible');
+        document.body.style.overflow = 'initial';
     });
 });

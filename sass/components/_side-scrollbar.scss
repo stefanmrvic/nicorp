@@ -1,0 +1,50 @@
+.side-scrollbar {
+    display: none;
+
+    @media only screen and (min-width: $laptop) {
+        display: initial;
+        position: fixed;
+        top: 32%;
+        right: 41px;
+    }
+
+    @media only screen and (min-width: $desktop-medium) {
+        right: 43px;
+    }
+
+    &__container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__bar-background {
+        height: 210px;
+        width: 2px;
+        background-color: $color-sidebar-background;
+        margin: 20px 0;
+    }
+
+    &__bar {
+        position: absolute;
+        top: 39px;
+        left: 9px;
+        height: 26.25px;
+        width: 2px;
+        background-color: $color-sidebar-active;
+        transition: all .35s;
+    }
+
+    &__current,
+    &__total {
+        color: $color-primary;
+        font-size: 16px;
+        transform: rotate(90deg);
+        font-weight: 500;
+    }
+}
+
+.side-scrollbar__container > span {
+    display: inline-block;
+}

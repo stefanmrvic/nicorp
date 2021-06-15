@@ -20,15 +20,25 @@
     <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
-    <!-- Element used to get getBoundingClientRect().top; -->
+    <!-- Element used to get getBoundingClientRect().top for nav -->
     <div id="top" class="nav-distance"></div>
+
+    <!-- Side Progress Bar -->
+    <div class="side-scrollbar">
+      <div class="side-scrollbar__container">
+        <span class="side-scrollbar__current">01</span>
+        <div class="side-scrollbar__bar-background"></div>
+        <div class="side-scrollbar__bar"></div>
+        <span class="side-scrollbar__total">08</span>
+      </div>
+    </div>
 
     <header>
     <!-- Nav Start -->
     <nav class="nav">
       <div class="wrapper">
-        <!--<a href="#" class="nav__logo"> Nicorp.-->
-        <img src="/imgs/logo.png" alt="Nicorp Logo" class="nav__logo"/>
+        <a href="#" class="nav__logo">
+          <img src="/imgs/logo.png" alt="Nicorp Logo" class="nav__logo__img"/>
         </a>
 
         <!-- Hamburger Icon -->
@@ -79,6 +89,8 @@
 
     <!-- Hero Start -->
     <section class="hero">
+      <div id="hero" class="hash-links"></div>
+
       <div id="hero-slider">
         <div class="hero-slide slide-1 active">
           <div class="hero-slide-1"></div>
@@ -141,27 +153,44 @@
 
     <main>
       <!-- About Us Section Start -->
-      <section id="about-us" class="about-us">
+      <section class="about-us">
+        <div id="about-us" class="hash-links"></div>
 
         <!-- Pop-up Window when Who Are We Button is Pressed -->
+        <!-- Picture Div Start -->
         <div id="about" class="about-us__about">
-          <div class="about-us__about__button">
-            <span class="about-us__about__button--1"></span>
-            <span class="about-us__about__button--2"></span>
+          <div class="about-us__about__wrapper">
+            <div class="about-us__about__img">
+              <picture>
+                <source media="(max-width: 999px)" srcset="imgs/about-us/nicorp.jpg">
+                <source media="(min-width: 1000px)" srcset="imgs/about-us/nicorp-laptop.jpg">
+                <img src="imgs/about-us/nicorp.jpg" alt="">
+              </picture>
+            </div>
+            <!-- Picture Div End -->
+            
+            <!-- Content Div Start -->
+            <div class="about-us__about__content">
+              <div class="about-us__about__button">
+                <span class="about-us__about__button--1"></span>
+                <span class="about-us__about__button--2"></span>
+              </div>
+              <h2 class="about-us__about__title">Ko smo mi?</h2>
+              <p class="about-us__about__text--1">
+                NICORP je građevinska kompanija čija delatnost je pružanje usluga u oblasti izvođenja svih vrsta građevinskih i građevinsko-zanatskih radova
+                u okviru stambenih, poslovnih i industrijskih objekta, kao i projektovanje i implementacija inovativnih arhitektonskih rešenja.
+              </p>
+              <p class="about-us__about__text--2">
+                Posvećenost najvišim standardima i inovativnim rešenjima, uz tim iskusnih profesionalaca, na čelu sa visoko kvalifikovanim rukovodećim kadrom, omogućava nam da pružimo klijentima najbolja rešenja i sprovedemo sve zahtevane ideje u delo.
+              </p>
+              <p class="about-us__about__text--3">
+                Naš uspeh je definisan time koliko brzo i efikasno možemo da nadmašimo Vaša očekivanja u pružanju vrhunskog kvaliteta usluge i cene.
+              </p>
+            </div>
+            <!-- Content Div End -->
           </div>
-          <h2 class="about-us__about__title">Ko smo mi?</h2>
-          <p class="about-us__about__text--1">
-            NICORP je građevinska kompanija čija delatnost je pružanje usluga u oblasti izvođenja svih vrsta građevinskih i građevinsko-zanatskih radova
-            u okviru stambenih, poslovnih i industrijskih objekta, kao i projektovanje i implementacija inovativnih arhitektonskih rešenja.
-          </p>
-          <p class="about-us__about__text--2">
-            Posvećenost najvišim standardima i inovativnim rešenjima, uz tim iskusnih profesionalaca, na čelu sa visoko kvalifikovanim rukovodećim kadrom, omogućava nam da pružimo klijentima najbolja rešenja i sprovedemo sve zahtevane ideje u delo.
-          </p>
-          <p class="about-us__about__text--3">
-            Naš uspeh je definisan time koliko brzo i efikasno možemo da nadmašimo Vaša očekivanja u pružanju vrhunskog kvaliteta usluge i cene.
-          </p>
         </div>
-
+        
         <div class="about-us__wrapper">
           <div class="about-us__1">
             <h5 class="about-us__1__subtitle subtitle">O nama</h5>
@@ -197,68 +226,57 @@
       <script src="/js/aboutUs/aboutUs.js"></script>
       <!-- About Us Section End -->
 
-      <!-- Services Section Start -->
-      <section id="services" class="services">
+       <!-- Services Section Start -->
+       <section class="services">
+        <div id="services" class="hash-links"></div>
+
         <div class="services__container">
           <div class="services__1">
-            <div class="services__1__content">
-              <h5 class="services__1__content__subtitle">Arhitektura</h5>
-              <h3 class="services__1__content__text">Planiranje I Projektovanje</h3>
-            </div>
-            <div class="services__1__background">
-              <img class="services__1__background__img" src="/imgs/Services/concept-1.jpg" alt="">
-            </div>
+            <h5 class="services__1__subtitle">Arhitektura</h5>
+            <h3 class="services__1__text">Planiranje I Projektovanje</h3>
           </div>
           <div class="services__2">
-            <div class="services__2__content">
-              <h5 class="services__2__content__subtitle">Izgradnja</h5>
-              <h3 class="services__2__content__text">Građevinski radovi I Završni radovi</h3>
-            </div>
-            <div class="services__2__background">
-              <img class="services__2__background__img" src="/imgs/Services/building-1.jpg" alt="">
-            </div>
+            <h5 class="services__3__subtitle">Izgradnja</h5>
+            <h3 class="services__3__text">Građevinski radovi I Završni radovi</h3>
           </div>
           <div class="services__3">
-            <div class="services__3__content">
-              <h5 class="services__3__subtitle">Dizajn</h5>
-              <h3 class="services__3__text">Enterijer I Eksterijer</h3>
-            </div>
-            <div class="services__3__background">
-              <img class="services__3__background__img" src="/imgs/Services/Design.jpg" alt="">
-            </div>
+            <h5 class="services__2__subtitle">Dizajn</h5>
+            <h3 class="services__2__text">Enterijer I Eksterijer</h3>
           </div>
         </div>
-        <div class="services__background"></div>
       </section>
-      <script src="/js/services/services.js"></script>
       <!-- Services Section End -->
 
       <!-- Our Clients Section Start -->
-      <section id="our-clients" class="our-clients">
+      <section class="our-clients">
+        <div id="our-clients" class="hash-links"></div>
+
         <h5 class="our-clients__subtitle subtitle">Naši klijenti</h5>
         <h2 class="our-clients__text">Svaki klijent za nas je jedinstvena priča, rešenje i iskustvo.</h2>
         <div class="our-clients__clients">
-          <a href="#">
-            <img src="/imgs/Our Clients/vinci.png" alt="" class="our-clients__clients__client-1">
+          <a href="https://www.vinci-construction.com/en/" target="_blank">
+            <img src="/imgs/Our Clients/vinci.png" alt="vinci construction company logo" class="our-clients__clients__client-1">
           </a>
-          <a href="#">
-            <img src="/imgs/Our Clients/concord.png" alt="" class="our-clients__clients__client-2">
+          <a href="https://www.wdconcordwestdoo.com/" target="_blank">
+            <img src="/imgs/Our Clients/concord.png" alt="concord company logo" class="our-clients__clients__client-2">
           </a>
-          <a href="#">
-            <img src="/imgs/Our Clients/arhi-pro.png" alt="" class="our-clients__clients__client-3">
+          <a href="https://www.arhipro.com/" target="_blank">
+            <img src="/imgs/Our Clients/arhi-pro.png" alt="arhipro company logo" class="our-clients__clients__client-3">
           </a>
-          <a href="#">
-            <img src="/imgs/Our Clients/gmt.png" alt="" class="our-clients__clients__client-4">
+          <a href="http://www.gmtim.rs/" target="_blank">
+            <img src="/imgs/Our Clients/gmt.png" alt="gmt company logo" class="our-clients__clients__client-4">
           </a>
-          <a href="#">
-            <img src="/imgs/Our Clients/msbuild.png" alt="" class="our-clients__clients__client-5">
+          <a href="https://www.msbuild.rs/" target="_blank">
+            <img src="/imgs/Our Clients/msbuild.png" alt="msbuild company logo" class="our-clients__clients__client-5">
           </a>
         </div>
       </section>
       <!-- Our Clients Section End -->
 
       <!-- All Services Section Start -->
-      <section id="all-services" class="all-services">
+      <section class="all-services">
+        <div id="all-services" class="hash-links"></div>
+
         <h2 class="all-services__title">Naše Usluge</h2>
         <div class="all-services__services">
 
@@ -354,7 +372,9 @@
       <!-- All Services Section End -->
 
       <!-- Projects Section Start -->
-      <section id="projects" class="projects">
+      <section class="projects">
+        <div id="projects" class="hash-links"></div>
+
         <div class="projects__about">
           <h2 class="projects__about__title">Naši Projekti</h2>
           <p class="projects__about__text">Ovde možete pogledati naše projekte na kojima smo dali svoj maksimum da opravdamo poverenje naših klijenata.</p>
@@ -397,7 +417,9 @@
       <section class="strategy-design"></section>
 
       <!-- Contact Us Section Start -->
-      <section id="contact-us" class="contact-us">
+      <section class="contact-us">
+        <div id="contact-us" class="hash-links"></div>
+
         <h2 class="contact-us__title">Kontaktiraj Nas</h2>
         <p class="contact-us__text">
           Imate pitanje za nas?
@@ -406,7 +428,7 @@
         </p>
         <div class="contact-us__buttons">
           <button class="contact-us__buttons__button btn btn-white">
-            <a href="callto:+381692343611">
+            <a href="tel:+381692343611">
               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="30px" height="22px" viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve">
                 <g><path d="M23.71,26.301l-1.633-1.633c5.33-5.33,5.33-14.004,0-19.334l1.632-1.633C29.939,9.933,29.939,20.069,23.71,26.301z
@@ -437,7 +459,7 @@
       <!-- Contact Us Section End -->
 
       <!-- Footer Section Start -->
-      <footer class="footer">
+      <footer id="footer" class="footer">
         <a href="http://" class="footer__logo">
           <img src="/imgs/logo.png" alt="Nicorp Logo">
         </a>
@@ -471,19 +493,19 @@
           <h4 class="footer__links__title">Linkovi</h4>
           <ul>
             <li>
-              <a href="#">O Nama</a>
+              <a href="#about-us">O Nama</a>
             </li>
             <li>
-              <a href="#">Usluge</a>
+              <a href="#our-clients">Klijenti</a>
             </li>
             <li>
-              <a href="#">Klijenti</a>
+              <a href="#services">Usluge</a>
             </li>
             <li>
-              <a href="#">Projekti</a>
+              <a href="#projects">Projekti</a>
             </li>
             <li>
-              <a href="#">Kontakt</a>
+              <a href="#contact-us">Kontakt</a>
             </li>
           </ul>
         </div>
@@ -506,6 +528,8 @@
     crossorigin=""></script>
     <!-- Leaflet Custom Map -->
     <script src="js/map/map.js"></script>
+
+    <script src="js/progressBar/progressBar.js"></script>
 
   </body>
 </html>

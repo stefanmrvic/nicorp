@@ -4,17 +4,24 @@ $tablet-medium: 770px;
 $laptop: 1000px;
 $laptop-medium: 1026px;
 $desktop: 1200px;
+$desktop-medium: 1230px;
+$desktop-big: 1400px;
 
 //Z-index//
 $z-index-max: 99999;
 
 //Font Variables//
 $font-work-sans: ('Work Sans', serif);
+
 //Color Variables//
 $color-transparent: transparent;
 $color-primary: #fff;
 $color-secondary: #101010;
 $color-text: #525252;
+
+//Side Number Nav Colors//
+$color-sidebar-active: #fff;
+$color-sidebar-background: #3d3d3d;
 
 //Background Color//
 $color-background-mobile: #fff;
