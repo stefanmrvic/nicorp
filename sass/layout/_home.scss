@@ -2,12 +2,6 @@ section {
     position: relative;
 }
 
-//used to link navbar links to hash-lists to fix position: fixed navbar overlaping
-.hash-links {
-    position: absolute;
-    top: -89px;
-}
-
 body {
 
     @media only screen and (min-width: $laptop) {
@@ -546,120 +540,83 @@ body {
     background: $color-section-black;
     padding: 50px 30px 20px 30px;
     color: $color-primary;
-    display: grid;
-    grid-template-areas: 
-    "logo"
-    "about"
-    "contact"
-    "location"
-    "links"
-    "copyright";
-
-
-    @media only screen and (min-width: $tablet) {
-        grid-template-areas: 
-        "logo logo"
-        "about contact"
-        "location links"
-        "copyright copyright";
-    }
+    text-align: center;
 
     @media only screen and (min-width: $laptop) {
-        grid-template-columns: 3fr 1fr 2.1fr 1fr;
-        grid-template-areas: 
-        "logo logo logo logo"
-        "about contact location links"
-        "copyright copyright copyright copyright";
-        gap: 0 50px;
+        padding: 50px 0 20px 0;
     }
 
-
     &__logo {
-        max-width: 160px;
-        margin-bottom: 20px;
-        grid-area: logo;
+        display: inline-block;
+        max-width: 190px;
+        margin-bottom: 40px;
 
         @media only screen and (min-width: $laptop) {
-            margin: 0 auto;
             margin-bottom: 40px;
         }
     }
 
-    &__about {
-        margin-bottom: 30px;
-        grid-area: about;
-
-        &__text {
-            color: $color-primary;
-            max-width: 450px;
-        }
-    }
-
     &__contact {
+        position: relative;
         display: flex;
         flex-direction: column;
         margin-bottom: 30px;
-        grid-area: contact;
+        align-items: center;
+
+        &__title {
+            margin-bottom: 40px;
+            font-size: 34px;
+            font-weight: 600;
+        }
+
+        &__map {
+            height: 350px;
+            width: 100%;
+            margin-bottom: 40px;
+
+            @media only screen and (min-width: $tablet-medium) {
+                height: 500px;
+            }
+        }
+
+        &__text--1,
+        &__text--2 {
+            color: $color-primary;
+            font-size: 17px;
+        }
+
+        &__info > li > h4 {
+            margin-bottom: 5px;
+        }
+
+        &__info > li:first-child {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__tel--1 {
+            margin-bottom: 4px;
+        }
     }
 
     &__contact > ul > li > a {
         color: $color-primary;
-        font-size: 15px;
+        font-size: 16px;
         font-weight: 500;
     }
 
     &__contact > ul > li:not(:last-child) {
-        padding-bottom: 5px;
-    }
-
-    &__location {
-        margin-bottom: 30px;
-        grid-area: location;
-
-        &__text {
-            color: $color-primary;
-            margin-bottom: 20px;
-            font-size: clamp(15px, 3vw, 22px);
-        }
-
-        &__map {
-            height: 200px;
-            max-width: 310px;
-        }
-    }
-
-    &__links {
-        margin-bottom: 30px;
-        grid-area: links;
-    }
-
-    &__links > ul > li > a {
-        color: $color-primary;
-        font-size: 15px;
-        font-weight: 500;
-    }
-
-    &__links > ul > li:not(:last-child) {
-        margin-bottom: 7px;
+        padding-bottom: 15px;
     }
 
     &__copyright {
         color: $color-primary;
-        font-size: clamp(16px, 2.5vw, 18px);
-        grid-area: copyright;
+        font-size: 17px;
 
         @media only screen and (min-width: $laptop) {
             text-align: center;
             margin-top: 10px;
+            font-size: 18px;
         }
     }
-}
-
-.footer > div > h4 {
-    font-size: clamp(20px, 3.5vw, 21px);
-    margin-bottom: 10px;
-}
-
-.footer > div > p {
-    font-size: clamp(16px, 2.5vw, 18px);
 }

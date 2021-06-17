@@ -1,4 +1,0 @@
-1. dot nav (with numbers, represetning current section number)
-2. auto turning + buttons turning hero gallery images
-3. hold and drag project section 
-4. SEO

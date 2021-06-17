@@ -1,6 +1,5 @@
 body {
     font-family: $font-work-sans;
-    font-weight: 700;
 }
 
 h1, h2, h3, h4, h5 {
@@ -25,6 +24,7 @@ h3 {
 
 h4 {
     font-size: clamp(20px, 3.5vw, 24px);
+    font-weight: 600;
 }
 
 p {

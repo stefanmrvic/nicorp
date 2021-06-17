@@ -8,3 +8,22 @@
     font-weight: 600;
     margin-bottom: 28px;
 }
+
+//used to link navbar links to hash-lists to fix position: fixed navbar overlaping
+.hash-links {
+    position: absolute;
+    top: -72px;
+
+    @media only screen and (min-width: $laptop) {
+        top: -87px;
+    }
+}
+
+.footer-hash {
+    position: absolute;
+    top: -80px;
+
+    @media only screen and (min-width: $laptop) {
+        top: -95px;
+    }
+}

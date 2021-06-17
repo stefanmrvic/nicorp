@@ -11,5 +11,7 @@ window.addEventListener("load", (event) => {
         accessToken: 'pk.eyJ1Ijoic3RlZmFubXJ2aWMiLCJhIjoiY2tpaHp3YjF0MGQ0NDJybWxuZzF6MHIzdCJ9.NIx8s8uOmLHFmBD0qSGoCw'
     }).addTo(mymap);
 
+    mymap.scrollWheelZoom.disable();
+
     var marker = L.marker([44.79143382548834, 20.477597347590308]).addTo(mymap).bindPopup("Gospodara Vučića 57 / 6");
 });
