@@ -13,6 +13,16 @@
     background-color: $color-nav-background;
     padding: 17px 7%;
     z-index: $z-index-max;
+    
+    
+    @media only screen and (min-width: $laptop) {
+        padding: 17px 14% 17px 7%;
+    }
+
+    @media only screen and (min-width: $desktop-bigger) {
+        padding: 17px 7%;
+    }
+    
 
     &--scrolled {
         padding: 16px 7%;
@@ -88,7 +98,6 @@
     flex-basis: 100%;
     display: flex;
     justify-content: space-between;
-    position: relative;
     max-width: 1240px;
 }
 
@@ -111,15 +120,45 @@
     @media only screen and (min-width: $laptop) {
         display: none;
     }
+
+    &__lang {
+        position: absolute;
+        top: 29px;
+        left: 7%;
+        font-weight: 600;
+
+        span {
+            font-size: 24px;
+            padding: 0 5px;
+        }
+    }
+
+    &__lang > a {
+        font-size: 24px;
+        opacity: .5;
+        transition: all .28s;
+    }
+
+    &__lang > a:hover {
+        opacity: 1;
+    }
+
+    .active-lang {
+        opacity: 1;
+    }
 }
 //Selects All Items in Mobile Menu Except First Child
-.nav__mobile__items > li:not(:first-child) {
+.nav__mobile__items > li:not(:nth-child(-n+2)) {
     padding-top: 31px;
 }
+
 //Selects All Links in Mobile Menu
 .nav__mobile__items > li a {
-    font-size: 26px;
     color: $color-mobileNav-links;
+}
+//Selects All Links in Mobile Menu
+.nav__mobile__items > li:not(:first-child) a {
+    font-size: 26px;
 }
 
 .nav__items {
@@ -131,6 +170,7 @@
         align-items: center;
     }
 }
+
 //Makes Lines Under Nav Items On Hover (Desktop Only)
 .nav__items > li > a::before {
     content: "";
@@ -161,4 +201,42 @@
 
 .nav__items > li:not(:first-child) {
     margin-left: 36px;
+}
+
+.nav__lang {
+    display: none;
+
+    @media only screen and (min-width: $laptop) {
+        display: initial;
+        position: absolute;
+        top: 38px;
+        right: 23px;
+        font-weight: 600;
+    }
+
+    @media only screen and (min-width: $desktop) {
+        right: 19px;
+    }
+
+    .active-nav-lang {
+        opacity: 1;
+    }
+
+    &__divider {
+        padding: 0 5px;
+    }
+}
+
+.nav__lang > * {
+    font-size: 17px;
+    color: $color-primary;
+}
+
+.nav__lang > a {
+    opacity: 0.5;
+    transition: all .28s;
+}
+
+.nav__lang > a:hover {
+    opacity: 1;
 }
