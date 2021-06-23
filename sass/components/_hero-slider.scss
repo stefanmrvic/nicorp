@@ -201,20 +201,30 @@
 
   .text-1 {
     min-width: 228px;
-    width: 60%;
+    width: 68%;
     max-width: 519px;
 
-    @media only screen and (min-width: 533px) {
+    @media only screen and (min-width: $mobile) {
+      width: 60%;
+    }
+
+    @media only screen and (min-width: $mobile-medium) {
       margin-left: 2%;
     }
 
-    @media only screen and (min-width: 872px) {
+    @media only screen and (min-width: $tablet-big) {
       margin-left: 0;
     }
+  }
 
-    h1 {
-      width: 10ch;
+  .text-1--en {
+    width: 76%;
+    max-width: 575px;
+
+    @media only screen and (min-width: $mobile) {
+      width: 67%;
     }
+
   }
 
   .text-2 {
@@ -224,19 +234,32 @@
     @media only screen and (min-width: $laptop) {
       width: initial;
     }
+  }
 
-    h1 {
-      width: 14ch;
+  .text-2--en {
+    width: 84%;
+    max-width: 615px;
+
+    @media only screen and (min-width: $mobile) {
+      width: 79%;
     }
   }
 
   .text-3 {
-    width: 70%;
+    width: 73%;
     max-width: 568px;
+
+    @media only screen and (min-width: $mobile) {
+      width: 71%;
+    }
 
     @media only screen and (min-width: $laptop) {
       width: initial;
     }
+  }
+
+  .text-3--en {
+    max-width: 626px;
   }
   
   .hero-overlay-text .hero-subtitle {

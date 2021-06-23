@@ -26,6 +26,14 @@
 
     &--scrolled {
         padding: 16px 7%;
+
+        @media only screen and (min-width: $laptop) {
+            padding: 16px 14% 16px 7%;
+        }
+    
+        @media only screen and (min-width: $desktop-bigger) {
+            padding: 16px 7%;
+        }
     }
 
     &__logo {
