@@ -372,27 +372,27 @@ button.glider-dot.active {
 
 /* line 62, sass/components/_hero-slider.scss */
 .hero-slide-1 {
-  background: url(/imgs/1-mobile.jpg);
+  background: url(/imgs/hero/1-mobile.jpg);
   background-position: 82% 0; }
   @media only screen and (min-width: 720px) {
     /* line 62, sass/components/_hero-slider.scss */
     .hero-slide-1 {
-      background: url(/imgs/1-tablet.jpg);
+      background: url(/imgs/hero/1-tablet.jpg);
       background-position: 92% 0; } }
   @media only screen and (min-width: 1000px) {
     /* line 62, sass/components/_hero-slider.scss */
     .hero-slide-1 {
-      background: url(/imgs/1.jpg);
+      background: url(/imgs/hero/1.jpg);
       background-position: 70% 0; } }
 
 /* line 77, sass/components/_hero-slider.scss */
 .hero-slide-2 {
-  background: url(/imgs/2-mobile.jpg);
+  background: url(/imgs/hero/2-mobile.jpg);
   background-position: 41% 0; }
   @media only screen and (min-width: 720px) {
     /* line 77, sass/components/_hero-slider.scss */
     .hero-slide-2 {
-      background: url(/imgs/2.jpg);
+      background: url(/imgs/hero/2.jpg);
       background-position: 92% 0; } }
   @media only screen and (min-width: 1000px) {
     /* line 77, sass/components/_hero-slider.scss */
@@ -405,17 +405,17 @@ button.glider-dot.active {
 
 /* line 95, sass/components/_hero-slider.scss */
 .hero-slide-3 {
-  background: url(/imgs/3-mobile.jpg);
+  background: url(/imgs/hero/3-mobile.jpg);
   background-position: 0 0; }
   @media only screen and (min-width: 720px) {
     /* line 95, sass/components/_hero-slider.scss */
     .hero-slide-3 {
-      background: url(/imgs/3-tablet.jpg);
+      background: url(/imgs/hero/3-tablet.jpg);
       background-position: 92% 0; } }
   @media only screen and (min-width: 1000px) {
     /* line 95, sass/components/_hero-slider.scss */
     .hero-slide-3 {
-      background: url(/imgs/3.jpg);
+      background: url(/imgs/hero/3.jpg);
       background-position: 70% 0; } }
   @media only screen and (min-width: 1200px) {
     /* line 95, sass/components/_hero-slider.scss */
@@ -858,7 +858,7 @@ header {
   @media only screen and (min-width: 720px) {
     /* line 26, sass/layout/_home.scss */
     .about-us {
-      background: url(/imgs/bgg.png);
+      background: url(/imgs/about-us/background.png);
       background-size: cover;
       background-position: center; } }
   /* line 37, sass/layout/_home.scss */
@@ -1097,7 +1097,7 @@ header {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 180px);
-  background: url(/imgs/Services/design.jpg) center;
+  background: url(/imgs/services/design.jpg) center;
   background-size: cover; }
   @media only screen and (min-width: 1000px) {
     /* line 299, sass/layout/_home.scss */
@@ -1318,96 +1318,73 @@ header {
       max-width: 77%; } }
 
 /* line 551, sass/layout/_home.scss */
-.contact-us {
-  background: url(/imgs/contact-us/red-background.jpg);
-  background-size: cover;
-  color: #fff;
-  padding: 70px 0 30px 0;
-  text-align: center; }
-  /* line 558, sass/layout/_home.scss */
-  .contact-us__title {
-    font-size: clamp(32px, 5.3vw, 46px);
-    margin-bottom: 20px; }
-  /* line 563, sass/layout/_home.scss */
-  .contact-us__text {
-    color: #fff;
-    font-size: clamp(18px, 5vw, 20px);
-    margin-bottom: 32px; }
-  /* line 571, sass/layout/_home.scss */
-  .contact-us__buttons button:first-child {
-    margin-right: 30px; }
-  /* line 575, sass/layout/_home.scss */
-  .contact-us__buttons__button a {
-    padding: 12px 52px; }
-
-/* line 582, sass/layout/_home.scss */
 .footer {
   background: #0f0f0f;
   padding: 50px 30px 20px 30px;
   color: #fff;
   text-align: center; }
   @media only screen and (min-width: 1000px) {
-    /* line 582, sass/layout/_home.scss */
+    /* line 551, sass/layout/_home.scss */
     .footer {
       padding: 50px 0 20px 0; } }
-  /* line 592, sass/layout/_home.scss */
+  /* line 561, sass/layout/_home.scss */
   .footer__logo {
     display: inline-block;
     max-width: 190px;
     margin-bottom: 40px; }
     @media only screen and (min-width: 1000px) {
-      /* line 592, sass/layout/_home.scss */
+      /* line 561, sass/layout/_home.scss */
       .footer__logo {
         margin-bottom: 40px; } }
-  /* line 602, sass/layout/_home.scss */
+  /* line 571, sass/layout/_home.scss */
   .footer__contact {
     position: relative;
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
     align-items: center; }
-    /* line 609, sass/layout/_home.scss */
+    /* line 578, sass/layout/_home.scss */
     .footer__contact__title {
       margin-bottom: 40px;
       font-size: 34px;
       font-weight: 600; }
-    /* line 615, sass/layout/_home.scss */
+    /* line 584, sass/layout/_home.scss */
     .footer__contact__map {
       height: 350px;
       width: 100%;
       margin-bottom: 40px; }
       @media only screen and (min-width: 770px) {
-        /* line 615, sass/layout/_home.scss */
+        /* line 584, sass/layout/_home.scss */
         .footer__contact__map {
           height: 500px; } }
-    /* line 625, sass/layout/_home.scss */
+    /* line 594, sass/layout/_home.scss */
     .footer__contact__text--1, .footer__contact__text--2 {
       color: #fff;
       font-size: 17px; }
-    /* line 631, sass/layout/_home.scss */
+    /* line 600, sass/layout/_home.scss */
     .footer__contact__info > li > h4 {
       margin-bottom: 5px; }
-    /* line 635, sass/layout/_home.scss */
+    /* line 604, sass/layout/_home.scss */
     .footer__contact__info > li:first-child {
       display: flex;
       flex-direction: column; }
-    /* line 640, sass/layout/_home.scss */
+    /* line 609, sass/layout/_home.scss */
     .footer__contact__tel--1 {
       margin-bottom: 4px; }
-  /* line 645, sass/layout/_home.scss */
+  /* line 614, sass/layout/_home.scss */
   .footer__contact > ul > li > a {
     color: #fff;
     font-size: 16px;
     font-weight: 500; }
-  /* line 651, sass/layout/_home.scss */
+  /* line 620, sass/layout/_home.scss */
   .footer__contact > ul > li:not(:last-child) {
     padding-bottom: 15px; }
-  /* line 655, sass/layout/_home.scss */
+  /* line 624, sass/layout/_home.scss */
   .footer__copyright {
     color: #fff;
     font-size: 17px; }
     @media only screen and (min-width: 1000px) {
-      /* line 655, sass/layout/_home.scss */
+      /* line 624, sass/layout/_home.scss */
       .footer__copyright {
         text-align: center;
         margin-top: 10px;

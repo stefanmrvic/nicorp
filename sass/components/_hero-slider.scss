@@ -60,26 +60,26 @@
   }
 
   .hero-slide-1 {
-    background: url(/imgs/1-mobile.jpg);
+    background: url(/imgs/hero/1-mobile.jpg);
     background-position: 82% 0;
 
     @media only screen and (min-width: $tablet) {
-      background: url(/imgs/1-tablet.jpg);
+      background: url(/imgs/hero/1-tablet.jpg);
       background-position: 92% 0;
     }
 
     @media only screen and (min-width: $laptop) {
-      background: url(/imgs/1.jpg);
+      background: url(/imgs/hero/1.jpg);
       background-position: 70% 0;
     }
   }
 
   .hero-slide-2 {
-    background: url(/imgs/2-mobile.jpg);
+    background: url(/imgs/hero/2-mobile.jpg);
     background-position: 41% 0;
 
     @media only screen and (min-width: $tablet) {
-      background: url(/imgs/2.jpg);
+      background: url(/imgs/hero/2.jpg);
       background-position: 92% 0;
     }
 
@@ -93,16 +93,16 @@
   }
 
   .hero-slide-3 {
-    background: url(/imgs/3-mobile.jpg);
+    background: url(/imgs/hero/3-mobile.jpg);
     background-position: 0 0;
 
     @media only screen and (min-width: $tablet) {
-      background: url(/imgs/3-tablet.jpg);
+      background: url(/imgs/hero/3-tablet.jpg);
       background-position: 92% 0;
     }
 
     @media only screen and (min-width: $laptop) {
-      background: url(/imgs/3.jpg);
+      background: url(/imgs/hero/3.jpg);
       background-position: 70% 0;
     }
 
