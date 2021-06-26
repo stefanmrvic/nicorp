@@ -437,29 +437,68 @@ header {
         }
     }
 
-    &__services > a {
+    &__services > div {
         display: flex;
         border: 1px solid rgba(0, 0, 0, 0.185);
-        padding: 90px 15%;
+        padding: 90px 14%;
         transition: border .2s;
         color: initial;
+        flex-wrap: wrap;
+
+        @media only screen and (min-width: $mobile-medium) {
+            flex-wrap: nowrap;
+            padding: 90px 15%;
+        }
 
         @media only screen and (min-width: $laptop) {
             padding: 85px 5%;
         }
     }
 
-    &__services > a:hover {
+    &__services > div:hover {
         border: 1px solid $color-secondary;
     }
 
-    &__services > a > div:nth-child(1) {
+    &__services > div > div:nth-child(1) {
         margin-top: 10px;
-        margin-right: 40px;
+        margin-right: 23px;
+
+        @media only screen and (min-width: $mobile-medium) {
+            margin-right: 40px;
+        }
     }
 
-    &__services > a > div > p {
+    &__services > div > div:nth-child(2) {
+        display: flex;
+        align-items: center;
+
+        @media only screen and (min-width: $mobile-medium) {
+            display: initial;
+            align-items: initial;
+        }
+    }
+
+    &__services > div > div > p {
+        display: none;
+
+        @media only screen and (min-width: $mobile-medium) {
+            display: initial;
+        }
+    }
+
+    &__services > div > p {
         margin-top: 20px;
+
+        @media only screen and (min-width: $mobile-medium) {
+            display: none;
+        }
+    }
+
+    &__services > div > div > h4 {
+       
+        @media only screen and (min-width: $mobile-medium) {
+            margin-bottom: 20px;
+        }
     }
 }
 

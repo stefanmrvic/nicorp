@@ -1222,158 +1222,192 @@ header {
       .all-services__services {
         grid-template-columns: repeat(3, 1fr); } }
   /* line 440, sass/layout/_home.scss */
-  .all-services__services > a {
+  .all-services__services > div {
     display: flex;
     border: 1px solid rgba(0, 0, 0, 0.185);
-    padding: 90px 15%;
+    padding: 90px 14%;
     transition: border .2s;
-    color: initial; }
+    color: initial;
+    flex-wrap: wrap; }
+    @media only screen and (min-width: 533px) {
+      /* line 440, sass/layout/_home.scss */
+      .all-services__services > div {
+        flex-wrap: nowrap;
+        padding: 90px 15%; } }
     @media only screen and (min-width: 1000px) {
       /* line 440, sass/layout/_home.scss */
-      .all-services__services > a {
+      .all-services__services > div {
         padding: 85px 5%; } }
-  /* line 452, sass/layout/_home.scss */
-  .all-services__services > a:hover {
+  /* line 458, sass/layout/_home.scss */
+  .all-services__services > div:hover {
     border: 1px solid #101010; }
-  /* line 456, sass/layout/_home.scss */
-  .all-services__services > a > div:nth-child(1) {
+  /* line 462, sass/layout/_home.scss */
+  .all-services__services > div > div:nth-child(1) {
     margin-top: 10px;
-    margin-right: 40px; }
-  /* line 461, sass/layout/_home.scss */
-  .all-services__services > a > div > p {
+    margin-right: 23px; }
+    @media only screen and (min-width: 533px) {
+      /* line 462, sass/layout/_home.scss */
+      .all-services__services > div > div:nth-child(1) {
+        margin-right: 40px; } }
+  /* line 471, sass/layout/_home.scss */
+  .all-services__services > div > div:nth-child(2) {
+    display: flex;
+    align-items: center; }
+    @media only screen and (min-width: 533px) {
+      /* line 471, sass/layout/_home.scss */
+      .all-services__services > div > div:nth-child(2) {
+        display: initial;
+        align-items: initial; } }
+  /* line 481, sass/layout/_home.scss */
+  .all-services__services > div > div > p {
+    display: none; }
+    @media only screen and (min-width: 533px) {
+      /* line 481, sass/layout/_home.scss */
+      .all-services__services > div > div > p {
+        display: initial; } }
+  /* line 489, sass/layout/_home.scss */
+  .all-services__services > div > p {
     margin-top: 20px; }
+    @media only screen and (min-width: 533px) {
+      /* line 489, sass/layout/_home.scss */
+      .all-services__services > div > p {
+        display: none; } }
+  @media only screen and (min-width: 533px) {
+    /* line 497, sass/layout/_home.scss */
+    .all-services__services > div > div > h4 {
+      margin-bottom: 20px; } }
 
-/* line 467, sass/layout/_home.scss */
+/* line 506, sass/layout/_home.scss */
 .projects {
   background-color: #f5f5f5;
   padding: 70px 15px; }
   @media only screen and (min-width: 1000px) {
-    /* line 467, sass/layout/_home.scss */
+    /* line 506, sass/layout/_home.scss */
     .projects {
       display: flex;
       padding: 80px 0 80px 5%; } }
   @media only screen and (min-width: 1200px) {
-    /* line 467, sass/layout/_home.scss */
+    /* line 506, sass/layout/_home.scss */
     .projects {
       padding: 120px 0 80px 10%; } }
-  /* line 480, sass/layout/_home.scss */
+  /* line 519, sass/layout/_home.scss */
   .projects__about {
     margin-bottom: 50px; }
     @media only screen and (min-width: 770px) {
-      /* line 480, sass/layout/_home.scss */
+      /* line 519, sass/layout/_home.scss */
       .projects__about {
         margin-bottom: 55px; } }
     @media only screen and (min-width: 1000px) {
-      /* line 480, sass/layout/_home.scss */
+      /* line 519, sass/layout/_home.scss */
       .projects__about {
         margin-right: 113px;
         max-width: 57ch; } }
-    /* line 492, sass/layout/_home.scss */
+    /* line 531, sass/layout/_home.scss */
     .projects__about__title {
       margin-bottom: 20px;
       font-size: clamp(31px, 4.1vw, 46px); }
       @media only screen and (min-width: 770px) {
-        /* line 492, sass/layout/_home.scss */
+        /* line 531, sass/layout/_home.scss */
         .projects__about__title {
           margin-bottom: 25px;
           font-weight: 600; } }
   @media only screen and (min-width: 1000px) {
-    /* line 503, sass/layout/_home.scss */
+    /* line 542, sass/layout/_home.scss */
     .projects__carousel {
       min-width: 53%;
       max-width: 77%; } }
 
-/* line 512, sass/layout/_home.scss */
+/* line 551, sass/layout/_home.scss */
 .contact-us {
   background: url(/imgs/contact-us/red-background.jpg);
   background-size: cover;
   color: #fff;
   padding: 70px 0 30px 0;
   text-align: center; }
-  /* line 519, sass/layout/_home.scss */
+  /* line 558, sass/layout/_home.scss */
   .contact-us__title {
     font-size: clamp(32px, 5.3vw, 46px);
     margin-bottom: 20px; }
-  /* line 524, sass/layout/_home.scss */
+  /* line 563, sass/layout/_home.scss */
   .contact-us__text {
     color: #fff;
     font-size: clamp(18px, 5vw, 20px);
     margin-bottom: 32px; }
-  /* line 532, sass/layout/_home.scss */
+  /* line 571, sass/layout/_home.scss */
   .contact-us__buttons button:first-child {
     margin-right: 30px; }
-  /* line 536, sass/layout/_home.scss */
+  /* line 575, sass/layout/_home.scss */
   .contact-us__buttons__button a {
     padding: 12px 52px; }
 
-/* line 543, sass/layout/_home.scss */
+/* line 582, sass/layout/_home.scss */
 .footer {
   background: #0f0f0f;
   padding: 50px 30px 20px 30px;
   color: #fff;
   text-align: center; }
   @media only screen and (min-width: 1000px) {
-    /* line 543, sass/layout/_home.scss */
+    /* line 582, sass/layout/_home.scss */
     .footer {
       padding: 50px 0 20px 0; } }
-  /* line 553, sass/layout/_home.scss */
+  /* line 592, sass/layout/_home.scss */
   .footer__logo {
     display: inline-block;
     max-width: 190px;
     margin-bottom: 40px; }
     @media only screen and (min-width: 1000px) {
-      /* line 553, sass/layout/_home.scss */
+      /* line 592, sass/layout/_home.scss */
       .footer__logo {
         margin-bottom: 40px; } }
-  /* line 563, sass/layout/_home.scss */
+  /* line 602, sass/layout/_home.scss */
   .footer__contact {
     position: relative;
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
     align-items: center; }
-    /* line 570, sass/layout/_home.scss */
+    /* line 609, sass/layout/_home.scss */
     .footer__contact__title {
       margin-bottom: 40px;
       font-size: 34px;
       font-weight: 600; }
-    /* line 576, sass/layout/_home.scss */
+    /* line 615, sass/layout/_home.scss */
     .footer__contact__map {
       height: 350px;
       width: 100%;
       margin-bottom: 40px; }
       @media only screen and (min-width: 770px) {
-        /* line 576, sass/layout/_home.scss */
+        /* line 615, sass/layout/_home.scss */
         .footer__contact__map {
           height: 500px; } }
-    /* line 586, sass/layout/_home.scss */
+    /* line 625, sass/layout/_home.scss */
     .footer__contact__text--1, .footer__contact__text--2 {
       color: #fff;
       font-size: 17px; }
-    /* line 592, sass/layout/_home.scss */
+    /* line 631, sass/layout/_home.scss */
     .footer__contact__info > li > h4 {
       margin-bottom: 5px; }
-    /* line 596, sass/layout/_home.scss */
+    /* line 635, sass/layout/_home.scss */
     .footer__contact__info > li:first-child {
       display: flex;
       flex-direction: column; }
-    /* line 601, sass/layout/_home.scss */
+    /* line 640, sass/layout/_home.scss */
     .footer__contact__tel--1 {
       margin-bottom: 4px; }
-  /* line 606, sass/layout/_home.scss */
+  /* line 645, sass/layout/_home.scss */
   .footer__contact > ul > li > a {
     color: #fff;
     font-size: 16px;
     font-weight: 500; }
-  /* line 612, sass/layout/_home.scss */
+  /* line 651, sass/layout/_home.scss */
   .footer__contact > ul > li:not(:last-child) {
     padding-bottom: 15px; }
-  /* line 616, sass/layout/_home.scss */
+  /* line 655, sass/layout/_home.scss */
   .footer__copyright {
     color: #fff;
     font-size: 17px; }
     @media only screen and (min-width: 1000px) {
-      /* line 616, sass/layout/_home.scss */
+      /* line 655, sass/layout/_home.scss */
       .footer__copyright {
         text-align: center;
         margin-top: 10px;
