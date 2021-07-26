@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>NICORP | Građevinska kompanija</title>
     <meta name="title" content="NICORP | Građevinska kompanija">
-    <meta name="description" content="NICORP pruža usluge u oblasti izvođenja svih vrsta građevinskih i građevinsko-zanatskih radova.">
+    <meta name="description" content="NICORP je građevinska kompanija čija delatnost je pružanje usluga u oblasti izvođenja svih vrsta građevinskih i građevinsko-zanatskih radova u okviru stambenih, poslovnih i industrijskih objekta, kao i projektovanje i implementacija inovativnih arhitektonskih rešenja.">
     <!-- Leaflet CSS Style -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
@@ -57,13 +57,13 @@
             <a href="#about-us">O Nama</a>
           </li>
           <li class="nav__mobile__items__item--2 nav__mobile__item mobile-item">
-            <a href="#our-clients">Klijenti</a>
-          </li>
-          <li class="nav__mobile__items__item--3 nav__mobile__item mobile-item">
             <a href="#all-services">Usluge</a>
           </li>
-          <li class="nav__mobile__items__item--4 nav__mobile__item mobile-item">
+          <li class="nav__mobile__items__item--3 nav__mobile__item mobile-item">
             <a href="#projects">Projekti</a>
+          </li>
+          <li class="nav__mobile__items__item--4 nav__mobile__item mobile-item">
+            <a href="#our-clients">Klijenti</a>
           </li>
           <li class="nav__mobile__items__item--5 nav__mobile__item mobile-item">
             <a href="#contact">Kontakt</a>
@@ -75,13 +75,13 @@
             <a href="#about-us">O Nama</a>
           </li>
           <li class="nav__items__item--2">
-            <a href="#our-clients">Klijenti</a>
-          </li>
-          <li class="nav__items__item--3">
             <a href="#all-services">Usluge</a>
           </li>
-          <li class="nav__items__item--4">
+          <li class="nav__items__item--3">
             <a href="#projects">Projekti</a>
+          </li>
+          <li class="nav__items__item--4">
+            <a href="#our-clients">Klijenti</a>
           </li>
           <li class="nav__items__item--5">
             <a href="#contact">Kontakt</a>
@@ -98,76 +98,51 @@
     <!-- Nav End -->
     <script src="js/nav/nav.js"></script>
 
-    <!-- Hero Start -->
+    <!-- Hero Section Start -->
     <section class="hero">
       <div id="hero" class="hash-links"></div>
 
-      <div id="hero-slider">
-        <div class="hero-slide slide-1 active">
-          <div class="hero-slide-1"></div>
-          <div class="hero-overlay-text text-1">
-            <h5 class="hero-subtitle">Nicorp</h5>
-            <h1 class="hero-header">Od ideje do realizacije</h1>
-            <p class="hero-text">
-              Šta god ste zamislili, naš tim je spreman da Vam pomogne da realizujete vašu ideju.
-            </p>
-          </div>
-        </div>
-        <div class="hero-slide slide-2">
-          <div class="hero-slide-2"></div>
-          <div class="hero-overlay-text text-2">
-            <h5 class="hero-subtitle">Nicorp</h5>
-            <h1 class="hero-header">Uvek ispred zadatih rokova</h1>
-            <p class="hero-text">
-              Mi rokove shvatamo ozbiljno, i držimo se njih. Poštovajući dogovoreni budžet
-              i sve ugovorene obaveze.
-            </p>
-          </div>
-        </div>
-        <div class="hero-slide slide-3">
-          <div class="hero-slide-3"></div>
-          <div class="hero-overlay-text text-3">
-            <h5 class="hero-subtitle">Nicorp</h5>
-            <h1 class="hero-header">Preciznost i pedantnost</h1>
-            <p class="hero-text">
-              Od samog početka tretiramo gradilišta svojih klijenata kao svoje. 
-              I time opravdavamo poverenje svojih klijenata.
-            </p>
-          </div>
-        </div>
-  
-        <div class="hero-dots">
-          <div class="dot dot-1"></div>
-          <div class="dot dot-2"></div>
-          <div class="dot dot-3"></div>
-        </div>
-
-        <div class="hero-buttons">
-          <div class="hero-slider-back-btn">
-            <span>Prev</span>
-          </div>
-  
-          <div class="hero-slider-splitter">
-            <span>|</span>
-          </div>
-
-          <div class="hero-slider-next-btn">
-            <span>Next</span>
-          </div>
+      <div class="hero__container">
+        <div class="hero__text">
+          <h1 class="hero__text__header">
+            <span class="hero__text__header--left">Mi gradimo</span> <span class="hero__text__header--right">vaše snove</span>
+          </h1>
         </div>
       </div>
-      <!-- Hero Slider -->
-      <script src="js/heroSlider/heroSlider.js"></script>
     </section>
-    <!-- Hero End -->
+    <!-- Hero Section End -->
     </header>
-
+    
     <main>
       <!-- About Us Section Start -->
       <section class="about-us">
         <div id="about-us" class="hash-links"></div>
 
-        <!-- Pop-up Window when Who Are We Button is Pressed -->
+        <h5 class="about-us__subtitle subtitle">O nama</h5>
+        <div class="about-us__container">
+          <img src="/imgs/about-us/nicorp logo.jpg" alt="nicorp logo" class="about-us__logo">
+          <div class="about-us__about-company">
+            <p><b>NICORP d.o.o.</b> je građevinska kompanija čija delatnost je pružanje usluga u oblasti izvođenja svih vrsta
+              građevinskih i građevinsko-zanatskih radova u okviru stambenih, poslovnih i industrijskih objekta, kao i
+              projektovanje i implementacija inovativnih arhitektonskih rešenja.</p>
+              <button class="about-us__about-company__button btn btn-black">
+                <a href="#about">Saznaj više...</a>
+              </button>
+          </div>
+          <img src="/imgs/about-us/planning.jpg" alt="" class="about-us__img-1">
+          <div class="about-us__text-1">
+            <h3>Od ideje do realizacije</h3>
+            <p>Pouzdanost i iskustvo nam omogućavaju da klijentima pružimo najbolja rešenja i sprovedemo sve zahtevane ideje u delo.</p>
+          </div>
+          <img src="/imgs/about-us/day.jpg" alt="" class="about-us__img-2">
+          <div class="about-us__text-2">
+            <h3>Uvek ispred zadatih rokova</h3>
+            <p>Naš uspeh je definisan time koliko brzo i efikasno možemo da nadmašimo očekivanja klijenata u
+               pružanju vrhunskog kvaliteta usluge i cene.</p>
+          </div>
+        </div>
+
+        <!-- Pop-up Window when Find out more Button is Pressed -->
         <!-- Picture Div Start -->
         <div id="about" class="about-us__about">
           <div class="about-us__about__wrapper">
@@ -179,58 +154,33 @@
               </picture>
             </div>
             <!-- Picture Div End -->
-            
             <!-- Content Div Start -->
             <div class="about-us__about__content">
               <button class="about-us__about__button" role="button">
                 <span class="about-us__about__button--1"></span>
                 <span class="about-us__about__button--2"></span>
               </button>
-              <h2 class="about-us__about__title">Ko smo mi?</h2>
+              <h2 class="about-us__about__title">O nama</h2>
               <p class="about-us__about__text--1">
                 NICORP je građevinska kompanija čija delatnost je pružanje usluga u oblasti izvođenja svih vrsta građevinskih i građevinsko-zanatskih radova
                 u okviru stambenih, poslovnih i industrijskih objekta, kao i projektovanje i implementacija inovativnih arhitektonskih rešenja.
               </p>
               <p class="about-us__about__text--2">
-                Posvećenost najvišim standardima i inovativnim rešenjima, uz tim iskusnih profesionalaca, na čelu sa visoko kvalifikovanim rukovodećim kadrom, omogućava nam da pružimo klijentima najbolja rešenja i sprovedemo sve zahtevane ideje u delo.
+                Osnovana sa ciljem da savremene metode gradnje, oplemenjene modernim arhitektonskim rešenjima
+                učini dostupnim klijentima na domaćem tržistu. Od samog početka trudimo se da profesionalnim
+                pristupom, poštovanjem budžeta, rokova, kao i svih ugovorenih obaveza, opravdamo ukazano poverenje
+                klijenata.
               </p>
+              
               <p class="about-us__about__text--3">
+                Posvećenost najvišim standardima i inovativnim rešenjima, uz tim iskusnih profesionalaca, dopunjen sa selektivno angažovanim odgovornim kooperanatima,
+                na čelu sa visoko kvalifikovanim rukovodećim kadrom, omogućava nam da pružimo klijentima najbolja rešenja i sprovedemo sve zahtevane ideje u delo.
+              </p>
+              <p class="about-us__about__text--4">
                 Naš uspeh je definisan time koliko brzo i efikasno možemo da nadmašimo Vaša očekivanja u pružanju vrhunskog kvaliteta usluge i cene.
               </p>
             </div>
             <!-- Content Div End -->
-          </div>
-        </div>
-        
-        <div class="about-us__wrapper">
-          <div class="about-us__1">
-            <h5 class="about-us__1__subtitle subtitle">O nama</h5>
-            <div class="about-us__1__splitter--1">
-              <div class="about-us__1__header-text">
-                <h2 class="about-us__1__header-text__header">Nicorp je građevinska kompanija.</h2>
-              </div>
-              <div class="about-us__1__about-text">
-                <p class="about-us__1__about-text__text">
-                  Poslujemo u domenu građevinskih i profesionalnih usluga upravljanja projektima u svim aspektima izgradnje.
-                  Uz visoko kvalifikovani rukovodeći kadar, omogućavamo vam najbolja rešenja i sprovođenje svih zahtevanih ideja u delo.
-                </p>
-                <button class="about-us__1__about-text__button btn btn-black" role="button">
-                  <a href="#about">Ko smo mi</a>
-                </button>
-              </div>
-            </div>
-            <div class="about-us__1__splitter--2">
-              <img src="/imgs/about-us/night-crane.jpg" alt="Nicorp construction engineers talking in front of the construction site in the night" class="about-us__1__img">
-            </div>
-          </div>
-          <div class="about-us__2">
-            <div class="about-us__2__splitter">
-              <div class="about-us__2__header-text">
-                <h3 class="about-us__2__header-text__header">Nudimo moderna rešenja za Vaše građevinske potrebe.</h3>
-                <p class="about-us__2__header-text__text">Osnovani sa ciljem pravljenja moderne kompanije koja odgovara svim savremenim zahtevima tržišta, uz tim iskusnih profesionalaca.</p>
-              </div>
-              <img src="/imgs/about-us/day-crane.jpg" alt="Nicorp construction site with cranes on daylight" class="about-us__2__img">
-            </div>
           </div>
         </div>
       </section>
@@ -242,138 +192,110 @@
         <div id="services" class="hash-links"></div>
 
         <div class="services__container">
-          <div class="services__1">
-            <h5 class="services__1__subtitle">Arhitektura</h5>
-            <h3 class="services__1__text">Planiranje I Projektovanje</h3>
+          <div class="services__text">
+            <h3 class="services__text__service--1">PROJEKTOVANJE</h3>
+            <h3 class="services__text__service--2">IZGRADNJA</h3>
+            <h3 class="services__text__service--3">INŽENJERING</h3>
           </div>
-          <div class="services__2">
-            <h5 class="services__3__subtitle">Izgradnja</h5>
-            <h3 class="services__3__text">Građevinski radovi I Završni radovi</h3>
-          </div>
-          <div class="services__3">
-            <h5 class="services__2__subtitle">Dizajn</h5>
-            <h3 class="services__2__text">Enterijer I Eksterijer</h3>
-          </div>
+          <img src="/imgs/services/services.jpg" alt="" class="services__img">
         </div>
       </section>
+      <script src="/js/services/services.js"></script>
       <!-- Services Section End -->
-
-      <!-- Our Clients Section Start -->
-      <section class="our-clients">
-        <div id="our-clients" class="hash-links"></div>
-
-        <h5 class="our-clients__subtitle subtitle">Naši klijenti</h5>
-        <h2 class="our-clients__text">Svaki klijent za nas je jedinstvena priča, rešenje i iskustvo.</h2>
-        <div class="our-clients__clients">
-          <a href="https://www.vinci-construction.com/en/" target="_blank">
-            <img src="/imgs/our-clients/vinci.png" alt="vinci construction company logo" class="our-clients__clients__client-1">
-          </a>
-          <a href="https://www.wdconcordwestdoo.com/" target="_blank">
-            <img src="/imgs/our-clients/concord.png" alt="concord company logo" class="our-clients__clients__client-2">
-          </a>
-          <a href="https://www.arhipro.com/" target="_blank">
-            <img src="/imgs/our-clients/arhi-pro.png" alt="arhipro company logo" class="our-clients__clients__client-3">
-          </a>
-          <a href="http://www.gmtim.rs/" target="_blank">
-            <img src="/imgs/our-clients/gmt.png" alt="gmt company logo" class="our-clients__clients__client-4">
-          </a>
-          <a href="https://www.msbuild.rs/" target="_blank">
-            <img src="/imgs/our-clients/msbuild.png" alt="msbuild company logo" class="our-clients__clients__client-5">
-          </a>
-        </div>
-      </section>
-      <!-- Our Clients Section End -->
 
       <!-- All Services Section Start -->
       <section class="all-services">
         <div id="all-services" class="hash-links"></div>
 
-        <h2 class="all-services__title">Naše Usluge</h2>
+        <h2 class="all-services__title">NAŠE USLUGE</h2>
         <div class="all-services__services">
 
-          <!-- Planiranje -->
+          <!-- Izvođenje Radova -->
           <div href="#" class="all-services__services__service-1">
             <div class="all-services__services__service-1__svg">
-              <svg xmlns="http://www.w3.org/2000/svg" width="38" height="52">
-                <g fill="currentColor" fill-rule="nonzero">
-                  <path d="M15.1111111 0H.88888889C.398 0 0 .38805 0 .86666667V51.1333333C0 51.61195.398 52 .88888889 52H15.1111111C15.602 52 16 51.61195 16 51.1333333V.86666667C16 .38805 15.602 0 15.1111111 0zm-.8888889 5.2H9.77777778c-.49088889 0-.88888889.38805-.88888889.86666667 0 .47861666.398.86666666.88888889.86666666h4.44444442v1.73333334h-2.6666666c-.4908889 0-.8888889.38805-.8888889.86666666 0 .47861667.398.86666667.8888889.86666667h2.6666666v1.7333333H9.77777778c-.49088889 0-.88888889.38805-.88888889.8666667s.398.8666667.88888889.8666667h4.44444442V15.6h-2.6666666c-.4908889 0-.8888889.38805-.8888889.8666667 0 .4786166.398.8666666.8888889.8666666h2.6666666v1.7333334H9.77777778c-.49088889 0-.88888889.38805-.88888889.8666666 0 .4786167.398.8666667.88888889.8666667h4.44444442v1.7333333h-2.6666666c-.4908889 0-.8888889.38805-.8888889.8666667s.398.8666667.8888889.8666667h2.6666666V26H9.77777778c-.49088889 0-.88888889.38805-.88888889.8666667 0 .4786166.398.8666666.88888889.8666666h4.44444442v1.7333334h-2.6666666c-.4908889 0-.8888889.38805-.8888889.8666666 0 .4786167.398.8666667.8888889.8666667h2.6666666v1.7333333H9.77777778c-.49088889 0-.88888889.38805-.88888889.8666667s.398.8666667.88888889.8666667h4.44444442V36.4h-2.6666666c-.4908889 0-.8888889.38805-.8888889.8666667 0 .4786166.398.8666666.8888889.8666666h2.6666666v1.7333334H9.77777778c-.49088889 0-.88888889.38805-.88888889.8666666 0 .4786167.398.8666667.88888889.8666667h4.44444442v1.7333333h-2.6666666c-.4908889 0-.8888889.38805-.8888889.8666667s.398.8666667.8888889.8666667h2.6666666V46.8H9.77777778c-.49088889 0-.88888889.38805-.88888889.8666667 0 .4786166.398.8666666.88888889.8666666h4.44444442v1.7333334H1.77777778V1.73333333H14.2222222V5.2zM31.5 0c-3.5881161.00379148-6.4959375 2.71762104-6.5 6.06636019V40.7312756c0 .0112661 0 .0216655.0046429.0329316.0046428.0112661.0065.0415979.0083571.0623969.0099821.0899121.0352857.1776577.0752143.2599868.0046428.0112661 0 .0233989.0092857.034665l5.5714286 10.3994746c.0431785.0782127.0988928.1498174.1652857.2123226.0148571.0147326.0325.0242654.0482857.0381314.0644196.0539473.1366161.09912.2145.1343265.0265804.0126744.0538571.0239405.0817143.0337983.2054464.0809209.437125.0809209.6425714 0 .0278572-.0098578.0551339-.0211239.0817143-.0337983.0778839-.0352065.1500804-.0803792.2145-.1343265.0157857-.013866.0334286-.0233988.0482857-.0372648.0661607-.0629385.121875-.1347599.1652857-.2131892L37.9025 41.1212559c.0055714-.0103995 0-.0225322.0092857-.0337983.0396964-.0824375.0651161-.1701831.0752143-.2599869 0-.020799.0074286-.0407313.0083571-.0615302.0009286-.020799.0046429-.0233988.0046429-.0346649V6.06636019C37.9959375 2.71762104 35.0881161.00379148 31.5 0zm.9285714 47.4597356v-1.5287227c0-.4785925-.4157678-.8666229-.9285714-.8666229s-.9285714.3880304-.9285714.8666229v1.5287227l-3.3967143-6.3410796L31.5 39.1002913l4.3252857 2.0183647-3.3967143 6.3410796zm3.7142857-8.1306559l-3.7142857-1.7332457V18.1990806c0-.4785925-.4157678-.8666229-.9285714-.8666229s-.9285714.3880304-.9285714.8666229V37.595834l-3.7142857 1.7332457V13.8659661h9.2857142v25.4631136zm0-27.1963593h-9.2857142v-1.7332458h9.2857142v1.7332458zm0-3.46649156h-9.2857142V6.06636019c0-2.39307077 2.0787232-4.33311442 4.6428571-4.33311442 2.5641339 0 4.6428571 1.94004365 4.6428571 4.33311442v2.59986865z"></path>
-                </g>
+              <svg class="construction" viewBox="0 0 511.99823 511">
+                <path d="m8.535156 512.488281h409.597656c4.714844 0 8.535157-3.820312 8.535157-8.53125v-76.800781h59.730469c4.714843 0 8.535156-3.820312 8.535156-8.53125v-85.335938c0-4.710937-3.820313-8.53125-8.535156-8.53125h-59.730469v-76.800781c0-4.714843-3.820313-8.535156-8.535157-8.535156h-15.660156c1.203125-5.578125-.070312-11.40625-3.488281-15.976563l-38.558594-51.398437 17.804688-13.355469c7.910156-5.921875 12.328125-15.414062 11.769531-25.28125l-.855469-15.367187c-.234375-4.167969 1.632813-8.175781 4.972657-10.679688l17.800781-13.351562 7.492187 9.984375c1.355469 1.808594 3.375 3.007812 5.617188 3.328125.398437.054687.800781.085937 1.207031.082031 1.847656.003906 3.644531-.597656 5.121094-1.707031l70.40625-52.816407c11.304687-8.480468 13.597656-24.523437 5.117187-35.832031l-4.742187-6.328125c-8.492188-11.292968-24.527344-13.578125-35.839844-5.109375l-70.398437 52.8125c-3.769532 2.828125-4.535157 8.179688-1.707032 11.949219l7.488282 9.984375-17.800782 13.355469c-7.910156 5.921875-12.332031 15.410156-11.769531 25.277344l.851563 15.367187c.238281 4.167969-1.628907 8.179687-4.96875 10.679687l-17.800782 13.355469-38.5625-51.398437c-4.035156-5.464844-10.589844-8.476563-17.367187-7.980469-6.464844.46875-12.242188 4.21875-15.308594 9.933594l-70.117187 130.472656h-200.300782c-4.714844 0-8.535156 3.820313-8.535156 8.535156v85.332031c0 4.714844 3.820312 8.535157 8.535156 8.535157h59.730469v68.265625h-59.730469c-4.714844 0-8.535156 3.820312-8.535156 8.535156v85.332031c0 4.710938 3.820312 8.53125 8.535156 8.53125zm468.003906-493.226562c3.765626-2.828125 9.113282-2.066407 11.945313 1.703125l4.742187 6.328125c2.824219 3.769531 2.058594 9.113281-1.707031 11.941406l-63.582031 47.699219-14.980469-19.976563zm-322.9375 407.894531h119.464844v68.265625h-119.464844zm68.265626-85.332031h119.464843v68.265625h-119.464843zm187.734374 153.597656h-119.46875v-68.265625h119.46875zm68.265626-85.332031h-119.46875v-68.265625h119.46875zm-68.265626-85.332032h-119.46875v-49.691406l87.34375-18.578125h32.125zm-115.609374-207.722656c.289062-.597656.890624-.980468 1.554687-1l.167969-.007812c.90625.015625 1.746094.464844 2.261718 1.207031l38.554688 51.398437-35.203125 26.410157c-3.769531 2.828125-4.535156 8.175781-1.707031 11.949219 2.828125 3.769531 8.175781 4.53125 11.949218 1.707031l35.203126-26.410157 38.558593 51.398438c.613281.75.792969 1.761719.46875 2.671875-.203125.632813-.738281 1.097656-1.394531 1.214844l-169.292969 36c-1.050781.164062-2.105469-.285157-2.710937-1.160157-.679688-.820312-.816406-1.960937-.351563-2.921874zm-95.238282 165.621094c4.546875 6.253906 12.351563 9.234375 19.910156 7.609375l54.402344-11.570313v46.0625h-119.464844v-68.269531h46.058594l-2.644531 4.921875c-3.65625 6.808594-2.972656 15.125 1.738281 21.246094zm-181.6875 7.96875h17.066406c4.714844 0 8.535157-3.820312 8.535157-8.535156 0-4.710938-3.820313-8.53125-8.535157-8.53125h-17.066406v-17.070313h119.46875v68.269531h-119.46875zm68.265625 51.199219h119.46875v68.265625h-119.46875zm-68.265625 85.332031h119.46875v68.265625h-119.46875zm0 0"/>
+                <path d="m110.933594 282.089844c0-4.710938-3.820313-8.53125-8.535156-8.53125h-34.132813c-4.710937 0-8.53125 3.820312-8.53125 8.53125 0 4.714844 3.820313 8.535156 8.53125 8.535156h34.132813c4.714843 0 8.535156-3.820312 8.535156-8.535156zm0 0"/>
               </svg>
             </div>
             <div class="all-services__services__service-1__text">
-              <h4>Planiranje</h4>
-              <p>Planiranje svakog projekta shvatamo veoma ozbiljno i posvećujemo puno vremena i detalja kako bismo bili sigurni da projekat bude uspešan, realizovan u roku, i u okvirima dogovorenog budzeta.</p>
+              <h4>IZVOĐENJE RADOVA</h4>
+              <p>Pružamo usluge u oblasti izvođenja svih vrsta građevinskih i građevinsko-zanatskih radova u okviru stambenih, poslovnih i industrijskih objekta po principu “ključ u ruke”.</p>
             </div>
             <p>Planiranje svakog projekta shvatamo veoma ozbiljno i posvećujemo puno vremena i detalja kako bismo bili sigurni da projekat bude uspešan, realizovan u roku, i u okvirima dogovorenog budzeta.</p>
           </div>
 
-          <!-- Projektovanje -->
+          <!-- Ustupanje Radne Snage -->
           <div href="#" class="all-services__services__service-2">
             <div class="all-services__services__service-2__svg">
-              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
-                <g fill="currentColor" fill-rule="nonzero">
-                  <path d="M12.0734962 12.0734962c-5.43132828 5.4435179-5.43132828 14.2563903 0 19.6999082.3022242.3021275.7921292.3021275 1.0943534 0l18.6055548-18.6055548c.3021275-.3022242.3021275-.7921292 0-1.0943534-5.4435179-5.43132828-14.2562935-5.43132828-19.6999082 0zm.5634295 18.0405775c-4.52185027-5.1307487-4.02826904-12.9556847 1.1024797-17.477535 4.6792506-4.12394754 11.6952243-4.12404428 16.3746683-.000387l-17.477148 17.477922z"></path><path d="M47.7725646 12.4648963c-.0006827-.0006827-.001463-.0014629-.0021457-.0021456l-8.2781276-8.27830651c-.3046757-.30458472-.7985545-.30458472-1.1032302 0l-1.6649882 1.66502414C27.8892588-2.36758962 14.066112-1.86658043 5.84923156 6.96842463c-7.79897541 8.38568647-7.79897541 21.37076807 0 29.75645467L4.1842434 38.3900009c-.30457814.3046823-.30457814.7985718 0 1.1032541l8.2781276 8.2783065c.3046757.3045847.7985546.3045847 1.1032302 0l34.2048177-34.2032161c.3052609-.304097.3062362-.7981816.0021457-1.1034491zm-4.8642316 2.7559895l-2.7611964-2.7612561-1.1032302 1.1032541 2.7611964 2.761256-2.2064604 2.2072884-3.8652068-3.8652904-1.1032302 1.1032541 3.8652068 3.8652903-2.2088011 2.2041674-2.7611964-2.7612561-1.1032302 1.1032541 2.7611964 2.761256-2.2072406 2.2072883-3.8644266-3.8652903-1.1032302 1.1032541 3.8644266 3.8652903-2.7565151 2.764377-2.7611964-2.7612561-1.1032302 1.1032541 2.7643173 2.7581351-2.2072407 2.2065081-3.8652068-3.8645101-1.1055708 1.1040342 3.8652068 3.8645101-2.7588558 2.7589154-2.7611964-2.7612561-1.1032302 1.1032541 2.7580756 2.7589153-2.2064605 2.2072883-3.8652068-3.8652903-1.1032302 1.103254 3.8652068 3.8652904-2.2072406 2.2065081-2.7611964-2.7612561-1.1032302 1.1032541 2.7611964 2.7620362-2.2041198 2.2080686-7.17021608-7.1750525 1.65172444-1.6541008c.30457814-.3046822.30457814-.7985718 0-1.103254-8.00563603-7.8377656-8.14188184-20.681527-.30428556-28.68733595C15.0288052-.50887185 27.872289-.6451206 35.877925 7.19264502a20.18771985 20.18771985 0 01.3031153.30312177c.3046756.30458473.7985545.30458473 1.1032302 0l1.6564057-1.65176011 7.1780183 7.17817342-2.2103615 2.1987057z"></path>
-                </g>
-              </svg>
-            </div>
-            <div class="all-services__services__service-2__text">
-              <h4>Projektovanje</h4>
-              <p>Izrađujemo tehničku dokumentaciju za sve vrste arhitektonskih objekata visoke i niske gradnje, kao i izradu tehničke dokumentacije za legalizovanje građevinskih objekata.</p>
-            </div>
-            <p>Izrađujemo tehničku dokumentaciju za sve vrste arhitektonskih objekata visoke i niske gradnje, kao i izradu tehničke dokumentacije za legalizovanje građevinskih objekata.</p>
-          </div>
-
-          <!-- Izgradnja -->
-          <div href="#" class="all-services__services__service-3">
-            <div class="all-services__services__service-3__svg">
               <svg xmlns="http://www.w3.org/2000/svg" width="48" height="52">
                 <g fill="currentColor" fill-rule="nonzero">
                   <path d="M47.1428571 33.3320318v-7.3319879c.0166072-9.2425504-5.3607857-17.62493614-13.7142857-21.37802974v-.28859951c0-1.43595588-1.15125-2.59999556-2.5714285-2.59999556h-4.4408572c-.1219286-.36194105-.3252857-.69029882-.594-.95939836C25.34475.27547158 24.6864643-.00402795 24 .00004387c-1.0857857.00459484-2.0517857.69825199-2.4137143 1.73337522h-4.4434286c-1.4201785 0-2.5714285 1.16403968-2.5714285 2.59999556v.28859951C6.21792857 8.37510776.84053571 16.7574935.85714286 26.0000439v7.3319879C.29657143 34.5665964.0042857 35.9083025 0 37.2666918 0 45.3908113 10.7665714 52 24 52s24-6.6091887 24-14.7333082c-.0042857-1.3583893-.2965714-2.7000954-.8571429-3.93466zM24 50.2666696c-12.288 0-22.28571429-5.83179-22.28571429-12.9999778.00653572-.9639484.19167858-1.9181467.546-2.8131952.19478572-.1601164.30889286-.399641.31114286-.6534656v-7.7999866C2.55878571 17.7272918 7.21821429 10.173113 14.5714286 6.54514421V21.6667184c0 .4786159.3837857.8666652.8571428.8666652.4733572 0 .8571429-.3880493.8571429-.8666652V4.33341465c0-.47861585.3837857-.86666518.8571428-.86666518h4.2857143V25.1333792c0 .4786158.3837857.8666652.8571429.8666652.4733571 0 .8571428-.3880494.8571428-.8666652V2.60008428c0-.47861585.3837858-.86666601.8571429-.86666601.2308929 0 .4516071.09555066.6102857.26520037.1599643.15805806.2491072.37537436.2468572.60146564V25.1333792c0 .4786158.3837857.8666652.8571428.8666652.4733572 0 .8571429-.3880494.8571429-.8666652V3.46674947h4.2857143c.4733571 0 .8571428.38804933.8571428.86666518V21.6667184c0 .4786159.3837857.8666652.8571429.8666652.4733571 0 .8571428-.3880493.8571428-.8666652V6.54514421c7.3532143 3.62796879 12.0126429 11.18214759 12 19.45490019v7.5226538c.0006429.1285914.03.2553412.0857143.3709327.5026072 1.0521315.7661786 2.2045796.7714286 3.3730609C46.2857143 44.4348796 36.288 50.2666696 24 50.2666696z"></path><path d="M38.8877289 37.4120885c-.2141881-.3561071-.7290847-.5021352-1.1565712-.3279098-.2437696.0959827-.4217036.2803853-.4830909.5004546-.4412763.7775719-5.0791266 3.9214724-14.2471771 3.9214724-8.9723231 0-13.60483538-3.0109439-14.21248007-3.8684392-.04259296-.2413573-.22286236-.4500356-.48286845-.5589032-.43960825-.1842158-.97396636-.0342662-1.19327004.3348191-.0088967.0119511-.03469714.0605027-.0418145.0746947-.08440745.1674095-.09330415.3548932-.02491076.5273447C7.6282798 39.4826259 13.0463708 43 23.0008897 43s15.3726098-3.5173741 15.9535644-4.9858721c.0683934-.1724515.0594967-.3599352-.0249107-.5273447-.0071174-.0126981-.0329178-.0612497-.0418145-.0746947z"></path>
                 </g>
               </svg>
             </div>
-            <div class="all-services__services__service-3__text">
-              <h4>Izgradnja</h4>
-              <p>Izvodimo sve vrste građevinskih radova, uključujući pripremne radove, grube građevinske radove, zanatsko-instalaterske radove i završne (fine) građevinske radove, pod stručno-tehničkim nadzorom.</p>
+            <div class="all-services__services__service-2__text">
+              <h4>USTUPANJE RADNE SNAGE</h4>
+              <p>Pružamo podršku drugim građevinskim kompanijama ustupanjem radne snage za obavljanje zanatskih i pomoćnih poslova na gradilištu, kao i finalnog čišćenja objekata pred useljenje.</p>
             </div>
-            <p>Izvodimo sve vrste građevinskih radova, uključujući pripremne radove, grube građevinske radove, zanatsko-instalaterske radove i završne (fine) građevinske radove, pod stručno-tehničkim nadzorom.</p>
+            <!-- Duplicate paragraph because it goes outside of the container on smaller screen sizes -->
+            <p>Pružamo podršku drugim građevinskim kompanijama ustupanjem radne snage za obavljanje zanatskih i pomoćnih poslova na gradilištu, kao i finalnog čišćenja objekata pred useljenje.</p>
           </div>
 
-          <!-- Dizajn Interijera -->
-          <div href="#" class="all-services__services__service-4">
-            <div class="all-services__services__service-4__svg">
-              <svg xmlns="http://www.w3.org/2000/svg" width="38" height="55">
-                <path fill="currentColor" fill-rule="nonzero" d="M19 0C8.51154762.01214583.0119881 8.62354167 0 19.25v9.1666667c0 .5062291.40510714.9166666.9047619.9166666.49965477 0 .90476191-.4104375.90476191-.9166666h1.80952381v25.6666666c0 .5062292.40510714.9166667.9047619.9166667H33.4761905c.4996547 0 .9047619-.4104375.9047619-.9166667V28.4166667h1.8095238c0 .5062291.4051071.9166666.9047619.9166666S38 28.9228958 38 28.4166667V19.25C37.9880119 8.62354167 29.4884524.01214583 19 0zm13.5714286 53.1666667H5.42857143V49.5H32.5714286v3.6666667zm0-5.5H5.42857143V34.8333333H32.5714286v12.8333334zm0-14.6666667H5.42857143v-7.3333333H32.5714286V33zm.9047619-9.1666667H4.52380952v-3.6666666H33.4761905v3.6666666zm2.7142857 2.75h-1.8095238v-.9166666c.4996547 0 .9047619-.4104375.9047619-.9166667v-5.5c0-.5062292-.4051072-.9166667-.9047619-.9166667H3.61904762c-.49965476 0-.90476191.4104375-.90476191.9166667v5.5c0 .5062292.40510715.9166667.90476191.9166667v.9166666H1.80952381V19.25C1.80952381 9.63107292 9.50599405 1.83333333 19 1.83333333c9.494006 0 17.1904762 7.79773959 17.1904762 17.41666667v7.3333333z"></path>
-              </svg>
-            </div>
-            <div class="all-services__services__service-4__text">
-              <h4>Dizajn Enterijera</h4>
-              <p>Dizajniranjem enterijera kombinujemo estetski sa tehničkim aspektom, stvarajući prostore koji čine boravak prijatnim, div život lakšim. 
-                 Nakon što obe strane iznesu svoje ideje za enterijer, izrađuje se model spomenutog prostora.</p>
-            </div>
-            <p>Dizajniranjem enterijera kombinujemo estetski sa tehničkim aspektom, stvarajući prostore koji čine boravak prijatnim, div život lakšim. 
-              Nakon što obe strane iznesu svoje ideje za enterijer, izrađuje se model spomenutog prostora.</p>
-          </div>
-
-          <!-- Izrada Eksterijera -->
-          <div href="#" class="all-services__services__service-5">
-            <div class="all-services__services__service-5__svg">
+          <!-- Održavanje Objekta -->
+          <div href="#" class="all-services__services__service-3">
+            <div class="all-services__services__service-3__svg">
               <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47">
                 <g fill="currentColor" fill-rule="nonzero">
                   <path d="M46.2166667 9.4H33.6833333V2.35c0-1.29788542-1.0521146-2.35-2.35-2.35H15.6666667c-1.2978855 0-2.35 1.05211458-2.35 2.35V9.4H.78333333C.3507375 9.4 0 9.7507375 0 10.1833333v16.45c0 .4325959.3507375.7833334.78333333.7833334h2.35v18.8c0 .4325958.3507375.7833333.78333334.7833333H43.0833333c.4325959 0 .7833334-.3507375.7833334-.7833333v-18.8h2.35c.4325958 0 .7833333-.3507375.7833333-.7833334v-16.45C47 9.7507375 46.6492625 9.4 46.2166667 9.4zM14.8833333 2.35c0-.43259583.3507375-.78333333.7833334-.78333333h15.6666666c.4325959 0 .7833334.3507375.7833334.78333333V9.4H30.55V3.91666667c0-.43259584-.3507375-.78333334-.7833333-.78333334H17.2333333c-.4325958 0-.7833333.3507375-.7833333.78333334V9.4h-1.5666667V2.35zm14.1 2.35v4.7H18.0166667V4.7h10.9666666zm.7833334 40.7333333H17.2333333V37.6h12.5333334v7.8333333zm12.5333333 0H31.3333333v-8.6166666c0-.4325959-.3507375-.7833334-.7833333-.7833334h-14.1c-.4325958 0-.7833333.3507375-.7833333.7833334v8.6166666H4.7V27.4166667h6.2666667v3.9166666c0 .4325959.3507375.7833334.7833333.7833334h4.7c.4325958 0 .7833333-.3507375.7833333-.7833334V30.55h12.5333334v.7833333c0 .4325959.3507375.7833334.7833333.7833334h4.7c.4325958 0 .7833333-.3507375.7833333-.7833334v-3.9166666H42.3v18.0166666zM15.6666667 27.4166667V30.55h-3.1333334v-3.1333333h3.1333334zM12.5333333 25.85v-1.5666667h3.1333334V25.85h-3.1333334zm4.7 3.1333333v-1.5666666h12.5333334v1.5666666H17.2333333zm17.2333334-1.5666666V30.55h-3.1333334v-3.1333333h3.1333334zM31.3333333 25.85v-1.5666667h3.1333334V25.85h-3.1333334zm14.1 0h-9.4V23.5c0-.4325958-.3507375-.7833333-.7833333-.7833333h-4.7c-.4325958 0-.7833333.3507375-.7833333.7833333v2.35H17.2333333V23.5c0-.4325958-.3507375-.7833333-.7833333-.7833333h-4.7c-.4325958 0-.7833333.3507375-.7833333.7833333v2.35H1.56666667V10.9666667H45.4333333V25.85z"></path><path d="M11.78125 16h23.4375c.4314453 0 .78125-.223875.78125-.5s-.3498047-.5-.78125-.5h-23.4375c-.4314453 0-.78125.223875-.78125.5s.3498047.5.78125.5z"></path>
                 </g>
               </svg>
             </div>
-            <div class="all-services__services__service-5__text">
-              <h4>Izrada Eksterijera</h4>
-              <p>Unikatnim dizajnom formiramo prostor koji poboljšava funkciju, fleksibilnost i komfor koji je neophodan korisniku.
-                 Bilo da je u pitanju bazen, fasada ili dvorište, naš stručan tim je tu da Vam realizuje ideju.</p>
+            <div class="all-services__services__service-3__text">
+              <h4>ODRŽAVANJE OBJEKTA</h4>
+              <p>Svojim klijentima možemo pružiti usluge tehničkog održavanja objekata, koje obuhvata redovno, preventivno ali i incidentno održavanje svih sistema koji su neophodni za funkcionisanje nekog objekta.</p>
             </div>
-            <p>Unikatnim dizajnom formiramo prostor koji poboljšava funkciju, fleksibilnost i komfor koji je neophodan korisniku.
-              Bilo da je u pitanju bazen, fasada ili dvorište, naš stručan tim je tu da Vam realizuje ideju.</p>
+            <!-- Duplicate paragraph because it goes outside of the container on smaller screen sizes -->
+            <p>Svojim klijentima možemo pružiti usluge tehničkog održavanja objekata, koje obuhvata redovno, preventivno ali i incidentno održavanje svih sistema koji su neophodni za funkcionisanje nekog objekta.</p>
+          </div>
+
+          <!-- Planiranje i Projektovanje  -->
+          <div href="#" class="all-services__services__service-4">
+            <div class="all-services__services__service-4__svg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="38" height="52">
+                <g fill="currentColor" fill-rule="nonzero">
+                  <path d="M15.1111111 0H.88888889C.398 0 0 .38805 0 .86666667V51.1333333C0 51.61195.398 52 .88888889 52H15.1111111C15.602 52 16 51.61195 16 51.1333333V.86666667C16 .38805 15.602 0 15.1111111 0zm-.8888889 5.2H9.77777778c-.49088889 0-.88888889.38805-.88888889.86666667 0 .47861666.398.86666666.88888889.86666666h4.44444442v1.73333334h-2.6666666c-.4908889 0-.8888889.38805-.8888889.86666666 0 .47861667.398.86666667.8888889.86666667h2.6666666v1.7333333H9.77777778c-.49088889 0-.88888889.38805-.88888889.8666667s.398.8666667.88888889.8666667h4.44444442V15.6h-2.6666666c-.4908889 0-.8888889.38805-.8888889.8666667 0 .4786166.398.8666666.8888889.8666666h2.6666666v1.7333334H9.77777778c-.49088889 0-.88888889.38805-.88888889.8666666 0 .4786167.398.8666667.88888889.8666667h4.44444442v1.7333333h-2.6666666c-.4908889 0-.8888889.38805-.8888889.8666667s.398.8666667.8888889.8666667h2.6666666V26H9.77777778c-.49088889 0-.88888889.38805-.88888889.8666667 0 .4786166.398.8666666.88888889.8666666h4.44444442v1.7333334h-2.6666666c-.4908889 0-.8888889.38805-.8888889.8666666 0 .4786167.398.8666667.8888889.8666667h2.6666666v1.7333333H9.77777778c-.49088889 0-.88888889.38805-.88888889.8666667s.398.8666667.88888889.8666667h4.44444442V36.4h-2.6666666c-.4908889 0-.8888889.38805-.8888889.8666667 0 .4786166.398.8666666.8888889.8666666h2.6666666v1.7333334H9.77777778c-.49088889 0-.88888889.38805-.88888889.8666666 0 .4786167.398.8666667.88888889.8666667h4.44444442v1.7333333h-2.6666666c-.4908889 0-.8888889.38805-.8888889.8666667s.398.8666667.8888889.8666667h2.6666666V46.8H9.77777778c-.49088889 0-.88888889.38805-.88888889.8666667 0 .4786166.398.8666666.88888889.8666666h4.44444442v1.7333334H1.77777778V1.73333333H14.2222222V5.2zM31.5 0c-3.5881161.00379148-6.4959375 2.71762104-6.5 6.06636019V40.7312756c0 .0112661 0 .0216655.0046429.0329316.0046428.0112661.0065.0415979.0083571.0623969.0099821.0899121.0352857.1776577.0752143.2599868.0046428.0112661 0 .0233989.0092857.034665l5.5714286 10.3994746c.0431785.0782127.0988928.1498174.1652857.2123226.0148571.0147326.0325.0242654.0482857.0381314.0644196.0539473.1366161.09912.2145.1343265.0265804.0126744.0538571.0239405.0817143.0337983.2054464.0809209.437125.0809209.6425714 0 .0278572-.0098578.0551339-.0211239.0817143-.0337983.0778839-.0352065.1500804-.0803792.2145-.1343265.0157857-.013866.0334286-.0233988.0482857-.0372648.0661607-.0629385.121875-.1347599.1652857-.2131892L37.9025 41.1212559c.0055714-.0103995 0-.0225322.0092857-.0337983.0396964-.0824375.0651161-.1701831.0752143-.2599869 0-.020799.0074286-.0407313.0083571-.0615302.0009286-.020799.0046429-.0233988.0046429-.0346649V6.06636019C37.9959375 2.71762104 35.0881161.00379148 31.5 0zm.9285714 47.4597356v-1.5287227c0-.4785925-.4157678-.8666229-.9285714-.8666229s-.9285714.3880304-.9285714.8666229v1.5287227l-3.3967143-6.3410796L31.5 39.1002913l4.3252857 2.0183647-3.3967143 6.3410796zm3.7142857-8.1306559l-3.7142857-1.7332457V18.1990806c0-.4785925-.4157678-.8666229-.9285714-.8666229s-.9285714.3880304-.9285714.8666229V37.595834l-3.7142857 1.7332457V13.8659661h9.2857142v25.4631136zm0-27.1963593h-9.2857142v-1.7332458h9.2857142v1.7332458zm0-3.46649156h-9.2857142V6.06636019c0-2.39307077 2.0787232-4.33311442 4.6428571-4.33311442 2.5641339 0 4.6428571 1.94004365 4.6428571 4.33311442v2.59986865z"></path>
+                </g>
+              </svg>
+            </div>
+            <div class="all-services__services__service-4__text">
+              <h4>PLANIRANJE I PROJEKTOVANJE</h4>
+              <p>Planiranju svakog projekta posvećujemo puno vremena obraćajući pažnju na detalje kako bismo osigurali da projekat bude uspešno realizovan, po visokim standardima, bezbedno, u roku i u okvirima dogovorenog budžeta.</p>
+            </div>
+            <!-- Duplicate paragraph because it goes outside of the container on smaller screen sizes -->
+            <p>Planiranju svakog projekta posvećujemo puno vremena obraćajući pažnju na detalje kako bismo osigurali da projekat bude uspešno realizovan, po visokim standardima, bezbedno, u roku i u okvirima dogovorenog budžeta.</p>
+          </div>
+
+          <!-- Uređenje Enterijera -->
+          <div href="#" class="all-services__services__service-5">
+            <div class="all-services__services__service-5__svg">
+              <svg class="interior" viewBox="0 0 60 60">
+                <g id="050---Interior-Design">
+                  <path id="Shape" d="m33.016 6h2c.5522847 0 1-.44771525 1-1s-.4477153-1-1-1h-2c-.5522847 0-1 .44771525-1 1s.4477153 1 1 1z"/>
+                  <path id="Shape" d="m7.016 6h22c.5522847 0 1-.44771525 1-1s-.4477153-1-1-1h-22c-.55228475 0-1 .44771525-1 1s.44771525 1 1 1z"/>
+                  <path id="Shape" d="m58.721 29.111c1.844631-2.0550516 1.6740514-5.2163689-.3810001-7.0609999s-5.2163688-1.6740516-7.0609999.3809999c-5.034 5.605-2.734 3.044-11.263 12.543v-12.974h9c1.6568542 0 3-1.3431458 3-3v-12c-.0049584-3.86393756-3.1360624-6.99504164-7-7h-38c-3.86416566.00440864-6.99559136 3.13583434-7 7v50c0 1.6568542 1.34314575 3 3 3h34c1.6568542 0 3-1.3431458 3-3v-7.059zm-5.953-5.344c.7108774-.8168661 1.8068033-1.1872348 2.8674721-.9690636s1.9214443.991018 2.2522048 2.0221409c.3307606 1.0311228.0801659 2.1604718-.6556769 2.9549227l-3.34 3.725c-2.757-2.475-1.724-1.548-4.465-4.01zm-2.752-16.767v12c0 .5522847-.4477153 1-1 1h-9v-13c0-2.76142375 2.2385763-5 5-5s5 2.23857625 5 5zm-13 51h-34c-.55228475 0-1-.4477153-1-1v-50c.00330612-2.76005315 2.23994685-4.99669388 5-5h33.11c-1.3492728 1.31362278-2.1102472 3.11687977-2.11 5v30.2l-4.032 4.489c-.1555616-1.5237211-1.4363663-2.6841268-2.968-2.689v-15h2.94c.6534564.0124863 1.2721839-.2935215 1.6588659-.8204353.386682-.5269139.4930319-1.208936.2851341-1.8285647l-2.469-7c-.2975927-.816184-1.0762762-1.3570588-1.945-1.351h-6.941c-.8686314-.0057603-1.6471599.5350068-1.945 1.351l-2.47 7c-.2079619.6197985-.1014992 1.3020164.2854194 1.8289816.3869186.5269653 1.0059492.8328356 1.6595806.8200184h2.941v15c-1.6568542 0-3 1.3431458-3 3v2h-3v-3.278c.6157032-.3554644.996422-1.0110622 1-1.722v-1.78c.788285-.7019526 1.146099-1.7687339.9405172-2.8040439s-.9438397-1.884444-1.9405172-2.2319561v-6.184c0-2.209139-1.790861-4-4-4h-5c-2.209139 0-4 1.790861-4 4v6.184c-.99711482.3470254-1.73584144 1.1962083-1.94147251 2.2317664-.20563106 1.035558.15259745 2.1025636.94147251 2.8042336v1.78c.002145.7113268.38324874 1.3675874 1 1.722v3.278c-.55228475 0-1 .4477153-1 1s.44771525 1 1 1h25.084l-2.932 8h-16.152c-.5522847 0-1 .4477153-1 1s.4477153 1 1 1h17c.3865378-.0004669.7376777-.2251965.9-.576l8.1-4v5.576c0 .5522847-.4477153 1-1 1zm-.183-8.223-6.092 3.008 2.338-6.379zm-14.758-27.777c-.1.027-.344.8 2.47-7l7 .017 2.411 6.983zm4.941 2h2v15h-2zm4 17c.5522847 0 1 .4477153 1 1v1.884c-.149.166.751.116-8 .116v-2c0-.5522847.4477153-1 1-1zm-13-7c.5522847 0 1 .4477153 1 1s-.4477153 1-1 1-1-.4477153-1-1 .4477153-1 1-1zm-1-1.816c-.846935.3025307-1.5134693.969065-1.816 1.816h-5.369c-.30231576-.8467209-.9684458-1.5132179-1.815-1.816v-6.184c0-1.1045695.8954305-2 2-2h5c1.1045695 0 2 .8954305 2 2zm-10 1.816c.55228475 0 1 .4477153 1 1s-.44771525 1-1 1-1-.4477153-1-1 .44771525-1 1-1zm2.815 2h5.369c.4222546 1.1943509 1.5492146 1.9947486 2.816 2v1h-11v-1c1.26641797-.0056727 2.39286915-.8059932 2.815-2zm-1.815 5h1.784l-.6 3h-1.184zm3.819 0h1.365l.6 3h-2.565zm3.4 0h1.781v3h-1.181zm23.29 7.608-4.464-4.008 14.03-15.625 4.465 4.009z"/>
+                  <path id="Shape" d="m9.016 54h-3c-.55228475 0-1 .4477153-1 1s.44771525 1 1 1h3c.55228475 0 1-.4477153 1-1s-.44771525-1-1-1z"/></g>
+              </svg>
+            </div>
+            <div class="all-services__services__service-5__text">
+              <h4>UREĐENJE ENTERIJERA</h4>
+              <p>Posebno smo ponosni na našu sposobnost da dizajniramo i realizujemo najrazličitije projekte iz oblasti uređenja enterijera, bilo da se radi o stambenim, komercijalnim ili poslovnim prostorima.</p>
+            </div>
+            <!-- Duplicate paragraph because it goes outside of the container on smaller screen sizes -->
+            <p>Posebno smo ponosni na našu sposobnost da dizajniramo i realizujemo najrazličitije projekte iz oblasti uređenja enterijera, bilo da se radi o stambenim, komercijalnim ili poslovnim prostorima.</p>
           </div>
           
-          <!-- Završni Radovi -->
+          <!-- Izrada Nameštaja -->
           <div href="#" class="all-services__services__service-6">
             <div class="all-services__services__service-6__svg">
               <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
@@ -383,10 +305,11 @@
               </svg>
             </div>
             <div class="all-services__services__service-6__text">
-              <h4>Završni Radovi</h4>
-              <p>Pored drugih usluga, takođe pružamo: renoviranje objekata, molersko-farbarski radovi, suvo-montažni radovi (gips), podopolagački radovi, keramičarski radovi, renoviranje fasada, kao i čišćenje objekta.</p>
+              <h4>IZRADA NAMEŠTAJA</h4>
+              <p>Po Vašoj želji i potrebama vršimo opremanje celokupnog enterijera po meri. Akcenat stavljamo na izradu, kako pojedinačnih komada, tako i na opremanje celokupnog enterijera.</p>
             </div>
-            <p>Pored drugih usluga, takođe pružamo: renoviranje objekata, molersko-farbarski radovi, suvo-montažni radovi (gips), podopolagački radovi, keramičarski radovi, renoviranje fasada, kao i čišćenje objekta.</p>
+            <!-- Duplicate paragraph because it goes outside of the container on smaller screen sizes -->
+            <p>Po Vašoj želji i potrebama vršimo opremanje celokupnog enterijera po meri. Akcenat stavljamo na izradu, kako pojedinačnih komada, tako i na opremanje celokupnog enterijera.</p>
           </div>
         </div>
       </section>
@@ -397,45 +320,119 @@
         <div id="projects" class="hash-links"></div>
 
         <div class="projects__about">
-          <h2 class="projects__about__title">Naši Projekti</h2>
-          <p class="projects__about__text">Ovde možete pogledati naše projekte na kojima smo dali svoj maksimum da opravdamo poverenje naših klijenata.</p>
+          <h2 class="projects__about__title">PROJEKTI</h2>
+          <p class="projects__about__text">
+            Naši projekti su naša pokretačka snaga. Ovde možete pogledati neke od uspešno realizovanih projekata na kojima smo učestvovali.
+          </p>
         </div>
         <div class="projects__carousel">
           <div class="glider-contain">
             <div class="glider">
               <div class="glider__1">
-                <img src="/imgs/projects/nikola tesla.png" alt="Construction works on airport Nikola Tesla">
-                <h4>Aerodrom Nikola Tesla</h4>
-                <p>Završni radovi i rekonstrukcija terminala</p>
+                <img src="/imgs/projects/the one.jpg" alt="The One Building">
+                <h4>The One, Novi Beograd</h4>
+                <p>Izvođenje pomoćnih i završnih građevinskih radova</p>
               </div>
               <div class="glider__2">
-                <img src="/imgs/projects/magnolia.jpg" alt="Finishing works on building Magnolia">
-                <h4>Magnolia</h4>
-                <p>Završni radovi</p>
+                <img src="/imgs/projects/SPV Avala.jpg" alt="SPV Avala Building">
+                <h4>SPV Avala, Beograd</h4>
+                <p>Obavljenje pomoćnih građevinskih poslova</p>
               </div>
               <div class="glider__3">
-                <img src="/imgs/projects/IKVB Dedinje 2.jpg" alt="Building and reconstruction of the IKVB Dedinje 2">
-                <h4>IKVB Dedinje 2</h4>
-                <p>Pomoć oko izgradnje i rekonstrukcije</p>
+                <img src="/imgs/projects/nikola tesla.png" alt="Construction works on airport Nikola Tesla">
+                <h4>Aerodrom Nikola Tesla Beograd</h4>
+                <p>Izvođenje završnih građevinskih radova</p>
               </div>
               <div class="glider__4">
-                <img src="/imgs/projects/poslovni objekt.jpg" alt="Building of business object">
-                <h4>Poslovni Objekat</h4>
-                <p>Izgradnja i rekonstrukcija</p>
+                <img src="/imgs/projects/AQUA PARK Ub.jpg" alt="Building of City Pool">
+                <h4>AQUA PARK Ub</h4>
+                <p>Izvođenje završnih građevinskih radova</p>
               </div>
               <div class="glider__5">
+                <img src="/imgs/projects/JKP Parking Servis.jpg" alt="Opticus building finishing works">
+                <h4>Poslovni objekat JKP Parking servisa</h4>
+                <p>Izvođenje završnih građevinskih radova</p>
+              </div>
+              <div class="glider__6">
+                <img src="/imgs/projects/MAXI.jpg" alt="Finishing works of MAXI Supermarket">
+                <h4>Maxi supermarket – Smederevo</h4>
+                <p>Izvođenje završnih građevinskih radova</p>
+              </div>
+              <div class="glider__7">
+                <img src="/imgs/projects/IKVB Dedinje 2.jpg" alt="Building and reconstruction of the IKVB Dedinje 2">
+                <h4>IKVB Dedinje 2</h4>
+                <p>Obavljanje pomoćnih građevinskih poslova</p>
+              </div>
+              <div class="glider__8">
                 <img src="/imgs/projects/opticus.jpg" alt="Opticus building finishing works">
-                <h4>Opticus</h4>
-                <p>Završni radovi</p>
+                <h4>OPTICUS bolnica</h4>
+                <p>Izvođenje završnih građevinskih radova</p>
+              </div>
+              <div class="glider__9">
+                <img src="/imgs/projects/magnolia.jpg" alt="Finishing works on building Magnolia">
+                <h4>BW MAGNOLIA</h4>
+                <p>Izvođenje pomoćnih i završnih građevinskih radova</p>
+              </div>
+              <div class="glider__10">
+                <img src="/imgs/projects/poslovni objekt.jpg" alt="Building of business object">
+                <h4>Poslovni objekat u ul. Živka Davidovića br. 64, Beograd</h4>
+                <p>Izgradnja i rekonstrukcija</p>
+              </div>
+              <div class="glider__11">
+                <img src="/imgs/projects/DIZAJNIRANJE ENTERIJERA.jpg" alt="Enterior">
+                <h4>Dizajniranje enterijera – privatni objekat</h4>
+              </div>
+              <div class="glider__12">
+                <img src="/imgs/projects/Izrada nameštaja po meri.jpg" alt="Enterior">
+                <h4>Izrada nameštaja po meri – privatan objekat</h4>
               </div>
             </div>
-          
+        
             <div role="tablist" class="dots" id="dots"></div>
           </div>
       </section>
       <!-- Projects Section End -->
 
-      <section class="strategy-design"></section>
+       <!-- Our Clients Section Start -->
+       <section class="our-clients">
+        <div id="our-clients" class="hash-links"></div>
+
+        <h2 class="our-clients__title">NAŠI KLIJENTI</h2>
+        <div class="our-clients__text">
+          <p class="our-clients__text--1">Sposobnost brzom prilagođavanju potrebama naših klijenata, uz pružanje usluga po najvišim
+            standardima, omogućila nam je saradnju sa vodećim svetskim i domaćim građevinskim kompanijama.
+          <p class="our-clients__text--2">Neki od naših klijenata su:</p>
+        </div>
+        
+        <div class="our-clients__clients">
+          <a href="https://www.vinci-construction.com/en/" target="_blank" class="our-clients__clients__client-1">
+            <img src="/imgs/our-clients/vinci.png" alt="vinci construction company logo">
+          </a>
+          <a href="https://www.wdconcordwestdoo.com/" target="_blank" class="our-clients__clients__client-2">
+            <img src="/imgs/our-clients/concord.png" alt="concord company logo">
+          </a>
+          <a href="https://www.arhipro.com/" target="_blank" class="our-clients__clients__client-3">
+            <img src="/imgs/our-clients/arhi-pro.png" alt="arhipro company logo">
+          </a>
+          <a href="http://www.gmtim.rs/" target="_blank" class="our-clients__clients__client-4">
+            <img src="/imgs/our-clients/gmt.png" alt="gmt company logo">
+          </a>
+          <a href="https://www.msbuild.rs/" target="_blank" class="our-clients__clients__client-5">
+            <img src="/imgs/our-clients/msbuild.png" alt="msbuild company logo">
+          </a>
+          <a href="https://aleksandar-gradnja.rs/" target="_blank" class="our-clients__clients__client-6">
+            <img src="/imgs/our-clients/AG.png" alt="aleksandar construction company logo">
+          </a>
+          <a href="https://www.kopra.rs/" target="_blank" class="our-clients__clients__client-7">
+            <img src="/imgs/our-clients/kopra.png" alt="kopra company logo">
+          </a>
+          <a href="https://set.rs/" target="_blank" class="our-clients__clients__client-8">
+            <img src="/imgs/our-clients/set.png" alt="set company logo">
+          </a>
+        </div>
+      </section>
+      <!-- Our Clients Section End -->
+
       <!-- Footer Section Start -->
       <footer id="footer" class="footer">
         
@@ -450,23 +447,48 @@
           <ul class="footer__contact__info">
             <li>
               <h4>Telefon</h4>
-              <a href="tel:+381692343611" class="footer__contact__tel--1">069 23 43 611</a>
-              <a href="tel:+381643072091" class="footer__contact__tel--2">064 30 72 091</a>
+              <a href="tel:+381692343611" class="footer__contact__tel--1">
+                <svg viewBox="0 0 384 384" class="phone">
+                  <g><path d="M353.188,252.052c-23.51,0-46.594-3.677-68.469-10.906c-10.719-3.656-23.896-0.302-30.438,6.417l-43.177,32.594    c-50.073-26.729-80.917-57.563-107.281-107.26l31.635-42.052c8.219-8.208,11.167-20.198,7.635-31.448    c-7.26-21.99-10.948-45.063-10.948-68.583C132.146,13.823,118.323,0,101.333,0H30.813C13.823,0,0,13.823,0,30.813    C0,225.563,158.438,384,353.188,384c16.99,0,30.813-13.823,30.813-30.813v-70.323C384,265.875,370.177,252.052,353.188,252.052z"/></g>
+                </svg>
+                +381 (0) 69 23 43 611
+              </a>
+              <a href="tel:+381643072091" class="footer__contact__tel--2">
+                <svg viewBox="0 0 384 384" class="phone">
+                  <g><path d="M353.188,252.052c-23.51,0-46.594-3.677-68.469-10.906c-10.719-3.656-23.896-0.302-30.438,6.417l-43.177,32.594    c-50.073-26.729-80.917-57.563-107.281-107.26l31.635-42.052c8.219-8.208,11.167-20.198,7.635-31.448    c-7.26-21.99-10.948-45.063-10.948-68.583C132.146,13.823,118.323,0,101.333,0H30.813C13.823,0,0,13.823,0,30.813    C0,225.563,158.438,384,353.188,384c16.99,0,30.813-13.823,30.813-30.813v-70.323C384,265.875,370.177,252.052,353.188,252.052z"/></g>
+                </svg>
+                +381 (0) 64 30 72 091
+              </a>
             </li>
             <li>
               <h4>Email</h4>
-              <a href="mailto:office@nicorp.rs " class="footer__contact__mail">office@nicorp.rs</a>
+              <a href="mailto:office@nicorp.rs " class="footer__contact__mail">
+                <svg class="email" viewBox="0 0 512 512">
+                  <g><polygon points="339.392,258.624 512,367.744 512,144.896"/></g>
+                  <g><polygon points="0,144.896 0,367.744 172.608,258.624"/></g>
+                  <g><path d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z"/></g>
+                  <g><path d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856    L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z"/></g>
+                </svg>
+                office@nicorp.rs
+              </a>
             </li>
             <li>
               <h4>Adresa</h4>
-              <p class="footer__contact__text--1">Gospodara Vučića 57 / 6</p>
+              <p class="footer__contact__text--1">
+                <svg class="location" viewBox="0 0 512 512">
+                  <g>
+                    <path d="M256,0C161.896,0,85.333,76.563,85.333,170.667c0,28.25,7.063,56.26,20.49,81.104L246.667,506.5    c1.875,3.396,5.448,5.5,9.333,5.5s7.458-2.104,9.333-5.5l140.896-254.813c13.375-24.76,20.438-52.771,20.438-81.021    C426.667,76.563,350.104,0,256,0z M256,256c-47.052,0-85.333-38.281-85.333-85.333c0-47.052,38.281-85.333,85.333-85.333    s85.333,38.281,85.333,85.333C341.333,217.719,303.052,256,256,256z"/>
+                  </g>
+                </svg>
+                Gospodara Vučića 57 / 6
+              </p>
               <p class="footer__contact__text--2">11000 Beograd, Srbija</p>
             </li>
           </ul>
         </div>
 
         <p class="footer__copyright">
-          <span><b>Nicrop</b></span> © 2021. All Rights Reserved. 
+          <span><b class="white">NICORP d.o.o.</b></span> © 2021. Sva prava zadržana. 
         </p>
 
       </footer>

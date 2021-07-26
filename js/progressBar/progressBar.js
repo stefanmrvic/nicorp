@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
         let section1 = document.getElementById('hero').getBoundingClientRect().top;
         let section2 = document.getElementById('about-us').getBoundingClientRect().top;
         let section3 = document.getElementById('services').getBoundingClientRect().top;
-        let section4 = document.getElementById('our-clients').getBoundingClientRect().top;
-        let section5 = document.getElementById('all-services').getBoundingClientRect().top;
-        let section6 = document.getElementById('projects').getBoundingClientRect().top;
+        let section4 = document.getElementById('all-services').getBoundingClientRect().top;
+        let section5 = document.getElementById('projects').getBoundingClientRect().top;
+        let section6 = document.getElementById('our-clients').getBoundingClientRect().top;
         let section7 = document.getElementById('footer').getBoundingClientRect().top;
 
         if (section1 <= 302) {

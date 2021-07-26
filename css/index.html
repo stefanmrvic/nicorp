@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>NICORP | Građevinska kompanija</title>
-    <meta name="title" content="NICORP | Construction company">
-    <meta name="description" content="NICORP is a construction company which provides services in all types of construction and construction-craft works within residential, commercial and industrial buildings, as well as the design and implementation of innovative architectural solutions.">
+    <meta name="title" content="NICORP | Građevinska kompanija">
+    <meta name="description" content="NICORP je građevinska kompanija čija delatnost je pružanje usluga u oblasti izvođenja svih vrsta građevinskih i građevinsko-zanatskih radova u okviru stambenih, poslovnih i industrijskih objekta, kao i projektovanje i implementacija inovativnih arhitektonskih rešenja.">
     <!-- Leaflet CSS Style -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
     <!-- Glider.js Stylesheet -->
-    <link rel="stylesheet" href="/css/glider.min.css">
+    <link rel="stylesheet" href="css/glider.min.css">
     <!-- Main CSS Style -->
     <link rel="stylesheet" href="/css/main.css" />
     <!-- Favicon Links -->
-    <link rel="icon" href="/nicorp-small.png" sizes="32x32">
-    <link rel="icon" href="/nicorp-big.png" sizes="192x192">
-    <link rel="manifest" href="/site.webmanifest"/>
+    <link rel="icon" href="nicorp-small.png" sizes="32x32">
+    <link rel="icon" href="nicorp-big.png" sizes="192x192">
+    <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
     <!-- Element used to get getBoundingClientRect().top for nav -->
@@ -54,49 +54,49 @@
             <a href="en/index.html" class="nav__mobile__items__lang__en">EN</a>
           </li>
           <li class="nav__mobile__items__item--1 nav__mobile__item mobile-item">
-            <a href="#about-us">About Us</a>
+            <a href="#about-us">O Nama</a>
           </li>
           <li class="nav__mobile__items__item--2 nav__mobile__item mobile-item">
-            <a href="#all-services">Services</a>
+            <a href="#all-services">Usluge</a>
           </li>
           <li class="nav__mobile__items__item--3 nav__mobile__item mobile-item">
-            <a href="#projects">Projects</a>
+            <a href="#projects">Projekti</a>
           </li>
           <li class="nav__mobile__items__item--4 nav__mobile__item mobile-item">
-            <a href="#our-clients">Clients</a>
+            <a href="#our-clients">Klijenti</a>
           </li>
           <li class="nav__mobile__items__item--5 nav__mobile__item mobile-item">
-            <a href="#contact">Contact</a>
+            <a href="#contact">Kontakt</a>
           </li>
         </ul>
 
         <ul class="nav__items">
           <li class="nav__items__item--1">
-            <a href="#about-us">About Us</a>
+            <a href="#about-us">O Nama</a>
           </li>
           <li class="nav__items__item--2">
-            <a href="#all-services">Services</a>
+            <a href="#all-services">Usluge</a>
           </li>
           <li class="nav__items__item--3">
-            <a href="#projects">Projects</a>
+            <a href="#projects">Projekti</a>
           </li>
           <li class="nav__items__item--4">
-            <a href="#our-clients">Clients</a>
+            <a href="#our-clients">Klijenti</a>
           </li>
           <li class="nav__items__item--5">
-            <a href="#contact">Contact</a>
+            <a href="#contact">Kontakt</a>
           </li>
         </ul>
 
         <div class="nav__lang">
-          <a href="/index.html" class="nav__lang__sr">SR</a>
+          <span class="nav__lang__sr active-nav-lang">SR</span>
           <span class="nav__lang__divider">/</span>
-          <span class="nav__lang__en active-nav-lang">EN</span>
+          <a href="en/index.html" class="nav__lang__en">EN</a>
         </div>
       </div>
     </nav>
     <!-- Nav End -->
-    <script src="/js/nav/nav.js"></script>
+    <script src="js/nav/nav.js"></script>
 
     <!-- Hero Section Start -->
     <section class="hero">
@@ -105,7 +105,7 @@
       <div class="hero__container">
         <div class="hero__text">
           <h1 class="hero__text__header">
-            <span class="hero__text__header--left">We build</span> <span class="hero__text__header--right">your dreams</span>
+            <span class="hero__text__header--left">Mi gradimo</span> <span class="hero__text__header--right">vaše snove</span>
           </h1>
         </div>
       </div>
@@ -118,24 +118,27 @@
       <section class="about-us">
         <div id="about-us" class="hash-links"></div>
 
-        <h5 class="about-us__subtitle subtitle">About us</h5>
+        <h5 class="about-us__subtitle subtitle">O nama</h5>
         <div class="about-us__container">
           <img src="/imgs/about-us/nicorp logo.jpg" alt="nicorp logo" class="about-us__logo">
           <div class="about-us__about-company">
-            <p><b>NICORP d.o.o.</b> is a construction company which provides services in all types of construction and construction-craft works within residential, commercial and industrial buildings, as well as the design and implementation of innovative architectural solutions.</p>
+            <p><b>NICORP d.o.o.</b> je građevinska kompanija čija delatnost je pružanje usluga u oblasti izvođenja svih vrsta
+              građevinskih i građevinsko-zanatskih radova u okviru stambenih, poslovnih i industrijskih objekta, kao i
+              projektovanje i implementacija inovativnih arhitektonskih rešenja.</p>
               <button class="about-us__about-company__button btn btn-black">
-                <a href="#about">Learn more</a>
+                <a href="#about">Saznaj više...</a>
               </button>
           </div>
           <img src="/imgs/about-us/planning.jpg" alt="" class="about-us__img-1">
           <div class="about-us__text-1">
-            <h3>From idea to Realization</h3>
-            <p>Reliability and experience allow us to provide clients with the best solutions and to put all of their ideas into action.</p>
+            <h3>Od ideje do realizacije</h3>
+            <p>Pouzdanost i iskustvo nam omogućavaju da klijentima pružimo najbolja rešenja i sprovedemo sve zahtevane ideje u delo.</p>
           </div>
           <img src="/imgs/about-us/day.jpg" alt="" class="about-us__img-2">
           <div class="about-us__text-2">
-            <h3>Always ahead of deadlines</h3>
-            <p>Our success is defined by how quickly and efficiently we can exceed your expectations in providing top quality service and price.</p>
+            <h3>Uvek ispred zadatih rokova</h3>
+            <p>Naš uspeh je definisan time koliko brzo i efikasno možemo da nadmašimo očekivanja klijenata u
+               pružanju vrhunskog kvaliteta usluge i cene.</p>
           </div>
         </div>
 
@@ -145,9 +148,9 @@
           <div class="about-us__about__wrapper">
             <div class="about-us__about__img">
               <picture>
-                <source media="(max-width: 999px)" srcset="/imgs/about-us-modal/nicorp.jpg">
-                <source media="(min-width: 1000px)" srcset="/imgs/about-us-modal/nicorp-laptop.jpg">
-                <img src="/imgs/about-us-modal/nicorp.jpg" alt="">
+                <source media="(max-width: 999px)" srcset="imgs/about-us-modal/nicorp.jpg">
+                <source media="(min-width: 1000px)" srcset="imgs/about-us-modal/nicorp-laptop.jpg">
+                <img src="imgs/about-us-modal/nicorp.jpg" alt="">
               </picture>
             </div>
             <!-- Picture Div End -->
@@ -157,21 +160,24 @@
                 <span class="about-us__about__button--1"></span>
                 <span class="about-us__about__button--2"></span>
               </button>
-              <h2 class="about-us__about__title">About Us</h2>
+              <h2 class="about-us__about__title">O nama</h2>
               <p class="about-us__about__text--1">
-                <b>NICORP d.o.o.</b> is a construction company which provides services in all types of construction and construction-craft works within residential, commercial and industrial buildings, as well as the design and implementation of innovative architectural solutions.
+                NICORP je građevinska kompanija čija delatnost je pružanje usluga u oblasti izvođenja svih vrsta građevinskih i građevinsko-zanatskih radova
+                u okviru stambenih, poslovnih i industrijskih objekta, kao i projektovanje i implementacija inovativnih arhitektonskih rešenja.
               </p>
               <p class="about-us__about__text--2">
-                Founded with the aim of making modern construction methods, enriched with modern architectural solutions, available to clients on the domestic market.
-                From the very beginning, we've tried to justify the trust of our clients with a professional approach, respecting the budget, deadlines, as well as all contractual obligations.
+                Osnovana sa ciljem da savremene metode gradnje, oplemenjene modernim arhitektonskim rešenjima
+                učini dostupnim klijentima na domaćem tržistu. Od samog početka trudimo se da profesionalnim
+                pristupom, poštovanjem budžeta, rokova, kao i svih ugovorenih obaveza, opravdamo ukazano poverenje
+                klijenata.
               </p>
               
               <p class="about-us__about__text--3">
-                Commitment to the highest standards and innovative solutions, with a team of experienced professionals, complemented by carefully chosen responsible subcontractors,
-                led by highly qualified management staff, allows us to provide clients with the best solutions and implement all of their ideas.
+                Posvećenost najvišim standardima i inovativnim rešenjima, uz tim iskusnih profesionalaca, dopunjen sa selektivno angažovanim odgovornim kooperanatima,
+                na čelu sa visoko kvalifikovanim rukovodećim kadrom, omogućava nam da pružimo klijentima najbolja rešenja i sprovedemo sve zahtevane ideje u delo.
               </p>
               <p class="about-us__about__text--4">
-                Our success is defined by how quickly and efficiently we can exceed your expectations in providing top quality service and price.
+                Naš uspeh je definisan time koliko brzo i efikasno možemo da nadmašimo Vaša očekivanja u pružanju vrhunskog kvaliteta usluge i cene.
               </p>
             </div>
             <!-- Content Div End -->
@@ -187,9 +193,9 @@
 
         <div class="services__container">
           <div class="services__text">
-            <h3 class="services__text__service--1">DESIGN</h3>
-            <h3 class="services__text__service--2">CONSTRUCTION</h3>
-            <h3 class="services__text__service--3">ENGINEERING</h3>
+            <h3 class="services__text__service--1">PROJEKTOVANJE</h3>
+            <h3 class="services__text__service--2">IZGRADNJA</h3>
+            <h3 class="services__text__service--3">INŽENJERING</h3>
           </div>
           <img src="/imgs/services/services.jpg" alt="" class="services__img">
         </div>
@@ -201,10 +207,10 @@
       <section class="all-services">
         <div id="all-services" class="hash-links"></div>
 
-        <h2 class="all-services__title">Our Services</h2>
+        <h2 class="all-services__title">Naše Usluge</h2>
         <div class="all-services__services">
 
-          <!-- Execution of Works -->
+          <!-- Izvođenje Radova -->
           <div href="#" class="all-services__services__service-1">
             <div class="all-services__services__service-1__svg">
               <svg class="construction" viewBox="0 0 511.99823 511">
@@ -213,13 +219,13 @@
               </svg>
             </div>
             <div class="all-services__services__service-1__text">
-              <h4>Execution of Works</h4>
-              <p>We provide services in all types of construction and construction-craft works within residential, commercial and industrial facilities on a turnkey basis.</p>
+              <h4>Izvođenje Radova</h4>
+              <p>Pružamo usluge u oblasti izvođenja svih vrsta građevinskih i građevinsko-zanatskih radova u okviru stambenih, poslovnih i industrijskih objekta po principu “ključ u ruke”.</p>
             </div>
-            <p>We provide services in all types of construction and construction-craft works within residential, commercial and industrial facilities on a turnkey basis.</p>
+            <p>Planiranje svakog projekta shvatamo veoma ozbiljno i posvećujemo puno vremena i detalja kako bismo bili sigurni da projekat bude uspešan, realizovan u roku, i u okvirima dogovorenog budzeta.</p>
           </div>
 
-          <!-- Assignment of Labor -->
+          <!-- Ustupanje Radne Snage -->
           <div href="#" class="all-services__services__service-2">
             <div class="all-services__services__service-2__svg">
               <svg xmlns="http://www.w3.org/2000/svg" width="48" height="52">
@@ -229,14 +235,14 @@
               </svg>
             </div>
             <div class="all-services__services__service-2__text">
-              <h4>Assignment of Labor</h4>
-              <p>We provide support to other construction companies by hiring labor to perform craft and ancillary work on the construction site, as well as final cleaning of buildings before moving in.</p>
+              <h4>Ustupanje Radne Snage</h4>
+              <p>Pružamo podršku drugim građevinskim kompanijama ustupanjem radne snage za obavljanje zanatskih i pomoćnih poslova na gradilištu, kao i finalnog čišćenja objekata pred useljenje.</p>
             </div>
             <!-- Duplicate paragraph because it goes outside of the container on smaller screen sizes -->
-            <p>We provide support to other construction companies by hiring labor to perform craft and ancillary work on the construction site, as well as final cleaning of buildings before moving in.</p>
+            <p>Pružamo podršku drugim građevinskim kompanijama ustupanjem radne snage za obavljanje zanatskih i pomoćnih poslova na gradilištu, kao i finalnog čišćenja objekata pred useljenje.</p>
           </div>
 
-          <!-- Facility Maintenance -->
+          <!-- Održavanje Objekta -->
           <div href="#" class="all-services__services__service-3">
             <div class="all-services__services__service-3__svg">
               <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47">
@@ -246,14 +252,14 @@
               </svg>
             </div>
             <div class="all-services__services__service-3__text">
-              <h4>Facility Maintenance</h4>
-              <p>We can provide our clients with technical maintenance services, which includes regular, preventive and incidental maintenance of all systems that are necessary for the functioning of a facility.</p>
+              <h4>Održavanje Objekta</h4>
+              <p>Svojim klijentima možemo pružiti usluge tehničkog održavanja objekata, koje obuhvata redovno, preventivno ali i incidentno održavanje svih sistema koji su neophodni za funkcionisanje nekog objekta.</p>
             </div>
             <!-- Duplicate paragraph because it goes outside of the container on smaller screen sizes -->
-            <p>We can provide our clients with technical maintenance services, which includes regular, preventive and incidental maintenance of all systems that are necessary for the functioning of a facility.</p>
+            <p>Svojim klijentima možemo pružiti usluge tehničkog održavanja objekata, koje obuhvata redovno, preventivno ali i incidentno održavanje svih sistema koji su neophodni za funkcionisanje nekog objekta.</p>
           </div>
 
-          <!-- Planning and Design  -->
+          <!-- Planiranje i Projektovanje  -->
           <div href="#" class="all-services__services__service-4">
             <div class="all-services__services__service-4__svg">
               <svg xmlns="http://www.w3.org/2000/svg" width="38" height="52">
@@ -263,14 +269,14 @@
               </svg>
             </div>
             <div class="all-services__services__service-4__text">
-              <h4>Planning and Design</h4>
-              <p>We devote a lot of time to the planning of each project, paying attention to details to ensure that the project is successfully implemented, to high standards, safely, on time and within the agreed budget.</p>
+              <h4>Planiranje i Projektovanje</h4>
+              <p>Planiranju svakog projekta posvećujemo puno vremena obraćajući pažnju na detalje kako bismo osigurali da projekat bude uspešno realizovan, po visokim standardima, bezbedno, u roku i u okvirima dogovorenog budžeta.</p>
             </div>
             <!-- Duplicate paragraph because it goes outside of the container on smaller screen sizes -->
-            <p>We devote a lot of time to the planning of each project, paying attention to details to ensure that the project is successfully implemented, to high standards, safely, on time and within the agreed budget.</p>
+            <p>Planiranju svakog projekta posvećujemo puno vremena obraćajući pažnju na detalje kako bismo osigurali da projekat bude uspešno realizovan, po visokim standardima, bezbedno, u roku i u okvirima dogovorenog budžeta.</p>
           </div>
 
-          <!-- Interior Design -->
+          <!-- Uređenje Enterijera -->
           <div href="#" class="all-services__services__service-5">
             <div class="all-services__services__service-5__svg">
               <svg class="interior" viewBox="0 0 60 60">
@@ -282,11 +288,11 @@
               </svg>
             </div>
             <div class="all-services__services__service-5__text">
-              <h4>Interior Design</h4>
-              <p>We are especially proud of our ability to design and implement a variety of projects in the field of interior design, whether it is residential, commercial or business premises.</p>
+              <h4>Uređenje Enterijera</h4>
+              <p>Posebno smo ponosni na našu sposobnost da dizajniramo i realizujemo najrazličitije projekte iz oblasti uređenja enterijera, bilo da se radi o stambenim, komercijalnim ili poslovnim prostorima.</p>
             </div>
             <!-- Duplicate paragraph because it goes outside of the container on smaller screen sizes -->
-            <p>We are especially proud of our ability to design and implement a variety of projects in the field of interior design, whether it is residential, commercial or business premises.</p>
+            <p>Posebno smo ponosni na našu sposobnost da dizajniramo i realizujemo najrazličitije projekte iz oblasti uređenja enterijera, bilo da se radi o stambenim, komercijalnim ili poslovnim prostorima.</p>
           </div>
           
           <!-- Izrada Nameštaja -->
@@ -299,11 +305,11 @@
               </svg>
             </div>
             <div class="all-services__services__service-6__text">
-              <h4>Furniture Manufacturing</h4>
-              <p>According to your wishes and needs, we equip the entire interior to measure. We put emphasis on the production of both individual pieces and the furnishing of the entire interior.</p>
+              <h4>Izrada Nameštaja</h4>
+              <p>Po Vašoj želji i potrebama vršimo opremanje celokupnog enterijera po meri. Akcenat stavljamo na izradu, kako pojedinačnih komada, tako i na opremanje celokupnog enterijera.</p>
             </div>
             <!-- Duplicate paragraph because it goes outside of the container on smaller screen sizes -->
-            <p>According to your wishes and needs, we equip the entire interior to measure. We put emphasis on the production of both individual pieces and the furnishing of the entire interior.</p>
+            <p>Po Vašoj želji i potrebama vršimo opremanje celokupnog enterijera po meri. Akcenat stavljamo na izradu, kako pojedinačnih komada, tako i na opremanje celokupnog enterijera.</p>
           </div>
         </div>
       </section>
@@ -314,9 +320,9 @@
         <div id="projects" class="hash-links"></div>
 
         <div class="projects__about">
-          <h2 class="projects__about__title">Projects</h2>
+          <h2 class="projects__about__title">Projekti</h2>
           <p class="projects__about__text">
-            Our projects are our driving force. Here you can see some of the successfully implemented projects in which we participated.
+            Naši projekti su naša pokretačka snaga. Ovde možete pogledati neke od uspešno realizovanih projekata na kojima smo učestvovali.
           </p>
         </div>
         <div class="projects__carousel">
@@ -324,43 +330,43 @@
             <div class="glider">
               <div class="glider__1">
                 <img src="/imgs/projects/nikola tesla.png" alt="Construction works on airport Nikola Tesla">
-                <h4>Airport Nikola Tesla, Belgrade</h4>
-                <p>Execution of final construction works</p>
+                <h4>Aerodrom Nikola Tesla, Beograd</h4>
+                <p>Izvođenje završnih građevinskih radova</p>
               </div>
               <div class="glider__2">
                 <img src="/imgs/projects/bazen.jpg" alt="Building of City Pool">
-                <h4>City Pools in Ub</h4>
-                <p>Execution of final construction works</p>
+                <h4>Gradski bazeni Ub</h4>
+                <p>Izvođenje završnih građevinskih radova</p>
               </div>
               <div class="glider__3">
                 <img src="/imgs/projects/JKP Parking Servis.jpg" alt="Opticus building finishing works">
-                <h4>Business building of the JKP parking service</h4>
-                <p>Execution of final construction works</p>
+                <h4>Poslovni objekat JKP Parking servisa</h4>
+                <p>Izvođenje završnih građevinskih radova</p>
               </div>
               <div class="glider__4">
                 <img src="/imgs/projects/MAXI.jpg" alt="Finishing works of MAXI Supermarket">
                 <h4>Maxi supermarket – Smederevo</h4>
-                <p>Execution of final construction works</p>
+                <p>Izvođenje završnih građevinskih radova</p>
               </div>
               <div class="glider__5">
                 <img src="/imgs/projects/IKVB Dedinje 2.jpg" alt="Building and reconstruction of the IKVB Dedinje 2">
-                <h4>Institute for Cardiovascular Diseases Dedinje 2</h4>
-                <p>Performing auxiliary construction work</p>
+                <h4>IKVB Dedinje 2</h4>
+                <p>Obavljanje pomoćnih građevinskih poslova</p>
               </div>
               <div class="glider__6">
                 <img src="/imgs/projects/opticus.jpg" alt="Opticus building finishing works">
-                <h4>OPTICUS hospital</h4>
-                <p>Execution of final construction works</p>
+                <h4>OPTICUS bolnica</h4>
+                <p>Izvođenje završnih građevinskih radova.</p>
               </div>
               <div class="glider__7">
                 <img src="/imgs/projects/magnolia.jpg" alt="Finishing works on building Magnolia">
                 <h4>BW MAGNOLIA</h4>
-                <p>Execution of auxiliary and final construction works</p>
+                <p>Izvođenje pomoćnih i završnih građevinskih radova</p>
               </div>
               <div class="glider__8">
                 <img src="/imgs/projects/poslovni objekt.jpg" alt="Building of business object">
-                <h4>Business building in st. Živka Davidovića no. 64, Belgrade</h4>
-                <p>Construction and reconstruction</p>
+                <h4>Poslovni objekat u ul. Živka Davidovića br. 64, Beograd</h4>
+                <p>Izgradnja i rekonstrukcija</p>
               </div>
             </div>
         
@@ -373,10 +379,11 @@
        <section class="our-clients">
         <div id="our-clients" class="hash-links"></div>
 
-        <h2 class="our-clients__title">Our Clients</h2>
+        <h2 class="our-clients__title">Naši Klijenti</h2>
         <div class="our-clients__text">
-          <p class="our-clients__text--1">The ability to quickly adapt to the needs of our clients, while providing services to the highest standards, has enabled us to cooperate with leading global and domestic construction companies.
-          <p class="our-clients__text--2">Some of our clients are:</p>
+          <p class="our-clients__text--1">Sposobnost brzom prilagođavanju potrebama naših klijenata, uz pružanje usluga po najvišim
+            standardima, omogućila nam je saradnju sa vodećim svetskim i domaćim građevinskim kompanijama.
+          <p class="our-clients__text--2">Neki od naših klijenata su:</p>
         </div>
         
         <div class="our-clients__clients">
@@ -417,11 +424,11 @@
         
         <div class="footer__contact">
           <div id="contact" class="footer-hash"></div>
-          <h4 class="footer__contact__title">Contact Us</h4>
+          <h4 class="footer__contact__title">Kontakt</h4>
           <div id="mapid" class="footer__contact__map"></div>
           <ul class="footer__contact__info">
             <li>
-              <h4>Phone</h4>
+              <h4>Telefon</h4>
               <a href="tel:+381692343611" class="footer__contact__tel--1">
                 <svg viewBox="0 0 384 384" class="phone">
                   <g><path d="M353.188,252.052c-23.51,0-46.594-3.677-68.469-10.906c-10.719-3.656-23.896-0.302-30.438,6.417l-43.177,32.594    c-50.073-26.729-80.917-57.563-107.281-107.26l31.635-42.052c8.219-8.208,11.167-20.198,7.635-31.448    c-7.26-21.99-10.948-45.063-10.948-68.583C132.146,13.823,118.323,0,101.333,0H30.813C13.823,0,0,13.823,0,30.813    C0,225.563,158.438,384,353.188,384c16.99,0,30.813-13.823,30.813-30.813v-70.323C384,265.875,370.177,252.052,353.188,252.052z"/></g>
@@ -448,7 +455,7 @@
               </a>
             </li>
             <li>
-              <h4>Address</h4>
+              <h4>Adresa</h4>
               <p class="footer__contact__text--1">
                 <svg class="location" viewBox="0 0 512 512">
                   <g>
@@ -457,13 +464,13 @@
                 </svg>
                 Gospodara Vučića 57 / 6
               </p>
-              <p class="footer__contact__text--2">11000 Belgrade, Serbia</p>
+              <p class="footer__contact__text--2">11000 Beograd, Srbija</p>
             </li>
           </ul>
         </div>
 
         <p class="footer__copyright">
-          <span><b class="white">Nicrop d.o.o.</b></span> © 2021. All Rights Reserved.
+          <span><b class="white">Nicrop</b></span> © 2021. Sva prava zadržana. 
         </p>
 
       </footer>
@@ -471,8 +478,8 @@
     </main> 
 
     <!-- Glider.js -->
-    <script src="/js/carousel/glider.min.js"></script>
-    <script src="/js/carousel/glider.js"></script>
+    <script src="js/carousel/glider.min.js"></script>
+    <script src="js/carousel/glider.js"></script>
 
     <!-- Leaflet CDN -->
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
@@ -480,9 +487,10 @@
     crossorigin=""></script>
 
     <!-- Leaflet Custom Map -->
-    <script src="/js/map/map.js"></script>
+    <script src="js/map/map.js"></script>
 
     <!-- Progressive Bar -->
-    <script src="/js/progressBar/progressBar.js"></script>
+    <script src="js/progressBar/progressBar.js"></script>
+
   </body>
 </html>
