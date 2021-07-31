@@ -29,7 +29,7 @@
         <span class="side-scrollbar__current">01</span>
         <div class="side-scrollbar__bar-background"></div>
         <div class="side-scrollbar__bar"></div>
-        <span class="side-scrollbar__total">07</span>
+        <span class="side-scrollbar__total">06</span>
       </div>
     </div>
 
@@ -51,7 +51,7 @@
           <li class="nav__mobile__items__lang mobile-item">
             <span class="nav__mobile__items__lang__sr active-lang">SR</span>
             <span>/</span>
-            <a href="en/index.html" class="nav__mobile__items__lang__en">EN</a>
+            <a href="en/index" class="nav__mobile__items__lang__en">EN</a>
           </li>
           <li class="nav__mobile__items__item--1 nav__mobile__item mobile-item">
             <a href="#about-us">About Us</a>
@@ -89,7 +89,7 @@
         </ul>
 
         <div class="nav__lang">
-          <a href="/index.html" class="nav__lang__sr">SR</a>
+          <a href="/index" class="nav__lang__sr">SR</a>
           <span class="nav__lang__divider">/</span>
           <span class="nav__lang__en active-nav-lang">EN</span>
         </div>
@@ -98,19 +98,66 @@
     <!-- Nav End -->
     <script src="/js/nav/nav.js"></script>
 
-    <!-- Hero Section Start -->
+    <!-- Hero Start -->
     <section class="hero">
       <div id="hero" class="hash-links"></div>
 
-      <div class="hero__container">
-        <div class="hero__text">
-          <h1 class="hero__text__header">
-            <span class="hero__text__header--left">We build</span> <span class="hero__text__header--right">your dreams</span>
-          </h1>
+      <div id="hero-slider">
+        <div class="hero-slide slide-1 active">
+          <div class="hero-slide-1"></div>
+          <div class="hero-overlay-text text-1 text-1--en">
+            <h5 class="hero-subtitle">Nicorp</h5>
+            <h1 class="hero-header">We build your dreams</h1>
+            <p class="hero-text">
+              Our commitment to the highest standards and innovative solutions, allows us to provide customers with the best solutions, and implement all the required ideas.
+            </p>
+          </div>
+        </div>
+        <div class="hero-slide slide-2">
+          <div class="hero-slide-2"></div>
+          <div class="hero-overlay-text text-2">
+            <h5 class="hero-subtitle">Nicorp</h5>
+            <h1 class="hero-header">Always ahead of deadlines</h1>
+            <p class="hero-text">
+              Our success is defined by how quickly and efficiently we can exceed customer expectations in providing superior service, quality, and price.
+            </p>
+          </div>
+        </div>
+        <div class="hero-slide slide-3">
+          <div class="hero-slide-3"></div>
+          <div class="hero-overlay-text text-3">
+            <h5 class="hero-subtitle">Nicorp</h5>
+            <h1 class="hero-header">A reliable partner</h1>
+            <p class="hero-text">
+              From the very beginning, we've tried to justify the trust of our clients with a professional approach, respect for the budget, deadlines, as well as all of the contractual obligations.
+            </p>
+          </div>
+        </div>
+
+        <div class="hero-dots">
+          <div class="dot dot-1"></div>
+          <div class="dot dot-2"></div>
+          <div class="dot dot-3"></div>
+        </div>
+
+        <div class="hero-buttons">
+          <div class="hero-slider-back-btn">
+            <span>Prev</span>
+          </div>
+
+          <div class="hero-slider-splitter">
+            <span>|</span>
+          </div>
+
+          <div class="hero-slider-next-btn">
+            <span>Next</span>
+          </div>
         </div>
       </div>
+      <!-- Hero Slider -->
+      <script src="/js/heroSlider/heroSlider.js"></script>
     </section>
-    <!-- Hero Section End -->
+    <!-- Hero End -->
     </header>
     
     <main>
@@ -118,7 +165,7 @@
       <section class="about-us">
         <div id="about-us" class="hash-links"></div>
 
-        <h5 class="about-us__subtitle subtitle">About us</h5>
+        <h5 class="about-us__subtitle subtitle">O nama</h5>
         <div class="about-us__container">
           <img src="/imgs/about-us/nicorp logo.jpg" alt="nicorp logo" class="about-us__logo">
           <div class="about-us__about-company">
@@ -129,14 +176,19 @@
           </div>
           <img src="/imgs/about-us/planning.jpg" alt="" class="about-us__img-1">
           <div class="about-us__text-1">
-            <h3>From idea to Realization</h3>
-            <p>Reliability and experience allow us to provide clients with the best solutions and to put all of their ideas into action.</p>
+            <h3>INNOVATIVE APPROACH TO CONSTRUCTION</h3>
+            <p>Founded with the aim of creating a modern company that meets all modern market requirements.</p>
           </div>
           <img src="/imgs/about-us/day.jpg" alt="" class="about-us__img-2">
           <div class="about-us__text-2">
-            <h3>Always ahead of deadlines</h3>
-            <p>Our success is defined by how quickly and efficiently we can exceed your expectations in providing top quality service and price.</p>
+            <h3>PROFESSIONAL STAFF AS A GUARANTEE OF QUALITY</h3>
+            <p>A team of experienced professionals, led by highly qualified management staff allows us to put all of your ideas into action.</p>
           </div>
+          <div class="about-us__text-3">
+            <h3>Our team</h3>
+            <p>We have a large and highly qualified workforce with many years of experience working on construction sites within the country and abroad.</p>
+          </div>
+          <img src="/imgs/about-us/workers.jpg" alt="" class="about-us__img-3">
         </div>
 
         <!-- Pop-up Window when Find out more Button is Pressed -->
@@ -181,27 +233,11 @@
       <script src="/js/aboutUs/aboutUs.js"></script>
       <!-- About Us Section End -->
 
-       <!-- Services Section Start -->
-       <section class="services">
-        <div id="services" class="hash-links"></div>
-
-        <div class="services__container">
-          <div class="services__text">
-            <h3 class="services__text__service--1">DESIGN</h3>
-            <h3 class="services__text__service--2">CONSTRUCTION</h3>
-            <h3 class="services__text__service--3">ENGINEERING</h3>
-          </div>
-          <img src="/imgs/services/services.jpg" alt="" class="services__img">
-        </div>
-      </section>
-      <script src="/js/services/services.js"></script>
-      <!-- Services Section End -->
-
       <!-- All Services Section Start -->
       <section class="all-services">
         <div id="all-services" class="hash-links"></div>
 
-        <h2 class="all-services__title">Our Services</h2>
+        <h2 class="all-services__title">OUR SERVICES</h2>
         <div class="all-services__services">
 
           <!-- Execution of Works -->
@@ -213,7 +249,7 @@
               </svg>
             </div>
             <div class="all-services__services__service-1__text">
-              <h4>Execution of Works</h4>
+              <h4>EXECUTION OF WORKS</h4>
               <p>We provide services in all types of construction and construction-craft works within residential, commercial and industrial facilities on a turnkey basis.</p>
             </div>
             <p>We provide services in all types of construction and construction-craft works within residential, commercial and industrial facilities on a turnkey basis.</p>
@@ -229,7 +265,7 @@
               </svg>
             </div>
             <div class="all-services__services__service-2__text">
-              <h4>Assignment of Labor</h4>
+              <h4>ASSIGNMENT OF LABOR</h4>
               <p>We provide support to other construction companies by hiring labor to perform craft and ancillary work on the construction site, as well as final cleaning of buildings before moving in.</p>
             </div>
             <!-- Duplicate paragraph because it goes outside of the container on smaller screen sizes -->
@@ -246,7 +282,7 @@
               </svg>
             </div>
             <div class="all-services__services__service-3__text">
-              <h4>Facility Maintenance</h4>
+              <h4>FACILITY MAINTENANCE</h4>
               <p>We can provide our clients with technical maintenance services, which includes regular, preventive and incidental maintenance of all systems that are necessary for the functioning of a facility.</p>
             </div>
             <!-- Duplicate paragraph because it goes outside of the container on smaller screen sizes -->
@@ -263,7 +299,7 @@
               </svg>
             </div>
             <div class="all-services__services__service-4__text">
-              <h4>Planning and Design</h4>
+              <h4>PLANNING AND DESIGN</h4>
               <p>We devote a lot of time to the planning of each project, paying attention to details to ensure that the project is successfully implemented, to high standards, safely, on time and within the agreed budget.</p>
             </div>
             <!-- Duplicate paragraph because it goes outside of the container on smaller screen sizes -->
@@ -282,7 +318,7 @@
               </svg>
             </div>
             <div class="all-services__services__service-5__text">
-              <h4>Interior Design</h4>
+              <h4>INTERIOR DESIGN</h4>
               <p>We are especially proud of our ability to design and implement a variety of projects in the field of interior design, whether it is residential, commercial or business premises.</p>
             </div>
             <!-- Duplicate paragraph because it goes outside of the container on smaller screen sizes -->
@@ -299,7 +335,7 @@
               </svg>
             </div>
             <div class="all-services__services__service-6__text">
-              <h4>Furniture Manufacturing</h4>
+              <h4>FURNITURE MANUFACTURING</h4>
               <p>According to your wishes and needs, we equip the entire interior to measure. We put emphasis on the production of both individual pieces and the furnishing of the entire interior.</p>
             </div>
             <!-- Duplicate paragraph because it goes outside of the container on smaller screen sizes -->
@@ -314,7 +350,7 @@
         <div id="projects" class="hash-links"></div>
 
         <div class="projects__about">
-          <h2 class="projects__about__title">Projects</h2>
+          <h2 class="projects__about__title">PROJECTS</h2>
           <p class="projects__about__text">
             Our projects are our driving force. Here you can see some of the successfully implemented projects in which we participated.
           </p>
@@ -373,7 +409,7 @@
        <section class="our-clients">
         <div id="our-clients" class="hash-links"></div>
 
-        <h2 class="our-clients__title">Our Clients</h2>
+        <h2 class="our-clients__title">OUR CLIENTS</h2>
         <div class="our-clients__text">
           <p class="our-clients__text--1">The ability to quickly adapt to the needs of our clients, while providing services to the highest standards, has enabled us to cooperate with leading global and domestic construction companies.
           <p class="our-clients__text--2">Some of our clients are:</p>
