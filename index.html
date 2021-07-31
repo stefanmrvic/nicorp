@@ -29,7 +29,7 @@
         <span class="side-scrollbar__current">01</span>
         <div class="side-scrollbar__bar-background"></div>
         <div class="side-scrollbar__bar"></div>
-        <span class="side-scrollbar__total">07</span>
+        <span class="side-scrollbar__total">06</span>
       </div>
     </div>
 
@@ -98,19 +98,66 @@
     <!-- Nav End -->
     <script src="js/nav/nav.js"></script>
 
-    <!-- Hero Section Start -->
-    <section class="hero">
+      <!-- Hero Start -->
+      <section class="hero">
       <div id="hero" class="hash-links"></div>
 
-      <div class="hero__container">
-        <div class="hero__text">
-          <h1 class="hero__text__header">
-            <span class="hero__text__header--left">Mi gradimo</span> <span class="hero__text__header--right">vaše snove</span>
-          </h1>
+      <div id="hero-slider">
+        <div class="hero-slide slide-1 active">
+          <div class="hero-slide-1"></div>
+          <div class="hero-overlay-text text-1">
+            <h5 class="hero-subtitle">Nicorp</h5>
+            <h1 class="hero-header">Mi gradimo vaše snove</h1>
+            <p class="hero-text">
+              Posvećenost najvišim standardima i inovativnim rešenjima, omogućava nam da pružimo klijentima najbolja rešenja i sprovedemo sve zahteve u delo.
+            </p>
+          </div>
+        </div>
+        <div class="hero-slide slide-2">
+          <div class="hero-slide-2"></div>
+          <div class="hero-overlay-text text-2">
+            <h5 class="hero-subtitle">Nicorp</h5>
+            <h1 class="hero-header">Uvek ispred zadatih rokova</h1>
+            <p class="hero-text">
+              Naš uspeh je definisan time koliko brzo i efikasno možemo da nadmašimo očekivanja klijenata u pružanju vrhunskog kvaliteta usluge i cene.
+            </p>
+          </div>
+        </div>
+        <div class="hero-slide slide-3">
+          <div class="hero-slide-3"></div>
+          <div class="hero-overlay-text text-3">
+            <h5 class="hero-subtitle">Nicorp</h5>
+            <h1 class="hero-header">Pouzdan partner</h1>
+            <p class="hero-text">
+              Od samog početka trudimo se da profesionalnim pristupom, poštovanjem budžeta, rokova, kao i svih ugovorenih obaveza, opravdamo ukazano poverenje klijenata.
+            </p>
+          </div>
+        </div>
+
+        <div class="hero-dots">
+          <div class="dot dot-1"></div>
+          <div class="dot dot-2"></div>
+          <div class="dot dot-3"></div>
+        </div>
+
+        <div class="hero-buttons">
+          <div class="hero-slider-back-btn">
+            <span>Prev</span>
+          </div>
+
+          <div class="hero-slider-splitter">
+            <span>|</span>
+          </div>
+
+          <div class="hero-slider-next-btn">
+            <span>Next</span>
+          </div>
         </div>
       </div>
+      <!-- Hero Slider -->
+      <script src="js/heroSlider/heroSlider.js"></script>
     </section>
-    <!-- Hero Section End -->
+    <!-- Hero End -->
     </header>
     
     <main>
@@ -131,15 +178,19 @@
           </div>
           <img src="/imgs/about-us/planning.jpg" alt="" class="about-us__img-1">
           <div class="about-us__text-1">
-            <h3>Od ideje do realizacije</h3>
-            <p>Pouzdanost i iskustvo nam omogućavaju da klijentima pružimo najbolja rešenja i sprovedemo sve zahtevane ideje u delo.</p>
+            <h3>Inovativan pristup gradnji</h3>
+            <p>Osnovani sa ciljem pravljenja moderne kompanije koja odgovara svim savremenim zahtevima tržišta.</p>
           </div>
           <img src="/imgs/about-us/day.jpg" alt="" class="about-us__img-2">
           <div class="about-us__text-2">
-            <h3>Uvek ispred zadatih rokova</h3>
-            <p>Naš uspeh je definisan time koliko brzo i efikasno možemo da nadmašimo očekivanja klijenata u
-               pružanju vrhunskog kvaliteta usluge i cene.</p>
+            <h3>Stručni kadar kao garant kvaliteta</h3>
+            <p>Tim iskusnih profesionalaca, na čelu sa visoko kvalifikovanim rukovodećim kadrom omogućava nam da sprovedemo sve zahtevane ideje u delo.</p>
           </div>
+          <div class="about-us__text-3">
+            <h3>Naš tim</h3>
+            <p>Raspolažemo sa velikim timom visokokvalifikovane rade snage sa višegodišnjim iskustvom rada na gradilištima u zemlji i inostranstvu.</p>
+          </div>
+          <img src="/imgs/about-us/workers.jpg" alt="" class="about-us__img-3">
         </div>
 
         <!-- Pop-up Window when Find out more Button is Pressed -->
@@ -186,22 +237,6 @@
       </section>
       <script src="/js/aboutUs/aboutUs.js"></script>
       <!-- About Us Section End -->
-
-       <!-- Services Section Start -->
-       <section class="services">
-        <div id="services" class="hash-links"></div>
-
-        <div class="services__container">
-          <div class="services__text">
-            <h3 class="services__text__service--1">PROJEKTOVANJE</h3>
-            <h3 class="services__text__service--2">IZGRADNJA</h3>
-            <h3 class="services__text__service--3">INŽENJERING</h3>
-          </div>
-          <img src="/imgs/services/services.jpg" alt="" class="services__img">
-        </div>
-      </section>
-      <script src="/js/services/services.js"></script>
-      <!-- Services Section End -->
 
       <!-- All Services Section Start -->
       <section class="all-services">
@@ -380,11 +415,11 @@
               </div>
               <div class="glider__11">
                 <img src="/imgs/projects/DIZAJNIRANJE ENTERIJERA.jpg" alt="Enterior">
-                <h4>Dizajniranje enterijera – privatni objekat</h4>
+                <h4>Dizajniranje enterijera</h4>
               </div>
               <div class="glider__12">
                 <img src="/imgs/projects/Izrada nameštaja po meri.jpg" alt="Enterior">
-                <h4>Izrada nameštaja po meri – privatan objekat</h4>
+                <h4>Izrada nameštaja po meri</h4>
               </div>
             </div>
         

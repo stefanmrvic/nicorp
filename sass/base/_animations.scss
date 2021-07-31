@@ -10,39 +10,35 @@
   }
 }
 
-//Hero Text Animations Start
-@keyframes fadeInLeftHero {
-    0% {
-      opacity: 0;
-      transform: translateX(-40%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0%);
-    }
+//Hero Slider Animations Start
+@keyframes animateInLeft {
+  0% {
+    transform: translateX(-100%);
   }
-  
-  @keyframes fadeInRightHero {
-    0% {
-      opacity: 0;
-      transform: translateX(40%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0%);
-    }
+  100% {
+    transform: translateX(0%);
   }
-  //Hero Text Animations End
+}
 
-  //Services Text Animations Start
-  @keyframes fadeInLeftServices {
-    0% {
-      opacity: 0;
-      transform: translateX(-45%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0%);
-    }
+@keyframes animateInRight {
+  0% {
+    transform: translateX(100%);
   }
-  //Services Text Animations End
+  100% {
+    transform: translateX(0%);
+  }
+}
+//Hero Slider Animations End
+
+//Services Text Animations Start
+@keyframes fadeInLeftServices {
+  0% {
+    opacity: 0;
+    transform: translateX(-45%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+//Services Text Animations End

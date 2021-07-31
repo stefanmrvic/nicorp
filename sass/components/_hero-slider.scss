@@ -1,0 +1,294 @@
+#hero-slider {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+  
+  #hero-slider::before {
+    display: none;
+
+    @media only screen and (min-width: $desktop) {
+      display: initial;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 20%;
+      bottom: 0;
+      width: 20%;
+      border-left: solid rgba(255, 255, 255, 0.25) 1px;
+      border-right: solid rgba(255, 255, 255, 0.25) 1px;
+      z-index: 999;
+    }
+  }
+
+  #hero-slider::after {
+    display: none;
+
+    @media only screen and (min-width: $desktop) {
+      display: initial;
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 20%;
+      bottom: 0;
+      width: 20%;
+      border-left: solid rgba(255, 255, 255, 0.25) 1px;
+      border-right: solid rgba(255, 255, 255, 0.25) 1px;
+      z-index: 999;
+    }
+  }
+
+  .hero-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    z-index: 700;
+    height: 100vh;
+  }
+
+  .hero-slide > div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    pointer-events: none;
+  }
+
+  .hero-slide-1 {
+    background: url(/imgs/hero/1-mobile.jpg);
+    background-position: 82% 0;
+
+    @media only screen and (min-width: $tablet) {
+      background: url(/imgs/hero/1-tablet.jpg);
+      background-position: 92% 0;
+    }
+
+    @media only screen and (min-width: $laptop) {
+      background: url(/imgs/hero/1.jpg);
+      background-position: 70% 0;
+    }
+  }
+
+  .hero-slide-2 {
+    background: url(/imgs/hero/2-mobile.jpg);
+    background-position: 41% 0;
+
+    @media only screen and (min-width: $tablet) {
+      background: url(/imgs/hero/2.jpg);
+      background-position: 92% 0;
+    }
+
+    @media only screen and (min-width: $laptop) {
+      background-position: 70% 0;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      background-position: 100% 69%;
+    }
+  }
+
+  .hero-slide-3 {
+    background: url(/imgs/hero/3-mobile.jpg);
+    background-position: 0 0;
+
+    @media only screen and (min-width: $tablet) {
+      background: url(/imgs/hero/3-tablet.jpg);
+      background-position: 92% 0;
+    }
+
+    @media only screen and (min-width: $laptop) {
+      background: url(/imgs/hero/3.jpg);
+      background-position: 70% 0;
+    }
+
+    @media only screen and (min-width: $desktop) {
+      background-position: 0 67%;
+    }
+  }
+  
+  .active {
+    z-index: 998;
+  }
+  
+  .slideInLeft {
+    animation-name: animateInLeft;
+    z-index: 998;
+  }
+  
+  .slideInRight {
+    animation-name: animateInRight;
+    z-index: 998;
+  }
+  
+  .slideOutLeft {
+    transform: translateX(-100%);
+  }
+  
+  .slideOutRight {
+    transform: translateX(100%);
+  }
+  
+ .hero-dots {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 57px;
+    left: 49.9%;
+    transform: translateX(-50%);
+    width: 110px;
+    z-index: 999;
+ }
+
+ .dot {
+   width: 32px;
+   height: 3px;
+   background: #fff;
+   opacity: .5;
+ }
+
+  .hero-buttons {
+    position: absolute;
+    display: flex;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    font-weight: 600;
+  }
+  
+  .hero-slider-back-btn,
+  .hero-slider-next-btn,
+  .hero-slider-splitter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 13px;
+    opacity: .7;
+    transition: all .2s;
+    margin: 9px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    backface-visibility: hidden;
+
+    @media only screen and (min-width: $laptop) {
+      font-size: 14px;
+    }
+  }
+  
+  .hero-slider-back-btn:hover,
+  .hero-slider-next-btn:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+  
+  .hero-overlay-text {
+    position: absolute;
+    color: $color-primary;
+    z-index: $z-index-max;
+    opacity: 1;
+
+    @media only screen and (min-width: $laptop) {
+      margin-left: 2%;
+    }
+  }
+
+  .text-1 {
+    min-width: 228px;
+    width: 68%;
+    max-width: 519px;
+
+    @media only screen and (min-width: $mobile) {
+      width: 60%;
+    }
+
+    @media only screen and (min-width: $mobile-medium) {
+      margin-left: 2%;
+    }
+
+    @media only screen and (min-width: $tablet-big) {
+      margin-left: 0;
+    }
+  }
+
+  .text-1--en {
+    width: 76%;
+    max-width: 575px;
+
+    @media only screen and (min-width: $mobile) {
+      width: 67%;
+    }
+
+  }
+
+  .text-2 {
+    width: 79%;
+    max-width: 723px;
+
+    @media only screen and (min-width: $laptop) {
+      width: initial;
+    }
+  }
+
+  .text-2--en {
+    width: 84%;
+    max-width: 615px;
+
+    @media only screen and (min-width: $mobile) {
+      width: 79%;
+    }
+  }
+
+  .text-3 {
+    width: 73%;
+    max-width: 568px;
+
+    @media only screen and (min-width: $mobile) {
+      width: 71%;
+    }
+
+    @media only screen and (min-width: $laptop) {
+      width: initial;
+    }
+  }
+
+  .text-3--en {
+    max-width: 626px;
+  }
+  
+  .hero-overlay-text .hero-subtitle {
+    font-size: clamp(12px, 3vw, 16px);
+    text-transform: uppercase;
+    margin-left: 1px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+
+    @media only screen and (min-width: $laptop) {
+      font-size: 14px;
+      margin-left: 9px;
+    }
+  }
+
+  .hero-overlay-text .hero-header {
+    text-transform: uppercase;
+
+    @media only screen and (min-width: $laptop) {
+    }
+  }
+  
+  .hero-overlay-text .hero-text {
+    margin-top: 20px;
+    //text-align: center;
+    color: white;
+
+    @media only screen and (min-width: $laptop) {
+      margin-top: 22px;
+    }
+  }
+  
